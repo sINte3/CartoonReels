@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-15",
+  "stage": "new 3D art-direction keyframe; not accepted animation",
+  "file": "hero-3d-keyframe.png",
+  "width": 941,
+  "height": 1672,
+  "bytes": 2365054,
+  "sha256": "97c4c09087da7d9523496e2cbf0e3be2dff2b5a374097ca511aba3b80915fdde",
+  "image_generation_requests": 1,
+  "images_generated": 1,
+  "user_authorized_scope": "one image generation request in ChatGPT using its image quota",
+  "external_paid_api_calls": 0,
+  "video_generation_requests": 0,
+  "edits_or_variants": 0,
+  "note": "Original generated PNG preserved. Approximate 9:16 portrait framing; final delivery size not prepared. Still image does not validate movement; no claim about exact quota or monetary debit."
+}
