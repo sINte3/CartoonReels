@@ -1,0 +1,30 @@
+{
+  "CartoonReels.zip": {
+    "bytes": 3586862,
+    "sha256": "e090b76cf26a57a010698ecdf04d95ed0d05845ff196a1b4b5ea0a254a6d894f"
+  },
+  "README.md": {
+    "bytes": 1614,
+    "sha256": "ff506c37dd501d0d22847f9f50abae4759a7b557d461d9cfe1954902b9809183"
+  },
+  "hero-poses.png": {
+    "bytes": 1104392,
+    "sha256": "01ad50523f8ac8434ccb9bc07ab8b33f4d76ad19a1bca85c50bf4872a675f582"
+  },
+  "motion-check.png": {
+    "bytes": 216173,
+    "sha256": "d11991732e3ab89bab90d34c9fed30fb1265744f59c20a02ead48e00e21a3a8a"
+  },
+  "tail-contact.png": {
+    "bytes": 942167,
+    "sha256": "0f9791ece648e815d637eb45906f16c9b3172995d8b807b599c394c2bb33ddf0"
+  },
+  "tail-study-8s.mp4": {
+    "bytes": 1278619,
+    "sha256": "e9824dfd7f65b75767388eaebe72c449569894cc263c6cc962dcfdb43d7bbdfa"
+  },
+  "validation.json": {
+    "bytes": 1255,
+    "sha256": "695ab3c0d55c6a6b9622fcdfb5fce5c2518e58cdf081cfa05a5b53f0d111d078"
+  }
+}

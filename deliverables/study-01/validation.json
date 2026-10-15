@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-15",
+  "kind": "silent technical animation study, not EP001 final",
+  "video": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1080,
+        "height": 1920,
+        "pix_fmt": "yuvj420p",
+        "r_frame_rate": "24/1",
+        "nb_frames": "192",
+        "side_data_list": [
+          {}
+        ]
+      }
+    ],
+    "format": {
+      "duration": "8.000000",
+      "size": "1278619"
+    }
+  },
+  "decoded_without_errors": true,
+  "files": [
+    {
+      "file": "hero-poses.png",
+      "bytes": 1104392,
+      "sha256": "01ad50523f8ac8434ccb9bc07ab8b33f4d76ad19a1bca85c50bf4872a675f582"
+    },
+    {
+      "file": "tail-contact.png",
+      "bytes": 942167,
+      "sha256": "0f9791ece648e815d637eb45906f16c9b3172995d8b807b599c394c2bb33ddf0"
+    },
+    {
+      "file": "tail-study-8s.mp4",
+      "bytes": 1278619,
+      "sha256": "e9824dfd7f65b75767388eaebe72c449569894cc263c6cc962dcfdb43d7bbdfa"
+    },
+    {
+      "file": "motion-check.png",
+      "bytes": 216173,
+      "sha256": "d11991732e3ab89bab90d34c9fed30fb1265744f59c20a02ead48e00e21a3a8a"
+    }
+  ],
+  "paid_api_generations": 0,
+  "browser": "installed Chromium via Remotion CDP; modern headless mode"
+}
