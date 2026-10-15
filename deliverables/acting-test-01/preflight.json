@@ -1,0 +1,62 @@
+{
+  "checked_date_local": "2026-10-15",
+  "timezone": "Asia/Tashkent",
+  "stage": "preparation only; no generation submitted",
+  "input": {
+    "file": "../lookdev-02/hero-3d-keyframe.png",
+    "format": "PNG",
+    "width": 941,
+    "height": 1672,
+    "bytes": 2365054,
+    "sha256": "97c4c09087da7d9523496e2cbf0e3be2dff2b5a374097ca511aba3b80915fdde",
+    "matches_original_generation_manifest": true,
+    "image_unchanged": true,
+    "under_documented_cli_image_limit_30MB": true,
+    "aspect_ratio": 0.562799043062201,
+    "framing": "approximately 9:16; exact output ratio must be selected in UI"
+  },
+  "prompt": {
+    "file": "prompt.en.txt",
+    "characters_including_newline": 2919,
+    "under_documented_h3_limit_7000": true,
+    "duration_seconds": 5,
+    "intervals_seconds": [
+      [
+        0.0,
+        0.5
+      ],
+      [
+        0.5,
+        1.5
+      ],
+      [
+        1.5,
+        3.0
+      ],
+      [
+        3.0,
+        5.0
+      ]
+    ],
+    "contiguous_full_coverage": true,
+    "sha256": "ab14a83c7f512a311b532095fe229650ce58de18a30f1df45ac908be34540abe"
+  },
+  "quoted_scope": {
+    "proposed_jobs": 1,
+    "automatic_retries": 0,
+    "new_images": 0,
+    "new_api_purchases": 0,
+    "account_plan_user_report": "M plan",
+    "account_balance_credits_user_report": 800,
+    "full_task_price_credits": null,
+    "spending_approved": false
+  },
+  "not_verified": [
+    "current account availability of H3 first-frame mode with 5s, 9:16, 2K",
+    "credit applicability, full displayed task price, billing minimum and refund rules",
+    "server-side input acceptance",
+    "video motion and artistic quality"
+  ],
+  "external_video_tasks_created": 0,
+  "additional_image_generations": 0
+}

@@ -1,0 +1,15 @@
+Create a 5-second continuous vertical 9:16 stylized 3D animated-film shot. Use the supplied image as the exact first frame. Preserve the original ginger-furred creature, cream muzzle and chest, expressive eyes, body proportions, warm window light, wooden floor, lived-in room and single wooden broom. Keep the camera locked at the original framing, angle and focus throughout. This is a silent visual comedy performance with no dialogue, music, titles or cuts.
+
+INITIAL STATE AND CONTINUITY
+Match the first frame: the creature stands on two grounded hind feet, both forepaws near its belly, already looking suspiciously toward the broom on screen-right. One continuous tail grows from its lower back and follows the existing path to a single firm wrap around the broom handle. The broom's bristles rest on the floor. Preserve that same tail-to-handle grip throughout, without sliding or changing ownership. The forepaws remain separate from the broom; there is no paw-to-broom contact.
+
+TIMELINE: ONE SHOT, 0.0-5.0 SECONDS
+0.0-0.5: Hold the initial pose briefly, with subtle breathing only.
+0.5-1.5: The tail begins a very small, slow tilt of the already-held broom handle toward the creature, to screen-left. The bristles remain supported by the floor as the broom pivots slightly. Use a small readable motion, not a sweep; the tail remains connected and its grip stays secure.
+1.5-3.0: The creature's eyes track this movement first. Its chest then leans back slightly away from the broom with believable weight, both hind feet still planted. The forepaw on screen-right, closest to the broom, lifts just a few centimeters beside its own chest, palm outward in a restrained, annoyed 'stop' gesture. Keep its original short arm length; the paw never reaches for or touches the handle. During this reaction the tail continues the same slow tilt, with the total angle change limited to a few degrees.
+3.0-5.0: In response to the gesture, the tail stops moving and holds the broom steady at the newly reached angle. The creature fixes its stern sideways gaze on the tail's grip and holds the little stop gesture for a readable comic pause. Settle naturally; do not start another action.
+
+LOCKED END STATE
+Both hind feet remain in their original floor positions. The raised forepaw stays close to the creature's chest; the other remains near the belly. The single tail is still attached to the same body location and still wraps the same broom handle. The bristles remain on the floor. Preserve tactile fur, facial identity, coherent soft shadows and the original warm three-dimensional lighting.
+
+Avoid extra tails or limbs, stretched arms, detached body parts, sliding feet, changing face or broom shape, broken or slipping grip, floating bristles, fur flicker, camera movement, zooming, reframing, cuts, flat image warping and text. Show real local body and facial acting, with a clear action, reaction and final pause.
