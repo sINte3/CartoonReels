@@ -49,11 +49,15 @@
     "account_plan_user_report": "M plan",
     "account_balance_credits_user_report": 800,
     "full_task_price_credits": null,
-    "spending_approved": false
+    "spending_approved": false,
+    "per_task_price_displayed_user_report": false,
+    "price_status": "unknown; user confirmed UI does not display per-task credit cost",
+    "support_question_prepared": true,
+    "support_question_sent": false
   },
   "not_verified": [
     "current account availability of H3 first-frame mode with 5s, 9:16, 2K",
-    "credit applicability, full displayed task price, billing minimum and refund rules",
+    "credit applicability, full task credit charge, billing minimum and refund rules",
     "server-side input acceptance",
     "video motion and artistic quality"
   ],
