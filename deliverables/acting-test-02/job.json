@@ -1,0 +1,36 @@
+{
+  "prepared_date": "2026-11-05",
+  "timezone": "Asia/Tashkent",
+  "stage": "prepared; not submitted",
+  "provider": "fal.ai",
+  "endpoint_id": "bytedance/seedance-2.0/image-to-video",
+  "input_image": {
+    "relative_path": "../lookdev-02/hero-3d-keyframe.png",
+    "sha256": "97c4c09087da7d9523496e2cbf0e3be2dff2b5a374097ca511aba3b80915fdde",
+    "bytes": 2365054,
+    "width": 941,
+    "height": 1672,
+    "modified": false
+  },
+  "arguments": {
+    "prompt": "One continuous 5-second stylized 3D shot, using the supplied image as the first frame. Locked camera. Preserve the ginger creature, warm lighting, fur, single attached tail and existing broom grip.\n0.0-0.5s: brief breathing hold.\n0.5-1.5s: the tail begins slowly tilting the broom a few degrees toward the creature, screen-left; bristles remain grounded.\n1.5-3.0s: as the tilt continues, the eyes track it; the creature leans slightly away and raises the nearest forepaw beside its chest, palm outward in a stop gesture.\n3.0-5.0s: the tail stops the broom; the creature holds its stern sideways look for a comic pause.\nBoth hind feet stay planted. The raised forepaw stays near the chest without touching the handle. Preserve facial identity, proportions, continuous tail attachment and grip. No cuts, camera motion, extra limbs, sliding, warping or text. No dialogue or music.",
+    "resolution": "720p",
+    "duration": "5",
+    "aspect_ratio": "9:16",
+    "generate_audio": false
+  },
+  "image_url_status": "not uploaded; add image_url from provider upload before an API request; browser Playground accepts the local original",
+  "cost_reference": {
+    "currency": "USD",
+    "rate_per_output_second": "0.3024",
+    "one_5_second_clip": "1.5120",
+    "two_5_second_clips": "3.0240",
+    "source": "https://raw.githubusercontent.com/fal-ai/seedance-2.0-api/84bff6b1eafdff54c4b116953055fb27a7e80299/README.md",
+    "checked_date": "2026-11-05",
+    "live_billing_verified": false,
+    "minimum_topup_verified": false
+  },
+  "generation_requests_authorized": 0,
+  "generation_requests_submitted": 0,
+  "automatic_retries": 0
+}

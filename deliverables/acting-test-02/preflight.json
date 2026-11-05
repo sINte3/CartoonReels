@@ -1,0 +1,32 @@
+{
+  "checked_date": "2026-11-05",
+  "original_png_hash_matches": true,
+  "prompt_words": 136,
+  "prompt_characters": 877,
+  "timeline_intervals_seconds": [
+    [
+      0.0,
+      0.5
+    ],
+    [
+      0.5,
+      1.5
+    ],
+    [
+      1.5,
+      3.0
+    ],
+    [
+      3.0,
+      5.0
+    ]
+  ],
+  "five_second_timeline_contiguous": true,
+  "parameters_documented_in_official_source": true,
+  "price_read_from_pinned_official_source": "0.3024",
+  "job_manifest_is_live_api_request": false,
+  "provider_upload_performed": false,
+  "live_generation_performed": false,
+  "live_account_or_price_check_performed": false,
+  "new_paid_operations": 0
+}
