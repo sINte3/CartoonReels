@@ -3,12 +3,12 @@
   "timezone": "Asia/Tashkent",
   "episode": "EP001 V2 Сам попросил",
   "shot": "02",
-  "status": "prepared; not submitted",
+  "status": "completed in user Claude Code; result received and assembled for review",
   "generation_authorized": false,
   "new_image_requests": 0,
   "new_video_requests_planned": 1,
   "automatic_retries": 0,
-  "new_video_requests_submitted": 0,
+  "new_video_requests_submitted": 1,
   "local_inputs": {
     "frame_path": "keyframes/shot02-start.png",
     "frame_width": 720,
@@ -54,5 +54,15 @@
     "target_height": 1280,
     "shot02_editorial_crop": "constant 10 percent enlargement after generation; scale 792x1408 then crop 720x1280 at x36,y64",
     "audio_generation_planned": false
+  },
+  "authorization_status": "Original one-shot approval consumed; this manifest does not authorize resubmission.",
+  "submission_scope": "User Claude Code, per user report. No provider submission from this cloud environment.",
+  "result": {
+    "review_path": "../../deliverables/ep001-v2/review.json",
+    "source": "User-uploaded MP4 and Claude Code report",
+    "task_id_reported": "bddd336ee802db0ec8fd799818a71c34",
+    "credits_consumed_reported": 164,
+    "result_received_and_decoded": true,
+    "file_sha256": "cb7159c00727c7c96cc9fde43b083e432c1e606233ef5236e085d241ed6c8b40"
   }
 }

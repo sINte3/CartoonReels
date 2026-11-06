@@ -1,0 +1,63 @@
+{
+  "prepared_date": "2026-11-06",
+  "timezone": "Asia/Tashkent",
+  "stage": "assembled silent review cut; user artistic approval pending",
+  "file": "EP001_Sam_poprosil_review_7s.mp4",
+  "bytes": 2840380,
+  "sha256": "493c9982bdd980488dab00c14eb48e576a4cd7777783ae0ece480a2e06199322",
+  "duration_seconds": "7.000000",
+  "width": 720,
+  "height": 1280,
+  "fps": "24/1",
+  "frames": 168,
+  "audio_tracks": 0,
+  "full_decode_passed": true,
+  "assembly": {
+    "shot01": {
+      "file": "../kie-seedance-test-01/timing-edit-3s.mp4",
+      "sha256": "3de3f9d51dd642262e6da76343345b5bb018462a8293032a42aee3a1a719de35",
+      "frames_used": 72,
+      "timeline_seconds": [
+        0,
+        3
+      ]
+    },
+    "shot02": {
+      "user_uploaded_filename": "CartoonReels_EP001_shot02_20261106-105004.mp4",
+      "bytes": 1955242,
+      "sha256": "cb7159c00727c7c96cc9fde43b083e432c1e606233ef5236e085d241ed6c8b40",
+      "source_duration_seconds": "4.041667",
+      "source_frames": 97,
+      "frames_used": 96,
+      "timeline_seconds": [
+        3,
+        7
+      ],
+      "edit": "Constant 10 percent enlargement: 792x1408, crop 720x1280 at x36,y64. No dynamic camera move or synthesized frames."
+    }
+  },
+  "provider_claims": {
+    "source": "user-supplied Claude Code reports; not independently queried here",
+    "provider": "kie.ai",
+    "model": "bytedance/seedance-2",
+    "shot02_task_id": "bddd336ee802db0ec8fd799818a71c34",
+    "shot02_credits_consumed": 164,
+    "shot02_cost_time_seconds": 272,
+    "video_credits_total_for_two_reported_jobs": 369
+  },
+  "inspection": {
+    "method": "All 97 extracted shot02 frames inspected in ordered contact sheets plus selected full-resolution frames; real-time playback not claimed.",
+    "tail_release_and_support_transfer": "Visible and usable for this review cut",
+    "remaining_departures": [
+      "The withdraw-and-return gesture is weak; around 1.8-2.1 seconds of shot02 the hand is separated without a pronounced additional broom tilt.",
+      "The handle lies across the open paw rather than only its outer edge.",
+      "The generated opening frame differs from the supplied frame.",
+      "Ending gaze is less precisely directed than the storyboard."
+    ],
+    "approval_status": "Suitable for an editorial review, not claimed to be final user acceptance or flawless physics."
+  },
+  "new_paid_operations_in_assembly": 0,
+  "new_generations_from_this_environment": 0,
+  "social_publication_performed": false,
+  "additional_generation_authorized": false
+}
