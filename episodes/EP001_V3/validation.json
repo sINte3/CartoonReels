@@ -1,0 +1,72 @@
+{
+  "checked_date": "2026-11-06",
+  "scope": "offline preparation only",
+  "reference_sha256_matches_original": true,
+  "image_prompt_count": 3,
+  "video_prompt_count": 2,
+  "image_prompt_character_counts": {
+    "K0": 1258,
+    "K1": 1232,
+    "K2": 1223
+  },
+  "video_prompt_character_counts": {
+    "A": 1348,
+    "B": 1358
+  },
+  "four_second_timelines_contiguous": {
+    "A": [
+      [
+        0.0,
+        0.7
+      ],
+      [
+        0.7,
+        1.2
+      ],
+      [
+        1.2,
+        2.0
+      ],
+      [
+        2.0,
+        3.0
+      ],
+      [
+        3.0,
+        4.0
+      ]
+    ],
+    "B": [
+      [
+        0.0,
+        0.7
+      ],
+      [
+        0.7,
+        1.6
+      ],
+      [
+        1.6,
+        2.6
+      ],
+      [
+        2.6,
+        4.0
+      ]
+    ]
+  },
+  "image_request_templates_follow_supplied_Nano_Banana_card_fields": true,
+  "video_request_templates_follow_supplied_Seedance_card_fields": true,
+  "live_schema_or_price_check_performed": false,
+  "image_prices_unknown_and_not_assumed": true,
+  "baseline_video_arithmetic": {
+    "seconds": 8,
+    "historical_rate": 41,
+    "conditional_credits": 328
+  },
+  "unresolved_input_urls_intentional": true,
+  "paid_requests_performed": 0,
+  "reference_uploads_performed": 0,
+  "generated_storyboard_images": 0,
+  "generated_video_frames": 0
+}

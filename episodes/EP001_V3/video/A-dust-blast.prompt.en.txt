@@ -1,0 +1,7 @@
+One continuous 4-second polished stylized 3D animated-film shot. The supplied first frame K0 establishes the clean ginger creature, warm room, one attached tail holding one broom, and a visible dust mound. The last frame K1 is the required dusty-face outcome. Preserve identity, fur, lighting and camera; keep both hind feet grounded.
+0.0-0.7s: The creature proudly puffs its chest and points at the mound, pleased with itself. The tail is already ready to work.
+0.7-1.2s: The tail draws the broom back slightly for an overenthusiastic sweep; the creature stays confidently unaware.
+1.2-2.0s: One brisk broom stroke visibly launches the mound upward toward the creature's muzzle. The broom itself never hits its face. A short gray dust plume coats the muzzle and cheeks; the creature squeezes its eyes shut in surprise.
+2.0-3.0s: The cloud settles, revealing a clean floor and the same creature with clearly dusty facial fur. Eyes, nose and identity remain readable; do not darken the entire scene.
+3.0-4.0s: One stunned blink and a readable embarrassed pause, matching K1. The tail still grips the broom, now at rest with bristles down.
+Locked camera, no cuts, titles, dialogue or music. One causal sweep and one dust event. No extra broom, tail or limbs, detached tail, teleporting dust, face injury or face transformation into another character.

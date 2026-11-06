@@ -1,0 +1,238 @@
+{
+  "prepared_date": "2026-11-06",
+  "timezone": "Asia/Tashkent",
+  "episode": "EP001 V3",
+  "working_title": "Чисто. Почти.",
+  "stage": "text storyboard and quote preparation only",
+  "provider": "kie.ai via user Claude Code /generate",
+  "authorizations": {
+    "paid_image_requests": 0,
+    "paid_video_requests": 0,
+    "reference_uploads": 0,
+    "automatic_retries": 0,
+    "previous_205_and_164_credit_authorizations_consumed": true
+  },
+  "original_character_reference": {
+    "relative_path": "../../deliverables/lookdev-02/hero-3d-keyframe.png",
+    "sha256": "97c4c09087da7d9523496e2cbf0e3be2dff2b5a374097ca511aba3b80915fdde",
+    "width": 941,
+    "height": 1672
+  },
+  "image_tasks": [
+    {
+      "id": "K0",
+      "status": "prompt only; no image generated",
+      "generation_authorized": false,
+      "depends_on": [],
+      "prompt_file": "keyframes/K0-clean.prompt.en.txt",
+      "prompt_sha256": "fb5689b644ac4a61e251c3874972acf940c86da90b83794fe1377aed9a60015f",
+      "output_name_hint": "CartoonReels_EP001_V3_K0_{timestamp}.png",
+      "price_credits": null,
+      "request_template": {
+        "model": "nano-banana-2",
+        "input": {
+          "prompt": "Use the supplied ginger creature and warm cottage room as the identity and visual-style reference. Create a new polished stylized 3D animated-film keyframe, vertical 9:16, medium full shot at the creature's eye level. Preserve its face, ears, short ginger fur, cream muzzle and chest, proportions and single continuous tail. Keep the window on screen-left, the wooden cabinet and plants in the background, tactile wood and soft warm shadows.\nThe creature stands on screen-left with both hind feet grounded. It puffs out its chest and proudly points one forepaw down at a small, clearly visible mound of gray household dust on the floor just to its right. Its expression is smug and managerial, not angry. Both forepaws are visible and anatomically natural.\nOne tail grows from its lower back and visibly wraps around the handle of one wooden broom on screen-right. The bristles are beside the dust mound, ready to sweep. The tail's preparation looks slightly overenthusiastic, while the creature is unaware. Keep the entire creature, the mound, the broom head and the tail path readable. Clean orange face, coherent room, no dust cloud yet. No text, logos, clothing, extra characters, extra tails or limbs. This is a staged film frame, not a character sheet.",
+          "image_input": [
+            "__UPLOADED_ORIGINAL_CHARACTER_REFERENCE__"
+          ],
+          "aspect_ratio": "9:16",
+          "resolution": "2K",
+          "output_format": "png"
+        }
+      }
+    },
+    {
+      "id": "K1",
+      "status": "prompt only; no image generated",
+      "generation_authorized": false,
+      "depends_on": [
+        "K0"
+      ],
+      "prompt_file": "keyframes/K1-dusty.prompt.en.txt",
+      "prompt_sha256": "f446cb22234dfbcf05c81d640c0b1d264f29606f994717ec5c79fd368f9da5a8",
+      "output_name_hint": "CartoonReels_EP001_V3_K1_{timestamp}.png",
+      "price_credits": null,
+      "request_template": {
+        "model": "nano-banana-2",
+        "input": {
+          "prompt": "The first reference is the approved clean staging frame K0. The second reference preserves the creature's original identity and tactile 3D style. Produce the after-action frame in exactly the same room, camera angle, framing, lighting and floor layout, vertical 9:16. Preserve the creature's face structure, ears, proportions, two forepaws, two grounded hind feet and single attached tail.\nThe dust cloud has just settled. The dust mound has been swept off the wooden floor, which now looks clean. The creature's muzzle, cheeks and brow fur are visibly coated with matte gray dust. Keep its eyes, eyelids, nose and facial expression clearly readable; ginger ears, cream chest and fur texture remain recognizable. Do not simply darken the whole image or replace the face with a flat black mask.\nThe creature stands stunned, with wide blinking eyes and its former self-satisfaction gone. Its tail still grips the same single broom on screen-right; the broom has finished one sweep and its bristles rest on the floor. No impact injury and no second broom. The important contrast is a clean floor and a dirty creature. Background and camera stay consistent. No text, dialogue lettering, extra characters, extra limbs or duplicated tail.",
+          "image_input": [
+            "__UPLOADED_APPROVED_K0__",
+            "__UPLOADED_ORIGINAL_CHARACTER_REFERENCE__"
+          ],
+          "aspect_ratio": "9:16",
+          "resolution": "2K",
+          "output_format": "png"
+        }
+      }
+    },
+    {
+      "id": "K2",
+      "status": "prompt only; no image generated",
+      "generation_authorized": false,
+      "depends_on": [
+        "K0",
+        "K1"
+      ],
+      "prompt_file": "keyframes/K2-again.prompt.en.txt",
+      "prompt_sha256": "debe2a382618e863e4bc7179670c894be422b88b32503af40fab60b1ce6ba17b",
+      "output_name_hint": "CartoonReels_EP001_V3_K2_{timestamp}.png",
+      "price_credits": null,
+      "request_template": {
+        "model": "nano-banana-2",
+        "input": {
+          "prompt": "The first reference is the approved dusty-creature frame K1. The second reference K0 locks the room and prop layout; the third preserves the original character design. Create the final comic frame in the same polished tactile 3D style, fixed camera and warm cottage lighting, vertical 9:16, medium full shot with the floor and broom head visible.\nThe creature remains visibly dusty, with the same face, ginger ears and cream chest. A little dust has fallen from it after a sneeze, forming a fresh small gray scatter on the floor near its feet. Do not make the creature suddenly clean or recreate the full original mound.\nThe single attached tail still holds the same wooden broom on screen-right and has drawn it back slightly in preparation for another energetic sweep toward this fresh dust. The broom has not struck yet. The creature sees what is coming: wide alarmed eyes, shoulders pulled back, both forepaws raised defensively with open palms. This is genuine comic alarm, not the smug command pose from K0. Both hind feet remain planted, no running or jumping. Keep the complete tail path, broom grip and new floor dust readable. No second cloud, face impact, new props, extra characters, extra limbs, text or logos.",
+          "image_input": [
+            "__UPLOADED_APPROVED_K1__",
+            "__UPLOADED_APPROVED_K0__",
+            "__UPLOADED_ORIGINAL_CHARACTER_REFERENCE__"
+          ],
+          "aspect_ratio": "9:16",
+          "resolution": "2K",
+          "output_format": "png"
+        }
+      }
+    }
+  ],
+  "video_tasks": [
+    {
+      "id": "A",
+      "status": "prompt only; no video generated",
+      "generation_authorized": false,
+      "depends_on": [
+        "K0",
+        "K1"
+      ],
+      "prompt_file": "video/A-dust-blast.prompt.en.txt",
+      "prompt_sha256": "52859c8f516f3e30ca887effa49f5281f3f2897a10fe1d8b77d6cc1caabc2299",
+      "local_time_intervals_seconds": [
+        [
+          0.0,
+          0.7
+        ],
+        [
+          0.7,
+          1.2
+        ],
+        [
+          1.2,
+          2.0
+        ],
+        [
+          2.0,
+          3.0
+        ],
+        [
+          3.0,
+          4.0
+        ]
+      ],
+      "timing_is_direction_not_model_enforcement": true,
+      "output_name_hint": "CartoonReels_EP001_V3_A_{timestamp}.mp4",
+      "request_template": {
+        "model": "bytedance/seedance-2",
+        "input": {
+          "prompt": "One continuous 4-second polished stylized 3D animated-film shot. The supplied first frame K0 establishes the clean ginger creature, warm room, one attached tail holding one broom, and a visible dust mound. The last frame K1 is the required dusty-face outcome. Preserve identity, fur, lighting and camera; keep both hind feet grounded.\n0.0-0.7s: The creature proudly puffs its chest and points at the mound, pleased with itself. The tail is already ready to work.\n0.7-1.2s: The tail draws the broom back slightly for an overenthusiastic sweep; the creature stays confidently unaware.\n1.2-2.0s: One brisk broom stroke visibly launches the mound upward toward the creature's muzzle. The broom itself never hits its face. A short gray dust plume coats the muzzle and cheeks; the creature squeezes its eyes shut in surprise.\n2.0-3.0s: The cloud settles, revealing a clean floor and the same creature with clearly dusty facial fur. Eyes, nose and identity remain readable; do not darken the entire scene.\n3.0-4.0s: One stunned blink and a readable embarrassed pause, matching K1. The tail still grips the broom, now at rest with bristles down.\nLocked camera, no cuts, titles, dialogue or music. One causal sweep and one dust event. No extra broom, tail or limbs, detached tail, teleporting dust, face injury or face transformation into another character.",
+          "first_frame_url": "__UPLOADED_APPROVED_K0__",
+          "last_frame_url": "__UPLOADED_APPROVED_K1__",
+          "duration": 4,
+          "resolution": "720p",
+          "aspect_ratio": "9:16",
+          "generate_audio": false
+        }
+      }
+    },
+    {
+      "id": "B",
+      "status": "prompt only; no video generated",
+      "generation_authorized": false,
+      "depends_on": [
+        "K2",
+        "accepted_A"
+      ],
+      "prompt_file": "video/B-sneeze-repeat.prompt.en.txt",
+      "prompt_sha256": "263d6e46cbce8f1d4ccaddf642370e6e0e2c64632e5bf0ddc4edbaca82b5e8a9",
+      "local_time_intervals_seconds": [
+        [
+          0.0,
+          0.7
+        ],
+        [
+          0.7,
+          1.6
+        ],
+        [
+          1.6,
+          2.6
+        ],
+        [
+          2.6,
+          4.0
+        ]
+      ],
+      "timing_is_direction_not_model_enforcement": true,
+      "output_name_hint": "CartoonReels_EP001_V3_B_{timestamp}.mp4",
+      "request_template": {
+        "model": "bytedance/seedance-2",
+        "input": {
+          "prompt": "One continuous 4-second stylized 3D animated-film shot. Start from the actual accepted last frame of shot A: the same dusty ginger creature, clean floor and single tail still holding the broom. The supplied last frame K2 establishes the fresh floor dust and alarmed defensive pose. Preserve the room, warm lighting, tactile fur, facial identity and grounded hind feet.\n0.0-0.7s: The dusty creature's nose twitches and its chest draws one small breath; it tries to retain its dignity.\n0.7-1.6s: One clear sneeze, a short head-and-shoulder bob with eyes squeezed shut. A small puff of loose dust falls from its muzzle and visibly settles on the floor near its feet. The creature remains dusty; it does not become suddenly clean.\n1.6-2.6s: The helpful tail immediately notices the new floor dust and draws the same broom back slightly, preparing another energetic sweep. Do not perform the second sweep. The creature's eyes track the broom and widen in recognition.\n2.6-4.0s: The creature pulls its shoulders back and raises both forepaws defensively, palms open, in comic alarm. The tail pauses ready to sweep. Hold this anticipation as the punchline, matching K2.\nExactly one creature, one continuous attached tail and one broom. No extra limbs, stretching, prop duplication, footsteps, camera movement, cuts, second dust explosion, dialogue, titles or music.",
+          "first_frame_url": "__UPLOADED_ACTUAL_ACCEPTED_A_LAST_FRAME__",
+          "last_frame_url": "__UPLOADED_APPROVED_K2__",
+          "duration": 4,
+          "resolution": "720p",
+          "aspect_ratio": "9:16",
+          "generate_audio": false
+        }
+      }
+    }
+  ],
+  "execution_order": [
+    "read-only documentation and price check",
+    "sequential approved keyframes with visual review",
+    "only A: principal dust-impact test",
+    "only after accepted A: extract actual A ending and assess K2 compatibility",
+    "B: sneeze and anticipation payoff",
+    "edit after visual acceptance"
+  ],
+  "budget": {
+    "currency": "Kie credits",
+    "quote_complete": false,
+    "image_prices": {
+      "P0": null,
+      "P1": null,
+      "P2": null
+    },
+    "current_video_rate_confirmed": false,
+    "last_observed_video_rate_per_second": 41,
+    "last_rate_source": "user supplied Kie reports for 720p regular Seedance 2.0, 2026-11-06",
+    "video_base_seconds": 8,
+    "video_credits_if_rate_unchanged": 328,
+    "complete_base_formula": "P0 + P1 + P2 + 8*R",
+    "optional_one_addressed_video_retry_formula": "4*R; excluded and not authorized",
+    "optional_retry_credits_if_rate_unchanged": 164,
+    "usd_rate_reference_per_credit": "0.005 from reported top-up package, not a live billing quote",
+    "video_usd_if_both_rate_and_conversion_unchanged": "1.640",
+    "missing": [
+      "current Kie Nano Banana 2 2K prices for K0/K1/K2 inputs",
+      "current exact Seedance rate and first/last-frame availability confirmation"
+    ]
+  },
+  "target_master": {
+    "seconds": 8,
+    "fps": 24,
+    "frames": 192,
+    "width": 720,
+    "height": 1280,
+    "dialogue": false,
+    "on_screen_explanatory_text": false
+  },
+  "limitations": {
+    "last_frame_mode_live_tested_by_project": false,
+    "dust_action_live_tested_by_project": false,
+    "new_images_created": 0,
+    "new_videos_created": 0,
+    "live_price_checked_here": false,
+    "artistic_acceptance": false,
+    "social_publication_authorized": false
+  }
+}
