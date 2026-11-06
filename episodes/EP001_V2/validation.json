@@ -1,0 +1,29 @@
+{
+  "checked_date": "2026-11-06",
+  "frame_extracted_from_existing_video": true,
+  "frame_format": "PNG",
+  "frame_dimensions": [
+    720,
+    1280
+  ],
+  "prompt_timeline_contiguous": true,
+  "prompt_characters": 1258,
+  "required_new_image_generations": 0,
+  "planned_new_video_generations": 1,
+  "new_video_generations_performed": 0,
+  "live_kie_or_billing_calls_performed": 0,
+  "assembly_filter_exercised": true,
+  "assembly_test_inputs": "existing 3-second timing edit and existing 5-second test used only as a technical stand-in; not an episode ending",
+  "assembly_test_output": {
+    "duration_seconds": "7.000000",
+    "width": 720,
+    "height": 1280,
+    "frames": "168",
+    "fps": "24/1",
+    "full_decode_passed": true
+  },
+  "story_ending_generated": false,
+  "four_second_provider_job_tested": false,
+  "live_price_verified": false,
+  "powershell_wrapper_executed": false
+}

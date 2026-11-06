@@ -1,0 +1,58 @@
+{
+  "prepared_date": "2026-11-06",
+  "timezone": "Asia/Tashkent",
+  "episode": "EP001 V2 Сам попросил",
+  "shot": "02",
+  "status": "prepared; not submitted",
+  "generation_authorized": false,
+  "new_image_requests": 0,
+  "new_video_requests_planned": 1,
+  "automatic_retries": 0,
+  "new_video_requests_submitted": 0,
+  "local_inputs": {
+    "frame_path": "keyframes/shot02-start.png",
+    "frame_width": 720,
+    "frame_height": 1280,
+    "frame_bytes": 1963971,
+    "frame_sha256": "ef6fbd9af1cfc84c82b73e7bdf7f415470e5f9c38a322b8df812c23ca73809a0",
+    "frame_origin": {
+      "file": "../../deliverables/kie-seedance-test-01/timing-edit-3s.mp4",
+      "frame_index_zero_based": 71
+    },
+    "prompt_path": "shot02-prompt.en.txt",
+    "prompt_sha256": "3911fddfe61f399d52d9b563bc16d233d729ffbb5def7868fec2e248563e804f"
+  },
+  "request_template": {
+    "model": "bytedance/seedance-2",
+    "input": {
+      "prompt": "One continuous 4-second stylized 3D animated-film shot. Start from the supplied frame: the ginger creature already holds its screen-right forepaw up in a stern stop gesture; its single tail still grips the broom handle. Locked camera, unchanged room, warm light, tactile fur and proportions.\n0.0-0.5s: Hold the creature's confident stop pose for a brief beat.\n0.5-2.0s: The tail calmly unwinds its tip and releases the handle. The broom tilts only slightly toward the already-raised forepaw; its bristles stay on the floor. The handle settles against the outer edge of that paw. No reaching or finger grasp. The released tail relaxes visibly beside the creature's hip, still attached to its body.\n2.0-3.0s: The creature starts withdrawing that paw a few centimeters. The broom begins leaning farther, so the creature immediately puts the same paw back to support it. Its confident expression turns into surprised realization.\n3.0-4.0s: The creature keeps propping the broom and gives its resting tail a resigned sideways look. Hold the awkward final pose for the comic payoff.\nExactly one broom and one continuous tail. Keep both hind feet planted. No face impact, object duplication, extra limbs, teleportation, camera motion, cuts, text, dialogue or music.",
+      "first_frame_url": "__UPLOAD_VERIFIED_FRAME_URL_AFTER_SPENDING_APPROVAL__",
+      "generate_audio": false,
+      "resolution": "720p",
+      "aspect_ratio": "9:16",
+      "duration": 4
+    }
+  },
+  "quote": {
+    "currency": "Kie credits",
+    "rate_per_output_second": "41",
+    "output_seconds": 4,
+    "estimated_credits": 164,
+    "usd_reference": "0.820",
+    "source": "user-supplied Kie card and prior 205-credit / 5-second run report, 2026-11-05 to 2026-11-06",
+    "live_price_checked_here": false,
+    "four_second_job_tested_here": false,
+    "refresh_price_and_balance_before_submission": true
+  },
+  "assembly_plan": {
+    "shot01_seconds": 3,
+    "shot02_seconds": 4,
+    "total_seconds": 7,
+    "target_fps": 24,
+    "target_frames": 168,
+    "target_width": 720,
+    "target_height": 1280,
+    "shot02_editorial_crop": "constant 10 percent enlargement after generation; scale 792x1408 then crop 720x1280 at x36,y64",
+    "audio_generation_planned": false
+  }
+}
