@@ -1,0 +1,71 @@
+{
+  "review_date": "2026-11-06",
+  "timezone": "Asia/Tashkent",
+  "source_video": {
+    "file": "CartoonReels_acting-test-02_seedance2_720p_5s_20261106-091726.mp4",
+    "bytes": 2667174,
+    "sha256": "7abf0c05127c60bc27eec2b21085a13fb01882309619adad7ef55312c7c4cc90",
+    "duration_seconds": "5.041667",
+    "streams": [
+      {
+        "index": 0,
+        "codec_type": "video",
+        "codec_name": "h264",
+        "width": 720,
+        "height": 1280,
+        "r_frame_rate": "24/1",
+        "avg_frame_rate": "24/1",
+        "nb_frames": "121",
+        "duration": "5.041667",
+        "pix_fmt": "yuv420p"
+      }
+    ]
+  },
+  "source_full_decode_passed": true,
+  "review_method": "All 121 extracted frames inspected in ordered contact sheets (final frame also inspected at full resolution), with full-resolution close-ups at selected times; no claim of native real-time video playback.",
+  "provider_report": {
+    "source": "user-supplied Claude Code report; not independently queried against Kie",
+    "provider": "kie.ai",
+    "model": "bytedance/seedance-2",
+    "task_id": "6efb52adc117d5ced33e41019ffb6714",
+    "credits_consumed": 205,
+    "provider_cost_time_seconds": 258,
+    "create_task_submissions": 1
+  },
+  "creative_assessment": {
+    "status": "partially successful acting test; continue preparation, not final channel approval",
+    "positives": [
+      "Coherent stylized volumetric character, room, warm lighting and materials",
+      "Tail path and broom grip remain readable throughout inspected frames",
+      "Eyes and brow reaction followed by a recognizable stop gesture",
+      "No obvious duplicated limbs or cuts in inspected sequence"
+    ],
+    "departures": [
+      "Forepaw rises to around head/shoulder level rather than remaining beside the chest",
+      "Main paw gesture begins late, around 2.7 seconds, then holds through the end",
+      "Broom bristles translate on the floor; motion is not a pure tilt about a stationary base",
+      "Generated opening frame differs in fine texture from the input PNG"
+    ],
+    "contact_note": "Full-resolution selected late frames show a small gap between fingers and handle; no definite paw-to-handle contact is established by this review.",
+    "editing_note": "Use video frames for the shot opening; do not prepend the original PNG as an exact-match still."
+  },
+  "timing_edit": {
+    "file": "timing-edit-3s.mp4",
+    "source_interval_seconds": [
+      0.75,
+      3.75
+    ],
+    "duration_seconds": "3.000000",
+    "width": 720,
+    "height": 1280,
+    "fps": "24/1",
+    "frames": 72,
+    "audio_tracks": 0,
+    "bytes": 1368334,
+    "sha256": "3de3f9d51dd642262e6da76343345b5bb018462a8293032a42aee3a1a719de35",
+    "full_decode_passed": true,
+    "changes": "Continuous trim and H.264 re-encoding only. No new acting, retiming, interpolation, audio or generative changes. Original upload kept unchanged outside this delivery folder."
+  },
+  "new_paid_operations_in_review": 0,
+  "additional_generation_authorized": false
+}
