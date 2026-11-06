@@ -27,7 +27,7 @@
       "prompt_file": "keyframes/K0-clean.prompt.en.txt",
       "prompt_sha256": "fb5689b644ac4a61e251c3874972acf940c86da90b83794fe1377aed9a60015f",
       "output_name_hint": "CartoonReels_EP001_V3_K0_{timestamp}.png",
-      "price_credits": null,
+      "price_credits": 12,
       "request_template": {
         "model": "nano-banana-2",
         "input": {
@@ -39,7 +39,8 @@
           "resolution": "2K",
           "output_format": "png"
         }
-      }
+      },
+      "price_basis": "Published 2K price per user report, not an actual charge for this task"
     },
     {
       "id": "K1",
@@ -51,7 +52,7 @@
       "prompt_file": "keyframes/K1-dusty.prompt.en.txt",
       "prompt_sha256": "f446cb22234dfbcf05c81d640c0b1d264f29606f994717ec5c79fd368f9da5a8",
       "output_name_hint": "CartoonReels_EP001_V3_K1_{timestamp}.png",
-      "price_credits": null,
+      "price_credits": 12,
       "request_template": {
         "model": "nano-banana-2",
         "input": {
@@ -64,7 +65,8 @@
           "resolution": "2K",
           "output_format": "png"
         }
-      }
+      },
+      "price_basis": "Published 2K price per user report, not an actual charge for this task"
     },
     {
       "id": "K2",
@@ -77,7 +79,7 @@
       "prompt_file": "keyframes/K2-again.prompt.en.txt",
       "prompt_sha256": "debe2a382618e863e4bc7179670c894be422b88b32503af40fab60b1ce6ba17b",
       "output_name_hint": "CartoonReels_EP001_V3_K2_{timestamp}.png",
-      "price_credits": null,
+      "price_credits": 12,
       "request_template": {
         "model": "nano-banana-2",
         "input": {
@@ -91,7 +93,8 @@
           "resolution": "2K",
           "output_format": "png"
         }
-      }
+      },
+      "price_basis": "Published 2K price per user report, not an actual charge for this task"
     }
   ],
   "video_tasks": [
@@ -196,11 +199,11 @@
   ],
   "budget": {
     "currency": "Kie credits",
-    "quote_complete": false,
+    "quote_complete": true,
     "image_prices": {
-      "P0": null,
-      "P1": null,
-      "P2": null
+      "P0": 12,
+      "P1": 12,
+      "P2": 12
     },
     "current_video_rate_confirmed": false,
     "last_observed_video_rate_per_second": 41,
@@ -212,10 +215,27 @@
     "optional_retry_credits_if_rate_unchanged": 164,
     "usd_rate_reference_per_credit": "0.005 from reported top-up package, not a live billing quote",
     "video_usd_if_both_rate_and_conversion_unchanged": "1.640",
-    "missing": [
-      "current Kie Nano Banana 2 2K prices for K0/K1/K2 inputs",
-      "current exact Seedance rate and first/last-frame availability confirmation"
-    ]
+    "missing": [],
+    "quote_date": "2026-11-06",
+    "quote_source": "User-supplied Claude Code report of reading Kie model price pages; not independently queried here",
+    "quote_source_sha256": "416a96357bdb208183a4c1889fa7ce025efc946a0f8d49fed69ab0acfdc3cf72",
+    "image_prices_are_quotes_not_actual_charges": true,
+    "video_rate_confirmed_by_user_claude_report": true,
+    "base_image_credits_quoted": 36,
+    "base_video_credits_quoted": 328,
+    "base_total_credits_quoted": 364,
+    "base_total_usd_reference": "1.820",
+    "optional_one_video_retry_total_credits_quoted": 528,
+    "uncertainties": [
+      "Reference-count price effects are not documented; K1/K2 quotes assume the published resolution price. K0 alone does not test multi-reference billing.",
+      "First+last-frame mode and the dust gag have not been tested by this project.",
+      "Beta video tariff must be refreshed before each paid step."
+    ],
+    "reported_minimum_topup": {
+      "usd": 5,
+      "credits": 1000,
+      "source": "user-supplied report; distinct from task costs"
+    }
   },
   "target_master": {
     "seconds": 8,
@@ -234,5 +254,7 @@
     "live_price_checked_here": false,
     "artistic_acceptance": false,
     "social_publication_authorized": false
-  }
+  },
+  "next_action": "Await explicit approval for K0 only, quoted at 12 credits; no K1/K2 or video order authorized",
+  "reported_nano_banana_max_image_inputs": 10
 }
