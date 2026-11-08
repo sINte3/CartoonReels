@@ -303,7 +303,7 @@
     "reported_cap_credits": 600,
     "reported_additional_video_used": false,
     "billing_independently_verified_here": false,
-    "provider_task_ids_available_here": false,
+    "provider_task_ids_available_here": true,
     "received_master": "../../deliverables/ep001-v3/EP001_V3_original_8s_sound_1080p.mp4",
     "received_master_sha256": "841c14a00ae19c6094451e09c04d13fdafd6900e244579a4660d650f985772c6",
     "review": "../../deliverables/ep001-v3/README.md",
@@ -311,6 +311,11 @@
     "new_paid_calls_during_review": 0,
     "audio_subjectively_listened_to": false,
     "artistic_acceptance": false,
-    "earlier_flags_scope": "Preproduction templates and authorization snapshot; not a request to rerun completed tasks."
+    "earlier_flags_scope": "Preproduction templates and authorization snapshot; not a request to rerun completed tasks.",
+    "production_records": "production/README.md",
+    "production_records_source_commit": "c2188c2a016aa5b4f03e74b94f6f7921f1a2c17e",
+    "saved_task_records_checked": 7,
+    "saved_credits_consumed_sum_checked": 388,
+    "live_billing_queried_during_handoff_review": false
   }
 }
