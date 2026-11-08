@@ -1,0 +1,54 @@
+{
+  "label": "K0-retry1",
+  "stage": "K0",
+  "kind": "image",
+  "attemptType": "retry",
+  "reason": "Хвост не обвивает центр перекладины: он свисает поверх неё и выходит будто из живота между задними лапами; путь хвоста от поясницы не виден, поддержать вес снизу такой хвост не может. Остальное (личность, одна гантель с двумя грузами, оба хвата, задние лапы за снарядом, грузы снаружи стоп) в порядке.",
+  "status": "success",
+  "taskId": "f3bdca3087a8ecad355cb81fc1f39715",
+  "model": "nano-banana-2",
+  "input": {
+    "prompt": "Create a new staged frame using the supplied reference only for the original ginger creature's identity, proportions, tactile fur and warm lived-in cottage. Vertical 9:16, polished stylized 3D animated-film look, fixed eye-level camera, medium full shot. Keep the complete creature, continuous attached tail, hind feet, and the entire new prop inside the image. Remove the old broom; do not copy its pose.\n\nOne large unbranded dumbbell lies horizontally on the wooden floor in front of the creature: a single rigid short bar with exactly two round weights, positioned outside the hind feet so they can return to the floor without crossing the toes. Both forepaws already grip two separated places on the bar. The tail makes one secure visible wrap around the middle of the bar between the paws. Keep each contact readable and separate; the tail is not a third arm.\n\nThe creature is braced with bent knees, straining earnestly to lift the dumbbell, which still rests on the floor. Forearms retain their original short proportions; place the bar close enough for a believable grip. The tail is attached and already gripping, but has not raised the load yet. Clear anticipation, determined brows, effort in the body. Preserve the cream muzzle/chest and recognizable eyes. Warm coherent light and contact shadows. No text, logos, extra characters, extra limbs, second tail, duplicated dumbbell or extra weight.\n\nTargeted correction for this frame: the tail must read as a separate helper that can lift the bar from below. Show one continuous tail that starts at the creature's lower back behind the body, sweeps out around the hip on screen-right in a visible curve, comes forward low beside the hind foot, and then makes one full secure coil around the middle of the bar: it passes under the bar and comes back over the top, with the fluffy tip tucked against the coil, like the tail coiling around the broom handle in the reference. The whole tail path from the lower back to the coil stays visible. The tail must not emerge from between the legs or from the belly, and it must not simply hang or drape over the top of the bar. Keep both forepaws gripping the bar on either side of the coil, the dumbbell resting on the floor, the plates outside the hind feet, and everything else as described.",
+    "image_input": [
+      "https://tempfile.redpandaai.co/kieai/11630331/cartoonreels/ep002/hero-3d-keyframe_up20261108-180141.png"
+    ],
+    "aspect_ratio": "9:16",
+    "resolution": "2K",
+    "output_format": "png"
+  },
+  "priceCr": 12.0,
+  "budget": {
+    "actualBefore": 12.0,
+    "pendingBefore": 0.0,
+    "expected": 12.0,
+    "remainingMandatoryAfter": 393.0,
+    "projectedMax": 417.0,
+    "cap": 640
+  },
+  "inputs": {
+    "hero": {
+      "file": "E:\\Generations\\refs\\hero-3d-keyframe.png",
+      "sha256": "97c4c09087da7d9523496e2cbf0e3be2dff2b5a374097ca511aba3b80915fdde",
+      "url": "https://tempfile.redpandaai.co/kieai/11630331/cartoonreels/ep002/hero-3d-keyframe_up20261108-180141.png"
+    }
+  },
+  "promptFile": "E:\\Generations\\refs\\CartoonReels_EP002_K0-effort.prompt.en.txt",
+  "promptSha256": "78ddbcd99828af7d9eda3eb7cc72df8f57d4fbb3d431170d688f9fa43441638e",
+  "promptAddendum": {
+    "file": "E:\\Generations\\refs\\CartoonReels_EP002_K0-retry1_addendum.prompt.en.txt",
+    "sha256": "823883781d3bb4b138b9b3b63291850b5931fde6e4a50e6a9170e5712c4d0a36",
+    "text": "Targeted correction for this frame: the tail must read as a separate helper that can lift the bar from below. Show one continuous tail that starts at the creature's lower back behind the body, sweeps out around the hip on screen-right in a visible curve, comes forward low beside the hind foot, and then makes one full secure coil around the middle of the bar: it passes under the bar and comes back over the top, with the fluffy tip tucked against the coil, like the tail coiling around the broom handle in the reference. The whole tail path from the lower back to the coil stays visible. The tail must not emerge from between the legs or from the belly, and it must not simply hang or drape over the top of the bar. Keep both forepaws gripping the bar on either side of the coil, the dumbbell resting on the floor, the plates outside the hind feet, and everything else as described."
+  },
+  "planCommit": "e1fcc86352a0bebfa3339bf21ab2f643678d5708",
+  "sentAt": "2026-11-08T18:01:47+05:00",
+  "createdAt": "2026-11-08T18:01:47+05:00",
+  "lastCheckedAt": "2026-11-08T18:03:35+05:00",
+  "state": "success",
+  "resultUrls": [
+    "https://tempfile.aiquickdraw.com/workers/images/image_e104e186e686ed3c097b1f9ffc5ae58e.png"
+  ],
+  "resultJson": "{\"resultUrls\":[\"https://tempfile.aiquickdraw.com/workers/images/image_e104e186e686ed3c097b1f9ffc5ae58e.png\"]}",
+  "creditsConsumed": 12.0,
+  "costTime": 104,
+  "completedAt": "2026-11-08T18:03:35+05:00"
+}

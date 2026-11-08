@@ -1,0 +1,93 @@
+{
+  "file": "CartoonReels_EP002_9s_sound_1080p_20261108-182708.mp4",
+  "sha256": "9bd29f553ffd3884b85d9b50893cfe90afd0f8b29c2fd0af541c31d9e484d7c2",
+  "bytes": 8784682,
+  "created": "2026-11-08T18:27:29+05:00",
+  "what": "1080p: обычное масштабирование lanczos того же 720p-монтажа, звук скопирован без перекодирования; не новая детализация",
+  "package": "EP002 «Силач понарошку», commit e1fcc86352a0bebfa3339bf21ab2f643678d5708",
+  "sources": {
+    "A": {
+      "file": "CartoonReels_EP002_A_20261108-180642.mp4",
+      "sha256": "e0b114ecdc2acc05a44d224e1d1e2dc4f49f5bc4564d3d40df9acf6b50ec18de",
+      "taskId": "73525ce0db0714212d9638cf77821a06",
+      "loudness": {
+        "integrated_lufs": -26.2,
+        "true_peak_dbfs": -7.0
+      }
+    },
+    "B": {
+      "file": "CartoonReels_EP002_B_20261108-181616.mp4",
+      "sha256": "b7ee8338f50cc1708c4fe6a89357e02074bfbb09e894ac0a2155c9c9d6662c4a",
+      "taskId": "acfe6ed9e166f5c70daf3b7285f552c2",
+      "loudness": {
+        "integrated_lufs": -14.5,
+        "true_peak_dbfs": -1.1
+      }
+    }
+  },
+  "filter": {
+    "source": "assemble-with-audio.ffmpeg.txt",
+    "source_sha256": "0456d314b55febce26596397b1acec2f38f0e67464b44735ed851a63142d6cb9",
+    "used": "CartoonReels_EP002_assemble-with-audio.gain_20261108-182708.ffmpeg.txt",
+    "used_sha256": "175f21930f20f0823dea01697e759c091708cc36d320eaafafa16f8b736b7343",
+    "gainA_db": 5.0,
+    "gainB_db": -0.5
+  },
+  "ffmpeg_args": "-hide_banner -nostats -v error -y -i E:\\Generations\\CartoonReels_EP002_9s_sound_720p_20261108-182708.mp4 -map 0:v:0 -map 0:a:0 -vf scale=1080:1920:flags=lanczos,setsar=1 -c:v libx264 -preset slow -crf 16 -pix_fmt yuv420p -r 24 -fps_mode cfr -c:a copy -movflags +faststart -f mp4 E:\\Generations\\CartoonReels_EP002_9s_sound_1080p_20261108-182708.mp4.part",
+  "verification": {
+    "container": "mov,mp4,m4a,3gp,3g2,mj2",
+    "duration_s": "9.000000",
+    "bit_rate": "7808606",
+    "video": {
+      "index": 0,
+      "codec_name": "h264",
+      "profile": "High",
+      "codec_type": "video",
+      "width": 1080,
+      "height": 1920,
+      "sample_aspect_ratio": "1:1",
+      "pix_fmt": "yuv420p",
+      "r_frame_rate": "24/1",
+      "duration": "9.000000",
+      "nb_read_frames": "216"
+    },
+    "audio": {
+      "index": 1,
+      "codec_name": "aac",
+      "profile": "LC",
+      "codec_type": "audio",
+      "sample_rate": "48000",
+      "channels": 2,
+      "channel_layout": "stereo",
+      "r_frame_rate": "0/0",
+      "duration": "9.000000",
+      "nb_read_frames": "422"
+    },
+    "top_atoms": "ftyp,moov,free,mdat",
+    "full_decode_exit": 0,
+    "full_decode_stderr": "",
+    "volume": {
+      "mean_db": -22.7,
+      "max_db": -1.8
+    },
+    "loudness": {
+      "integrated_lufs": -16.8,
+      "true_peak_dbfs": -1.8
+    },
+    "checks": {
+      "one_video_h264": true,
+      "size": true,
+      "fps_24": true,
+      "frames_216": true,
+      "duration_9s": true,
+      "faststart_moov_before_mdat": true,
+      "full_decode_clean": true,
+      "audio_aac_48k_stereo": true,
+      "audio_duration_9s": true,
+      "audio_not_silent": true,
+      "no_clipping": true
+    },
+    "all_ok": true
+  },
+  "note": "Проверки техническими средствами (ffprobe, полное декодирование, volumedetect/ebur128, порядок атомов). Субъективного прослушивания не было."
+}

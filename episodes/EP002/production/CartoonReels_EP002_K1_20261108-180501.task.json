@@ -1,0 +1,56 @@
+{
+  "label": "K1",
+  "stage": "K1",
+  "kind": "image",
+  "attemptType": "base",
+  "reason": "",
+  "status": "success",
+  "taskId": "a56291c0ddd0a7f29f69d38cee1433dc",
+  "model": "nano-banana-2",
+  "input": {
+    "prompt": "The first reference is the accepted K0, locking the camera, room, one rigid dumbbell and all three separated contacts. The second reference preserves the original creature's identity. Create the end frame of the successful lift, with the same polished tactile 3D style, warm light and vertical 9:16 framing.\n\nThe one continuous attached tail visibly supports the center of the dumbbell with the same secure wrap. The bar is now in front of the lower belly; the bottoms of its two weights are only about 15-20 cm above their original floor positions, outside the feet. Both forepaws retain their original separate grips and normal proportions. Both hind feet remain planted. The tail's upward support is easy for the viewer to notice.\n\nThe creature takes all the credit: chest proudly lifted, chin up, pleased confident expression. Do not have it release either paw, point, flex a free arm or lift the weight over its head. Show a clear contrast between the visible helper and the owner's premature pride. Keep the entire prop and tail path visible. No new props, crop of the weights, text, extra limbs, extra tails or extra dumbbells.\n",
+    "image_input": [
+      "https://tempfile.redpandaai.co/kieai/11630331/cartoonreels/ep002/CartoonReels_EP002_K0-retry1_20261108-180147_up20261108-180447.png",
+      "https://tempfile.redpandaai.co/kieai/11630331/cartoonreels/ep002/hero-3d-keyframe_up20261108-180455.png"
+    ],
+    "aspect_ratio": "9:16",
+    "resolution": "2K",
+    "output_format": "png"
+  },
+  "priceCr": 12.0,
+  "budget": {
+    "actualBefore": 24.0,
+    "pendingBefore": 0.0,
+    "expected": 12.0,
+    "remainingMandatoryAfter": 381.0,
+    "projectedMax": 417.0,
+    "cap": 640
+  },
+  "inputs": {
+    "K0": {
+      "file": "E:\\Generations\\CartoonReels_EP002_K0-retry1_20261108-180147.png",
+      "sha256": "112db9988f39bfcfb3cf5708512dabed72133fa1bb8bab300fa7f2049f20f00b",
+      "url": "https://tempfile.redpandaai.co/kieai/11630331/cartoonreels/ep002/CartoonReels_EP002_K0-retry1_20261108-180147_up20261108-180447.png"
+    },
+    "hero": {
+      "file": "E:\\Generations\\refs\\hero-3d-keyframe.png",
+      "sha256": "97c4c09087da7d9523496e2cbf0e3be2dff2b5a374097ca511aba3b80915fdde",
+      "url": "https://tempfile.redpandaai.co/kieai/11630331/cartoonreels/ep002/hero-3d-keyframe_up20261108-180455.png"
+    }
+  },
+  "promptFile": "E:\\Generations\\refs\\CartoonReels_EP002_K1-borrowed-strength.prompt.en.txt",
+  "promptSha256": "2fc38f177069226520fd372fddae2137688f373dc4f66308c576a883019ad9f3",
+  "promptAddendum": null,
+  "planCommit": "e1fcc86352a0bebfa3339bf21ab2f643678d5708",
+  "sentAt": "2026-11-08T18:05:01+05:00",
+  "createdAt": "2026-11-08T18:05:02+05:00",
+  "lastCheckedAt": "2026-11-08T18:05:48+05:00",
+  "state": "success",
+  "resultUrls": [
+    "https://tempfile.aiquickdraw.com/workers/images/image_72704f8fb5964e65bddeca681eef76f3.png"
+  ],
+  "resultJson": "{\"resultUrls\":[\"https://tempfile.aiquickdraw.com/workers/images/image_72704f8fb5964e65bddeca681eef76f3.png\"]}",
+  "creditsConsumed": 12.0,
+  "costTime": 30,
+  "completedAt": "2026-11-08T18:05:48+05:00"
+}

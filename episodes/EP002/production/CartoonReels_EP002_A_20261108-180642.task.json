@@ -1,0 +1,55 @@
+{
+  "label": "A",
+  "stage": "A",
+  "kind": "video",
+  "attemptType": "base",
+  "reason": "",
+  "status": "success",
+  "taskId": "73525ce0db0714212d9638cf77821a06",
+  "model": "bytedance/seedance-2",
+  "input": {
+    "prompt": "One continuous four-second polished stylized 3D animated-film shot, vertical 9:16. The first frame K0 establishes the ginger creature, original warm cottage, one rigid dumbbell resting on the floor in front of the feet, two forepaws gripping separate places on the bar and a single attached tail wrapped around its center. The supplied last frame K1 establishes the successful low lift and premature pride. Preserve the character, framing, materials and all three contact positions. Camera locked; no cuts.\n\n0.0-0.6s: The creature strains against the load, knees bent. The two weights are still supported by the floor. Its expression says this is hard.\n0.6-2.2s: The already-gripping tail visibly supplies the upward support. The dumbbell rises only 15-20 cm, staying horizontal and close to the body; the forepaws follow with believable short arms. Show the tail's helpful movement before the owner's satisfaction.\n2.2-3.2s: The creature straightens slightly with both feet planted, lifts its chin and puffs its chest, smugly pleased with its apparent strength. Both paws keep their grips.\n3.2-4.0s: Settle into the proud pose of K1. The tail is still supporting the center. Do not begin the release yet.\n\nOne creature, one continuous tail, one rigid dumbbell with exactly two weights. No changing grips, free-arm flexing, teleporting, extra limbs, floating without support, overhead lift or foot movement. Native synchronized sound: a small wordless effort breath, restrained load/wood creak during the lift, then a quiet proud pause. No spoken words, singing or music.\n",
+    "first_frame_url": "https://tempfile.redpandaai.co/kieai/11630331/cartoonreels/ep002/CartoonReels_EP002_K0-retry1_20261108-180147_up20261108-180625.png",
+    "last_frame_url": "https://tempfile.redpandaai.co/kieai/11630331/cartoonreels/ep002/CartoonReels_EP002_K1_20261108-180501_up20261108-180633.png",
+    "duration": 4,
+    "resolution": "720p",
+    "aspect_ratio": "9:16",
+    "generate_audio": true
+  },
+  "priceCr": 164.0,
+  "budget": {
+    "actualBefore": 36.0,
+    "pendingBefore": 0.0,
+    "expected": 164.0,
+    "remainingMandatoryAfter": 217.0,
+    "projectedMax": 417.0,
+    "cap": 640
+  },
+  "inputs": {
+    "K0": {
+      "file": "E:\\Generations\\CartoonReels_EP002_K0-retry1_20261108-180147.png",
+      "sha256": "112db9988f39bfcfb3cf5708512dabed72133fa1bb8bab300fa7f2049f20f00b",
+      "url": "https://tempfile.redpandaai.co/kieai/11630331/cartoonreels/ep002/CartoonReels_EP002_K0-retry1_20261108-180147_up20261108-180625.png"
+    },
+    "K1": {
+      "file": "E:\\Generations\\CartoonReels_EP002_K1_20261108-180501.png",
+      "sha256": "1a7ded94af499db71c863f08c4bab4e2b38ada82fe81375385c6f20edf13d1ba",
+      "url": "https://tempfile.redpandaai.co/kieai/11630331/cartoonreels/ep002/CartoonReels_EP002_K1_20261108-180501_up20261108-180633.png"
+    }
+  },
+  "promptFile": "E:\\Generations\\refs\\CartoonReels_EP002_A-lift.prompt.en.txt",
+  "promptSha256": "93f0a6d62e2c44b2d3a4a41928c482305d2b6a0155f70441e72f60d0a34df059",
+  "promptAddendum": null,
+  "planCommit": "e1fcc86352a0bebfa3339bf21ab2f643678d5708",
+  "sentAt": "2026-11-08T18:06:42+05:00",
+  "createdAt": "2026-11-08T18:06:43+05:00",
+  "lastCheckedAt": "2026-11-08T18:10:13+05:00",
+  "state": "success",
+  "resultUrls": [
+    "https://tempfile.aiquickdraw.com/seedance/1794143638041-qv7wiuh2dnb.mp4"
+  ],
+  "resultJson": "{\"firstFrameUrl\":[],\"lastFrameUrl\":[],\"resultUrls\":[\"https://tempfile.aiquickdraw.com/seedance/1794143638041-qv7wiuh2dnb.mp4\"]}",
+  "creditsConsumed": 164.0,
+  "costTime": 198,
+  "completedAt": "2026-11-08T18:10:13+05:00"
+}

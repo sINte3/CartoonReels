@@ -1,0 +1,55 @@
+{
+  "label": "B",
+  "stage": "B",
+  "kind": "video",
+  "attemptType": "base",
+  "reason": "",
+  "status": "success",
+  "taskId": "acfe6ed9e166f5c70daf3b7285f552c2",
+  "model": "bytedance/seedance-2",
+  "input": {
+    "prompt": "One continuous five-second polished stylized 3D animated-film shot, vertical 9:16. Start from the actual accepted last frame of video A: the ginger creature holds one horizontal dumbbell low in front of its belly, both paws on separate grips, a single attached tail visibly supporting its center. The supplied last frame K2 establishes the weight back on the floor and the owner's humbled reaction. Preserve the real character, room, camera and rigid prop geometry. Camera locked; no cuts.\n\n0.0-0.8s: Hold the owner's premature pride briefly. Both hands remain on the bar, the tail supports the load, both hind feet are grounded.\n0.8-1.5s: Having finished helping, the tail naturally loosens and unwraps from the center, moving clearly away. It does not yank the bar or act maliciously. The owner tries to keep the same proud pose.\n1.5-2.4s: Once tail support is gone, the load overwhelms the owner. In one short sharp downward movement, the same dumbbell returns to its original floor position in front of the feet, both round weights outside the toes, then settles. The forepaws stay gripping; elbows and knees bend as the owner's body follows into a visibly deep squat with rounded low shoulders. This is a clear whole-body collapse of the proud pose, with normal proportions, not just a small facial change. No arm stretching, high throw or body impact. The cause is the removed support, not paws opening.\n2.4-3.6s: The creature looks at the grounded weight, then sideways toward the relaxed tail. Its smug expression turns into caught-out, sheepish surprise.\n3.6-5.0s: Let the final reaction read. The tail rests in a natural curl, the weight stays on the floor, the owner has lost its grand pose. Match K2 without another lift or new action.\n\nExactly one tail, one dumbbell, two weights and normal limbs. No free-floating load after release, duplicate props, foot injury, camera movement, captions or dialogue. Native synchronized sound: a tiny fur/handle rustle as the tail relaxes, one low weighty floor thud synchronized to the short landing, a small wordless exhale, then quiet realization. No spoken words, singing, music or second impact.\n",
+    "first_frame_url": "https://tempfile.redpandaai.co/kieai/11630331/cartoonreels/ep002/CartoonReels_EP002_A-lastframe_20261108-181155_up20261108-181602.png",
+    "last_frame_url": "https://tempfile.redpandaai.co/kieai/11630331/cartoonreels/ep002/CartoonReels_EP002_K2-retry1_20261108-181435_up20261108-181607.png",
+    "duration": 5,
+    "resolution": "720p",
+    "aspect_ratio": "9:16",
+    "generate_audio": true
+  },
+  "priceCr": 205.0,
+  "budget": {
+    "actualBefore": 224.0,
+    "pendingBefore": 0.0,
+    "expected": 205.0,
+    "remainingMandatoryAfter": 0.0,
+    "projectedMax": 429.0,
+    "cap": 640
+  },
+  "inputs": {
+    "A-last": {
+      "file": "E:\\Generations\\CartoonReels_EP002_A-lastframe_20261108-181155.png",
+      "sha256": "23e6a4f6006fe978747aa212c9abb7978d22b866ecb10f2cc2978fe8e56f7640",
+      "url": "https://tempfile.redpandaai.co/kieai/11630331/cartoonreels/ep002/CartoonReels_EP002_A-lastframe_20261108-181155_up20261108-181602.png"
+    },
+    "K2": {
+      "file": "E:\\Generations\\CartoonReels_EP002_K2-retry1_20261108-181435.png",
+      "sha256": "54a5107af0e0b2815a207203fbf2fdb05f9dac6bf04a118f806ec6ec85f86bbd",
+      "url": "https://tempfile.redpandaai.co/kieai/11630331/cartoonreels/ep002/CartoonReels_EP002_K2-retry1_20261108-181435_up20261108-181607.png"
+    }
+  },
+  "promptFile": "E:\\Generations\\refs\\CartoonReels_EP002_B-reality.prompt.en.txt",
+  "promptSha256": "4dc4249da59b682b1a559d7830c95c7990d064f8dfa0e7ec95f8895dca4ef56e",
+  "promptAddendum": null,
+  "planCommit": "e1fcc86352a0bebfa3339bf21ab2f643678d5708",
+  "sentAt": "2026-11-08T18:16:16+05:00",
+  "createdAt": "2026-11-08T18:16:17+05:00",
+  "lastCheckedAt": "2026-11-08T18:20:28+05:00",
+  "state": "success",
+  "resultUrls": [
+    "https://tempfile.aiquickdraw.com/seedance/1794144255468-59d9cnhym39.mp4"
+  ],
+  "resultJson": "{\"firstFrameUrl\":[],\"lastFrameUrl\":[],\"resultUrls\":[\"https://tempfile.aiquickdraw.com/seedance/1794144255468-59d9cnhym39.mp4\"]}",
+  "creditsConsumed": 205.0,
+  "costTime": 241,
+  "completedAt": "2026-11-08T18:20:28+05:00"
+}
