@@ -1,0 +1,19 @@
+{
+  "checked_date": "2026-11-08",
+  "scope": "offline preparation only; no provider calls",
+  "prompt_hashes_checked": 5,
+  "prompt_payload_matches": true,
+  "local_timelines_contiguous": true,
+  "image_reference_count_max": 3,
+  "relative_links_checked": 37,
+  "base_estimate_credits": 405,
+  "maximum_listed_estimate_credits": 634,
+  "proposed_cap_credits": 640,
+  "cap_authorized": false,
+  "fresh_prices_checked_here": false,
+  "new_images": 0,
+  "new_videos": 0,
+  "new_reference_uploads": 0,
+  "new_paid_calls": 0,
+  "artistic_acceptance": false
+}

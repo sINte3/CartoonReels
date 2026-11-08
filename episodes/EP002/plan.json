@@ -1,0 +1,247 @@
+{
+  "prepared_date": "2026-11-08",
+  "timezone": "Asia/Tashkent",
+  "episode": "EP002",
+  "working_title": "Силач понарошку",
+  "stage": "preproduction only; fresh quote and explicit new package authorization pending",
+  "authorizations": {
+    "preparation": true,
+    "image_generations": 0,
+    "video_generations": 0,
+    "reference_uploads": 0,
+    "paid_api_calls": 0,
+    "social_publication": false,
+    "automatic_topups": false
+  },
+  "original_character_reference": {
+    "relative_path": "../../deliverables/lookdev-02/hero-3d-keyframe.png",
+    "sha256": "97c4c09087da7d9523496e2cbf0e3be2dff2b5a374097ca511aba3b80915fdde",
+    "width": 941,
+    "height": 1672
+  },
+  "image_tasks": [
+    {
+      "id": "K0",
+      "status": "prompt only; no provider request",
+      "generation_authorized": false,
+      "prompt_file": "prompts/K0-effort.prompt.en.txt",
+      "prompt_sha256": "78ddbcd99828af7d9eda3eb7cc72df8f57d4fbb3d431170d688f9fa43441638e",
+      "depends_on": [],
+      "request_template": {
+        "model": "nano-banana-2",
+        "input": {
+          "prompt": "Create a new staged frame using the supplied reference only for the original ginger creature's identity, proportions, tactile fur and warm lived-in cottage. Vertical 9:16, polished stylized 3D animated-film look, fixed eye-level camera, medium full shot. Keep the complete creature, continuous attached tail, hind feet, and the entire new prop inside the image. Remove the old broom; do not copy its pose.\n\nOne large unbranded dumbbell lies horizontally on the wooden floor in front of the creature: a single rigid short bar with exactly two round weights, positioned outside the hind feet so they can return to the floor without crossing the toes. Both forepaws already grip two separated places on the bar. The tail makes one secure visible wrap around the middle of the bar between the paws. Keep each contact readable and separate; the tail is not a third arm.\n\nThe creature is braced with bent knees, straining earnestly to lift the dumbbell, which still rests on the floor. Forearms retain their original short proportions; place the bar close enough for a believable grip. The tail is attached and already gripping, but has not raised the load yet. Clear anticipation, determined brows, effort in the body. Preserve the cream muzzle/chest and recognizable eyes. Warm coherent light and contact shadows. No text, logos, extra characters, extra limbs, second tail, duplicated dumbbell or extra weight.\n",
+          "image_input": [
+            "__UPLOADED_ORIGINAL_CHARACTER_REFERENCE__"
+          ],
+          "aspect_ratio": "9:16",
+          "resolution": "2K",
+          "output_format": "png"
+        }
+      }
+    },
+    {
+      "id": "K1",
+      "status": "prompt only; no provider request",
+      "generation_authorized": false,
+      "prompt_file": "prompts/K1-borrowed-strength.prompt.en.txt",
+      "prompt_sha256": "2fc38f177069226520fd372fddae2137688f373dc4f66308c576a883019ad9f3",
+      "depends_on": [
+        "accepted_K0"
+      ],
+      "request_template": {
+        "model": "nano-banana-2",
+        "input": {
+          "prompt": "The first reference is the accepted K0, locking the camera, room, one rigid dumbbell and all three separated contacts. The second reference preserves the original creature's identity. Create the end frame of the successful lift, with the same polished tactile 3D style, warm light and vertical 9:16 framing.\n\nThe one continuous attached tail visibly supports the center of the dumbbell with the same secure wrap. The bar is now in front of the lower belly; the bottoms of its two weights are only about 15-20 cm above their original floor positions, outside the feet. Both forepaws retain their original separate grips and normal proportions. Both hind feet remain planted. The tail's upward support is easy for the viewer to notice.\n\nThe creature takes all the credit: chest proudly lifted, chin up, pleased confident expression. Do not have it release either paw, point, flex a free arm or lift the weight over its head. Show a clear contrast between the visible helper and the owner's premature pride. Keep the entire prop and tail path visible. No new props, crop of the weights, text, extra limbs, extra tails or extra dumbbells.\n",
+          "image_input": [
+            "__UPLOADED_ACCEPTED_K0__",
+            "__UPLOADED_ORIGINAL_CHARACTER_REFERENCE__"
+          ],
+          "aspect_ratio": "9:16",
+          "resolution": "2K",
+          "output_format": "png"
+        }
+      }
+    },
+    {
+      "id": "K2",
+      "status": "prompt only; no provider request",
+      "generation_authorized": false,
+      "prompt_file": "prompts/K2-reality.prompt.en.txt",
+      "prompt_sha256": "05b3b0b631a0b2e14b6c2ab4f6313193f0cb79b86cac98e53220d3f29d42dbc6",
+      "depends_on": [
+        "accepted_A",
+        "accepted_K0"
+      ],
+      "request_template": {
+        "model": "nano-banana-2",
+        "input": {
+          "prompt": "Use the actual last frame of accepted video A as the first reference, accepted K0 for the original floor positions as the second, and the original character design as the third. Create the final comic frame, maintaining the real creature, camera, room, dumbbell geometry, material, warm lighting and vertical 9:16 framing.\n\nThe dumbbell has returned to its original resting position on the floor in front of the creature, its two weights outside the hind feet. Both forepaws still grip the same two locations. The creature has followed the short downward movement with naturally bent knees and lowered shoulders; keep normal arm lengths and stable contact. No fall onto its body, impact on toes or injury.\n\nThe single attached tail has fully relaxed its central wrap and moved clearly away from the bar, curling naturally on screen-right. Show the complete continuous tail from the lower back; it is empty, not holding another object and not split into fingers or a face.\n\nThe creature's pride is gone. It gives the tail a sheepish, surprised sideways look, caught taking credit for someone else's work. Keep the eyes and muzzle expressive; avoid a generic furious pose. The contrast between the exhausted owner and the relaxed helper is the last beat. No subtitles, new props, duplicated weights or extra limbs.\n",
+          "image_input": [
+            "__UPLOADED_ACTUAL_ACCEPTED_A_LAST_FRAME__",
+            "__UPLOADED_ACCEPTED_K0__",
+            "__UPLOADED_ORIGINAL_CHARACTER_REFERENCE__"
+          ],
+          "aspect_ratio": "9:16",
+          "resolution": "2K",
+          "output_format": "png"
+        }
+      }
+    }
+  ],
+  "video_tasks": [
+    {
+      "id": "A",
+      "status": "prompt only; no provider request",
+      "generation_authorized": false,
+      "prompt_file": "prompts/A-lift.prompt.en.txt",
+      "prompt_sha256": "93f0a6d62e2c44b2d3a4a41928c482305d2b6a0155f70441e72f60d0a34df059",
+      "depends_on": [
+        "accepted_K0",
+        "accepted_K1"
+      ],
+      "local_time_intervals_seconds": [
+        [
+          0,
+          0.6
+        ],
+        [
+          0.6,
+          2.2
+        ],
+        [
+          2.2,
+          3.2
+        ],
+        [
+          3.2,
+          4
+        ]
+      ],
+      "timing_is_direction_not_model_enforcement": true,
+      "request_template": {
+        "model": "bytedance/seedance-2",
+        "input": {
+          "prompt": "One continuous four-second polished stylized 3D animated-film shot, vertical 9:16. The first frame K0 establishes the ginger creature, original warm cottage, one rigid dumbbell resting on the floor in front of the feet, two forepaws gripping separate places on the bar and a single attached tail wrapped around its center. The supplied last frame K1 establishes the successful low lift and premature pride. Preserve the character, framing, materials and all three contact positions. Camera locked; no cuts.\n\n0.0-0.6s: The creature strains against the load, knees bent. The two weights are still supported by the floor. Its expression says this is hard.\n0.6-2.2s: The already-gripping tail visibly supplies the upward support. The dumbbell rises only 15-20 cm, staying horizontal and close to the body; the forepaws follow with believable short arms. Show the tail's helpful movement before the owner's satisfaction.\n2.2-3.2s: The creature straightens slightly with both feet planted, lifts its chin and puffs its chest, smugly pleased with its apparent strength. Both paws keep their grips.\n3.2-4.0s: Settle into the proud pose of K1. The tail is still supporting the center. Do not begin the release yet.\n\nOne creature, one continuous tail, one rigid dumbbell with exactly two weights. No changing grips, free-arm flexing, teleporting, extra limbs, floating without support, overhead lift or foot movement. Native synchronized sound: a small wordless effort breath, restrained load/wood creak during the lift, then a quiet proud pause. No spoken words, singing or music.\n",
+          "first_frame_url": "__UPLOADED_ACCEPTED_K0__",
+          "last_frame_url": "__UPLOADED_ACCEPTED_K1__",
+          "duration": 4,
+          "resolution": "720p",
+          "aspect_ratio": "9:16",
+          "generate_audio": true
+        }
+      }
+    },
+    {
+      "id": "B",
+      "status": "prompt only; no provider request",
+      "generation_authorized": false,
+      "prompt_file": "prompts/B-reality.prompt.en.txt",
+      "prompt_sha256": "47fd5d60d3bd4fe6f84a1d92656100882bbe957231bd97ff9a42e9bd655c0fca",
+      "depends_on": [
+        "accepted_A",
+        "accepted_K2"
+      ],
+      "local_time_intervals_seconds": [
+        [
+          0,
+          0.8
+        ],
+        [
+          0.8,
+          1.5
+        ],
+        [
+          1.5,
+          2.4
+        ],
+        [
+          2.4,
+          3.6
+        ],
+        [
+          3.6,
+          5
+        ]
+      ],
+      "timing_is_direction_not_model_enforcement": true,
+      "request_template": {
+        "model": "bytedance/seedance-2",
+        "input": {
+          "prompt": "One continuous five-second polished stylized 3D animated-film shot, vertical 9:16. Start from the actual accepted last frame of video A: the ginger creature holds one horizontal dumbbell low in front of its belly, both paws on separate grips, a single attached tail visibly supporting its center. The supplied last frame K2 establishes the weight back on the floor and the owner's humbled reaction. Preserve the real character, room, camera and rigid prop geometry. Camera locked; no cuts.\n\n0.0-0.8s: Hold the owner's premature pride briefly. Both hands remain on the bar, the tail supports the load, both hind feet are grounded.\n0.8-1.5s: Having finished helping, the tail naturally loosens and unwraps from the center, moving clearly away. It does not yank the bar or act maliciously. The owner tries to keep the same proud pose.\n1.5-2.4s: Once tail support is gone, the load overwhelms the owner. The same dumbbell drops the short distance back onto its original floor position, in front of the feet, both round weights outside the toes. The forepaws stay gripping; elbows, knees and shoulders bend with believable weight. No arm stretching, high throw or body impact. The cause is the removed support, not paws opening.\n2.4-3.6s: The creature looks at the grounded weight, then sideways toward the relaxed tail. Its smug expression turns into caught-out, sheepish surprise.\n3.6-5.0s: Let the final reaction read. The tail rests in a natural curl, the weight stays on the floor, the owner has lost its grand pose. Match K2 without another lift or new action.\n\nExactly one tail, one dumbbell, two weights and normal limbs. No free-floating load after release, duplicate props, foot injury, camera movement, captions or dialogue. Native synchronized sound: a tiny fur/handle rustle as the tail relaxes, one low weighty floor thud synchronized to the short landing, a small wordless exhale, then quiet realization. No spoken words, singing, music or second impact.\n",
+          "first_frame_url": "__UPLOADED_ACTUAL_ACCEPTED_A_LAST_FRAME__",
+          "last_frame_url": "__UPLOADED_ACCEPTED_K2__",
+          "duration": 5,
+          "resolution": "720p",
+          "aspect_ratio": "9:16",
+          "generate_audio": true
+        }
+      }
+    }
+  ],
+  "execution_order": [
+    "free schema/price/balance verification in user Claude Code",
+    "explicit separate EP002 package authorization",
+    "K0 then K1; visual review",
+    "A only: visible tail assistance causes the lift",
+    "accept A and extract its actual selected ending frame",
+    "K2 using actual A ending as first reference",
+    "B: tail support disappears before low return to floor",
+    "edit with native audio; visual review, actual listening and technical checks"
+  ],
+  "budget": {
+    "currency": "Kie credits",
+    "live_price_checked_here": false,
+    "price_source": "latest user-supplied execution reports for EP001; not a fresh provider quote",
+    "image_2k_credits_assumed": 12,
+    "video_720p_audio_credits_per_second_assumed": 41,
+    "base_image_count": 3,
+    "base_video_seconds": 9,
+    "base_video_durations_seconds": [
+      4,
+      5
+    ],
+    "base_image_credits": 36,
+    "base_video_credits": 369,
+    "base_total_credits": 405,
+    "max_additional_images_proposed": 2,
+    "max_additional_videos_proposed": 1,
+    "max_additional_video_duration_seconds": 5,
+    "max_additional_image_credits": 24,
+    "max_additional_video_credits": 205,
+    "expected_max_with_all_proposed_corrections": 634,
+    "proposed_cap_credits": 640,
+    "proposed_cap_authorized": false,
+    "cap_is_client_instruction_not_provider_enforced": true,
+    "ep001_allowance_transfers_here": false,
+    "actual_paid_here": 0
+  },
+  "target_master": {
+    "seconds": 9,
+    "fps": 24,
+    "frames": 216,
+    "width": 720,
+    "height": 1280,
+    "dialogue": false,
+    "explanatory_titles": false,
+    "audio_required": true,
+    "audio_codec": "aac",
+    "audio_sample_rate": 48000,
+    "audio_channels": 2,
+    "ordinary_upscale_export": [
+      1080,
+      1920
+    ]
+  },
+  "limitations": {
+    "new_images_created": 0,
+    "new_videos_created": 0,
+    "new_reference_uploads": 0,
+    "new_paid_requests": 0,
+    "weight_interaction_tested": false,
+    "artistic_acceptance": false,
+    "audio_listened_to": false,
+    "fresh_balance_available_here": false
+  },
+  "next_action": "Use CLAUDE_PREPARE_ONLY_RU.md for free quote/schema/balance verification; do not create tasks or upload references."
+}
