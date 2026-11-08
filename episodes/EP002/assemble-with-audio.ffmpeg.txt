@@ -1,0 +1,6 @@
+[0:v]fps=24,trim=start_frame=0:end_frame=96,setpts=PTS-STARTPTS,scale=720:1280,setsar=1[v0];
+[1:v]fps=24,trim=start_frame=0:end_frame=120,setpts=PTS-STARTPTS,scale=720:1280,setsar=1[v1];
+[0:a]atrim=start=0:end=4,asetpts=PTS-STARTPTS,aresample=48000,aformat=sample_fmts=fltp:channel_layouts=stereo,apad=whole_dur=4,atrim=end=4,afade=t=out:st=3.96:d=0.04[a0];
+[1:a]atrim=start=0:end=5,asetpts=PTS-STARTPTS,aresample=48000,aformat=sample_fmts=fltp:channel_layouts=stereo,apad=whole_dur=5,atrim=end=5,afade=t=in:st=0:d=0.02,afade=t=out:st=4.94:d=0.06[a1];
+[v0][a0][v1][a1]concat=n=2:v=1:a=1[v][ac];
+[ac]alimiter=limit=0.8913:level=false[aout]

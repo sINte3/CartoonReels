@@ -1,0 +1,42 @@
+{
+  "checked_date": "2026-11-08",
+  "scope": "offline production package and assembly only",
+  "assembly_source": "EP001 V3 old footage: 0-4s and 3-8s, overlapping technical placeholders, not EP002 acting",
+  "filter_sha256": "0456d314b55febce26596397b1acec2f38f0e67464b44735ed851a63142d6cb9",
+  "assembly_exports": [
+    {
+      "width": 720,
+      "height": 1280,
+      "frames": 216,
+      "fps": "24/1",
+      "duration_seconds": 9.0,
+      "audio_codec": "aac",
+      "audio_sample_rate": 48000,
+      "audio_channels": 2,
+      "audio_duration_seconds": 9.0,
+      "audio_signal_nonzero": true,
+      "full_decode_passed": true
+    },
+    {
+      "width": 1080,
+      "height": 1920,
+      "frames": 216,
+      "fps": "24/1",
+      "duration_seconds": 9.0,
+      "audio_codec": "aac",
+      "audio_sample_rate": 48000,
+      "audio_channels": 2,
+      "audio_duration_seconds": 9.0,
+      "audio_signal_nonzero": true,
+      "full_decode_passed": true
+    }
+  ],
+  "new_provider_images": 0,
+  "new_provider_videos": 0,
+  "new_reference_uploads": 0,
+  "new_paid_calls": 0,
+  "fresh_model_prices_checked_here": false,
+  "power_shell_runtime_tested_here": false,
+  "weight_action_artistic_tested": false,
+  "audio_subjectively_listened_to": false
+}

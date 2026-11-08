@@ -3,7 +3,7 @@
   "timezone": "Asia/Tashkent",
   "episode": "EP002",
   "working_title": "Силач понарошку",
-  "stage": "preproduction only; fresh quote and explicit new package authorization pending",
+  "stage": "production brief ready; fresh checks and explicit package activation required before paid calls",
   "authorizations": {
     "preparation": true,
     "image_generations": 0,
@@ -68,7 +68,7 @@
       "status": "prompt only; no provider request",
       "generation_authorized": false,
       "prompt_file": "prompts/K2-reality.prompt.en.txt",
-      "prompt_sha256": "05b3b0b631a0b2e14b6c2ab4f6313193f0cb79b86cac98e53220d3f29d42dbc6",
+      "prompt_sha256": "8d0702507fdb781511d99624ed18218c4dd5f1af54dfa558ae3c839f776a6959",
       "depends_on": [
         "accepted_A",
         "accepted_K0"
@@ -76,7 +76,7 @@
       "request_template": {
         "model": "nano-banana-2",
         "input": {
-          "prompt": "Use the actual last frame of accepted video A as the first reference, accepted K0 for the original floor positions as the second, and the original character design as the third. Create the final comic frame, maintaining the real creature, camera, room, dumbbell geometry, material, warm lighting and vertical 9:16 framing.\n\nThe dumbbell has returned to its original resting position on the floor in front of the creature, its two weights outside the hind feet. Both forepaws still grip the same two locations. The creature has followed the short downward movement with naturally bent knees and lowered shoulders; keep normal arm lengths and stable contact. No fall onto its body, impact on toes or injury.\n\nThe single attached tail has fully relaxed its central wrap and moved clearly away from the bar, curling naturally on screen-right. Show the complete continuous tail from the lower back; it is empty, not holding another object and not split into fingers or a face.\n\nThe creature's pride is gone. It gives the tail a sheepish, surprised sideways look, caught taking credit for someone else's work. Keep the eyes and muzzle expressive; avoid a generic furious pose. The contrast between the exhausted owner and the relaxed helper is the last beat. No subtitles, new props, duplicated weights or extra limbs.\n",
+          "prompt": "Use the actual last frame of accepted video A as the first reference, accepted K0 for the original floor positions as the second, and the original character design as the third. Create the final comic frame, maintaining the real creature, camera, room, dumbbell geometry, material, warm lighting and vertical 9:16 framing.\n\nThe dumbbell has returned to its original resting position on the floor in front of the creature, its two weights outside the hind feet. Both forepaws still grip the same two locations. The creature has followed the short downward movement into a clearly lower, deep bent-knee squat with rounded, lowered shoulders. Make the silhouette visibly different from the tall proud K1 pose, rather than changing only the eyebrows. Keep normal body and arm proportions, planted hind feet and stable grips. No fall onto its body, impact on toes or injury.\n\nThe single attached tail has fully relaxed its central wrap and moved clearly away from the bar, curling naturally on screen-right. Show the complete continuous tail from the lower back; it is empty, not holding another object and not split into fingers or a face.\n\nThe creature's pride is gone. It gives the tail a sheepish, surprised sideways look, caught taking credit for someone else's work. Keep the eyes and muzzle expressive; avoid a generic furious pose. The contrast between the exhausted owner and the relaxed helper is the last beat. No subtitles, new props, duplicated weights or extra limbs.\n",
           "image_input": [
             "__UPLOADED_ACTUAL_ACCEPTED_A_LAST_FRAME__",
             "__UPLOADED_ACCEPTED_K0__",
@@ -137,7 +137,7 @@
       "status": "prompt only; no provider request",
       "generation_authorized": false,
       "prompt_file": "prompts/B-reality.prompt.en.txt",
-      "prompt_sha256": "47fd5d60d3bd4fe6f84a1d92656100882bbe957231bd97ff9a42e9bd655c0fca",
+      "prompt_sha256": "4dc4249da59b682b1a559d7830c95c7990d064f8dfa0e7ec95f8895dca4ef56e",
       "depends_on": [
         "accepted_A",
         "accepted_K2"
@@ -168,7 +168,7 @@
       "request_template": {
         "model": "bytedance/seedance-2",
         "input": {
-          "prompt": "One continuous five-second polished stylized 3D animated-film shot, vertical 9:16. Start from the actual accepted last frame of video A: the ginger creature holds one horizontal dumbbell low in front of its belly, both paws on separate grips, a single attached tail visibly supporting its center. The supplied last frame K2 establishes the weight back on the floor and the owner's humbled reaction. Preserve the real character, room, camera and rigid prop geometry. Camera locked; no cuts.\n\n0.0-0.8s: Hold the owner's premature pride briefly. Both hands remain on the bar, the tail supports the load, both hind feet are grounded.\n0.8-1.5s: Having finished helping, the tail naturally loosens and unwraps from the center, moving clearly away. It does not yank the bar or act maliciously. The owner tries to keep the same proud pose.\n1.5-2.4s: Once tail support is gone, the load overwhelms the owner. The same dumbbell drops the short distance back onto its original floor position, in front of the feet, both round weights outside the toes. The forepaws stay gripping; elbows, knees and shoulders bend with believable weight. No arm stretching, high throw or body impact. The cause is the removed support, not paws opening.\n2.4-3.6s: The creature looks at the grounded weight, then sideways toward the relaxed tail. Its smug expression turns into caught-out, sheepish surprise.\n3.6-5.0s: Let the final reaction read. The tail rests in a natural curl, the weight stays on the floor, the owner has lost its grand pose. Match K2 without another lift or new action.\n\nExactly one tail, one dumbbell, two weights and normal limbs. No free-floating load after release, duplicate props, foot injury, camera movement, captions or dialogue. Native synchronized sound: a tiny fur/handle rustle as the tail relaxes, one low weighty floor thud synchronized to the short landing, a small wordless exhale, then quiet realization. No spoken words, singing, music or second impact.\n",
+          "prompt": "One continuous five-second polished stylized 3D animated-film shot, vertical 9:16. Start from the actual accepted last frame of video A: the ginger creature holds one horizontal dumbbell low in front of its belly, both paws on separate grips, a single attached tail visibly supporting its center. The supplied last frame K2 establishes the weight back on the floor and the owner's humbled reaction. Preserve the real character, room, camera and rigid prop geometry. Camera locked; no cuts.\n\n0.0-0.8s: Hold the owner's premature pride briefly. Both hands remain on the bar, the tail supports the load, both hind feet are grounded.\n0.8-1.5s: Having finished helping, the tail naturally loosens and unwraps from the center, moving clearly away. It does not yank the bar or act maliciously. The owner tries to keep the same proud pose.\n1.5-2.4s: Once tail support is gone, the load overwhelms the owner. In one short sharp downward movement, the same dumbbell returns to its original floor position in front of the feet, both round weights outside the toes, then settles. The forepaws stay gripping; elbows and knees bend as the owner's body follows into a visibly deep squat with rounded low shoulders. This is a clear whole-body collapse of the proud pose, with normal proportions, not just a small facial change. No arm stretching, high throw or body impact. The cause is the removed support, not paws opening.\n2.4-3.6s: The creature looks at the grounded weight, then sideways toward the relaxed tail. Its smug expression turns into caught-out, sheepish surprise.\n3.6-5.0s: Let the final reaction read. The tail rests in a natural curl, the weight stays on the floor, the owner has lost its grand pose. Match K2 without another lift or new action.\n\nExactly one tail, one dumbbell, two weights and normal limbs. No free-floating load after release, duplicate props, foot injury, camera movement, captions or dialogue. Native synchronized sound: a tiny fur/handle rustle as the tail relaxes, one low weighty floor thud synchronized to the short landing, a small wordless exhale, then quiet realization. No spoken words, singing, music or second impact.\n",
           "first_frame_url": "__UPLOADED_ACTUAL_ACCEPTED_A_LAST_FRAME__",
           "last_frame_url": "__UPLOADED_ACCEPTED_K2__",
           "duration": 5,
@@ -243,5 +243,36 @@
     "audio_listened_to": false,
     "fresh_balance_available_here": false
   },
-  "next_action": "Use CLAUDE_PREPARE_ONLY_RU.md for free quote/schema/balance verification; do not create tasks or upload references."
+  "next_action": "User may activate the explicit 640-credit whole EP002 package using CLAUDE_PRODUCE_FULL_RU.md; fresh price/schema/balance checks are the first free steps inside that workflow. Without activation, use CLAUDE_PREPARE_ONLY_RU.md only.",
+  "batch_proposal": {
+    "credit_cap": 640,
+    "explicit_package_activation_recorded_here": false,
+    "base_image_tasks": 3,
+    "base_video_tasks": 2,
+    "max_additional_image_tasks": 2,
+    "max_additional_video_tasks": 1,
+    "max_image_create_attempts": 5,
+    "max_video_create_attempts": 3,
+    "max_total_create_attempts": 8,
+    "per_step_ok_required_after_explicit_activation": false,
+    "refresh_prices_and_balance_before_first_paid_call": true,
+    "resume_existing_ep002_tasks_before_creating_new": true,
+    "ep001_allowance_transfers_here": false,
+    "automatic_topups_allowed": false,
+    "external_paid_audio_services_allowed": false
+  },
+  "assembly": {
+    "filter_file": "assemble-with-audio.ffmpeg.txt",
+    "video_segment_frames": [
+      96,
+      120
+    ],
+    "fps": 24,
+    "seconds": 9,
+    "frames": 216,
+    "default_crop": false,
+    "audio_required": true,
+    "missing_video_padding_allowed": false,
+    "audio_gain_from_ep001_reused": false
+  }
 }
