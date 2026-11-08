@@ -1,9 +1,9 @@
 {
-  "prepared_date": "2026-11-06",
+  "prepared_date": "2026-11-08",
   "timezone": "Asia/Tashkent",
   "episode": "EP001 V3",
   "working_title": "Чисто. Почти.",
-  "stage": "text storyboard and quote preparation only",
+  "stage": "full-episode production brief with native audio, awaiting explicit package activation in user Claude Code",
   "provider": "kie.ai via user Claude Code /generate",
   "authorizations": {
     "paid_image_requests": 0,
@@ -74,18 +74,18 @@
       "generation_authorized": false,
       "depends_on": [
         "K0",
-        "K1"
+        "accepted_A"
       ],
       "prompt_file": "keyframes/K2-again.prompt.en.txt",
-      "prompt_sha256": "debe2a382618e863e4bc7179670c894be422b88b32503af40fab60b1ce6ba17b",
+      "prompt_sha256": "1846f45b1df2333301f607dcbfe1a564f95a1216399590687399c65db4bd87c0",
       "output_name_hint": "CartoonReels_EP001_V3_K2_{timestamp}.png",
       "price_credits": 12,
       "request_template": {
         "model": "nano-banana-2",
         "input": {
-          "prompt": "The first reference is the approved dusty-creature frame K1. The second reference K0 locks the room and prop layout; the third preserves the original character design. Create the final comic frame in the same polished tactile 3D style, fixed camera and warm cottage lighting, vertical 9:16, medium full shot with the floor and broom head visible.\nThe creature remains visibly dusty, with the same face, ginger ears and cream chest. A little dust has fallen from it after a sneeze, forming a fresh small gray scatter on the floor near its feet. Do not make the creature suddenly clean or recreate the full original mound.\nThe single attached tail still holds the same wooden broom on screen-right and has drawn it back slightly in preparation for another energetic sweep toward this fresh dust. The broom has not struck yet. The creature sees what is coming: wide alarmed eyes, shoulders pulled back, both forepaws raised defensively with open palms. This is genuine comic alarm, not the smug command pose from K0. Both hind feet remain planted, no running or jumping. Keep the complete tail path, broom grip and new floor dust readable. No second cloud, face impact, new props, extra characters, extra limbs, text or logos.",
+          "prompt": "The first reference is the actual last frame of accepted video shot A, locking the creature's real dusty appearance and pose. The second reference K0 locks the room and prop layout; the third preserves the original character design. Create the final comic frame in the same polished tactile 3D style, fixed camera and warm cottage lighting, vertical 9:16, medium full shot with the floor and broom head visible.\nThe creature remains visibly dusty, with the same face, ginger ears and cream chest. A little dust has fallen from it after a sneeze, forming a fresh small gray scatter on the floor near its feet. Do not make the creature suddenly clean or recreate the full original mound.\nThe single attached tail still holds the same wooden broom on screen-right and has drawn it back slightly in preparation for another energetic sweep toward this fresh dust. The broom has not struck yet. The creature sees what is coming: wide alarmed eyes, shoulders pulled back, both forepaws raised defensively with open palms. This is genuine comic alarm, not the smug command pose from K0. Both hind feet remain planted, no running or jumping. Keep the complete tail path, broom grip and new floor dust readable. No second cloud, face impact, new props, extra characters, extra limbs, text or logos.",
           "image_input": [
-            "__UPLOADED_APPROVED_K1__",
+            "__UPLOADED_ACTUAL_ACCEPTED_A_LAST_FRAME__",
             "__UPLOADED_APPROVED_K0__",
             "__UPLOADED_ORIGINAL_CHARACTER_REFERENCE__"
           ],
@@ -107,7 +107,7 @@
         "K1"
       ],
       "prompt_file": "video/A-dust-blast.prompt.en.txt",
-      "prompt_sha256": "52859c8f516f3e30ca887effa49f5281f3f2897a10fe1d8b77d6cc1caabc2299",
+      "prompt_sha256": "ccc0b52da5182432283e1b9a4f04dc58be9ce12dd2efe8bf6d75f4687bfb9a04",
       "local_time_intervals_seconds": [
         [
           0.0,
@@ -135,13 +135,13 @@
       "request_template": {
         "model": "bytedance/seedance-2",
         "input": {
-          "prompt": "One continuous 4-second polished stylized 3D animated-film shot. The supplied first frame K0 establishes the clean ginger creature, warm room, one attached tail holding one broom, and a visible dust mound. The last frame K1 is the required dusty-face outcome. Preserve identity, fur, lighting and camera; keep both hind feet grounded.\n0.0-0.7s: The creature proudly puffs its chest and points at the mound, pleased with itself. The tail is already ready to work.\n0.7-1.2s: The tail draws the broom back slightly for an overenthusiastic sweep; the creature stays confidently unaware.\n1.2-2.0s: One brisk broom stroke visibly launches the mound upward toward the creature's muzzle. The broom itself never hits its face. A short gray dust plume coats the muzzle and cheeks; the creature squeezes its eyes shut in surprise.\n2.0-3.0s: The cloud settles, revealing a clean floor and the same creature with clearly dusty facial fur. Eyes, nose and identity remain readable; do not darken the entire scene.\n3.0-4.0s: One stunned blink and a readable embarrassed pause, matching K1. The tail still grips the broom, now at rest with bristles down.\nLocked camera, no cuts, titles, dialogue or music. One causal sweep and one dust event. No extra broom, tail or limbs, detached tail, teleporting dust, face injury or face transformation into another character.",
+          "prompt": "One continuous 4-second polished stylized 3D animated-film shot. The supplied first frame K0 establishes the clean ginger creature, warm room, one attached tail holding one broom, and a visible dust mound. The last frame K1 is the required dusty-face outcome. Preserve identity, fur, lighting and camera; keep both hind feet grounded.\n0.0-0.7s: The creature proudly puffs its chest and points at the mound, pleased with itself. The tail is already ready to work.\n0.7-1.2s: The tail draws the broom back slightly for an overenthusiastic sweep; the creature stays confidently unaware.\n1.2-2.0s: One brisk broom stroke visibly launches the mound upward toward the creature's muzzle. The broom itself never hits its face. A short gray dust plume coats the muzzle and cheeks; the creature squeezes its eyes shut in surprise.\n2.0-3.0s: The cloud settles, revealing a clean floor and the same creature with clearly dusty facial fur. Eyes, nose and identity remain readable; do not darken the entire scene.\n3.0-4.0s: One stunned blink and a readable embarrassed pause, matching K1. The tail still grips the broom, now at rest with bristles down.\nLocked camera, no cuts, titles, dialogue or music. One causal sweep and one dust event. No extra broom, tail or limbs, detached tail, teleporting dust, face injury or face transformation into another character.\nNative synchronized sound: quiet indoor room tone, a short bristle scrape during preparation, one quick broom whoosh during the stroke, then a soft dusty puff. Let the stunned final blink have a quiet comic pause. No spoken words, singing or background music.",
           "first_frame_url": "__UPLOADED_APPROVED_K0__",
           "last_frame_url": "__UPLOADED_APPROVED_K1__",
           "duration": 4,
           "resolution": "720p",
           "aspect_ratio": "9:16",
-          "generate_audio": false
+          "generate_audio": true
         }
       }
     },
@@ -154,7 +154,7 @@
         "accepted_A"
       ],
       "prompt_file": "video/B-sneeze-repeat.prompt.en.txt",
-      "prompt_sha256": "263d6e46cbce8f1d4ccaddf642370e6e0e2c64632e5bf0ddc4edbaca82b5e8a9",
+      "prompt_sha256": "c2c318227e5a8b7c1c1f45273206b5d6d10da8cb0552438063bec9c312876e9f",
       "local_time_intervals_seconds": [
         [
           0.0,
@@ -178,28 +178,29 @@
       "request_template": {
         "model": "bytedance/seedance-2",
         "input": {
-          "prompt": "One continuous 4-second stylized 3D animated-film shot. Start from the actual accepted last frame of shot A: the same dusty ginger creature, clean floor and single tail still holding the broom. The supplied last frame K2 establishes the fresh floor dust and alarmed defensive pose. Preserve the room, warm lighting, tactile fur, facial identity and grounded hind feet.\n0.0-0.7s: The dusty creature's nose twitches and its chest draws one small breath; it tries to retain its dignity.\n0.7-1.6s: One clear sneeze, a short head-and-shoulder bob with eyes squeezed shut. A small puff of loose dust falls from its muzzle and visibly settles on the floor near its feet. The creature remains dusty; it does not become suddenly clean.\n1.6-2.6s: The helpful tail immediately notices the new floor dust and draws the same broom back slightly, preparing another energetic sweep. Do not perform the second sweep. The creature's eyes track the broom and widen in recognition.\n2.6-4.0s: The creature pulls its shoulders back and raises both forepaws defensively, palms open, in comic alarm. The tail pauses ready to sweep. Hold this anticipation as the punchline, matching K2.\nExactly one creature, one continuous attached tail and one broom. No extra limbs, stretching, prop duplication, footsteps, camera movement, cuts, second dust explosion, dialogue, titles or music.",
+          "prompt": "One continuous 4-second stylized 3D animated-film shot. Start from the actual accepted last frame of shot A: the same dusty ginger creature, clean floor and single tail still holding the broom. The supplied last frame K2 establishes the fresh floor dust and alarmed defensive pose. Preserve the room, warm lighting, tactile fur, facial identity and grounded hind feet.\n0.0-0.7s: The dusty creature's nose twitches and its chest draws one small breath; it tries to retain its dignity.\n0.7-1.6s: One clear sneeze, a short head-and-shoulder bob with eyes squeezed shut. A small puff of loose dust falls from its muzzle and visibly settles on the floor near its feet. The creature remains dusty; it does not become suddenly clean.\n1.6-2.6s: The helpful tail immediately notices the new floor dust and draws the same broom back slightly, preparing another energetic sweep. Do not perform the second sweep. The creature's eyes track the broom and widen in recognition.\n2.6-4.0s: The creature pulls its shoulders back and raises both forepaws defensively, palms open, in comic alarm. The tail pauses ready to sweep. Hold this anticipation as the punchline, matching K2.\nExactly one creature, one continuous attached tail and one broom. No extra limbs, stretching, prop duplication, footsteps, camera movement, cuts, second dust explosion, dialogue, titles or music.\nNative synchronized sound: a tiny sniff before the sneeze, one short natural nonverbal sneeze synchronized to the head bob, a light dust patter, and the start of the same recognizable broom-preparation scrape. Do not add the second impact. No spoken words, singing or background music.",
           "first_frame_url": "__UPLOADED_ACTUAL_ACCEPTED_A_LAST_FRAME__",
           "last_frame_url": "__UPLOADED_APPROVED_K2__",
           "duration": 4,
           "resolution": "720p",
           "aspect_ratio": "9:16",
-          "generate_audio": false
+          "generate_audio": true
         }
       }
     }
   ],
   "execution_order": [
-    "read-only documentation and price check",
-    "sequential approved keyframes with visual review",
-    "only A: principal dust-impact test",
-    "only after accepted A: extract actual A ending and assess K2 compatibility",
-    "B: sneeze and anticipation payoff",
-    "edit after visual acceptance"
+    "explicit user package activation, then refresh exact prices including native audio",
+    "K0 then K1, autonomous visual checks within approved bounds",
+    "A: principal dust-impact test with native audio",
+    "accept A and extract last frame of selected four-second segment",
+    "K2 from actual accepted A ending, K0 and original reference",
+    "B with native audio, then visual/audio acceptance",
+    "assemble eight seconds with AAC, export 720p and ordinary 1080p enlargement"
   ],
   "budget": {
     "currency": "Kie credits",
-    "quote_complete": true,
+    "quote_complete": false,
     "image_prices": {
       "P0": 12,
       "P1": 12,
@@ -215,7 +216,10 @@
     "optional_retry_credits_if_rate_unchanged": 164,
     "usd_rate_reference_per_credit": "0.005 from reported top-up package, not a live billing quote",
     "video_usd_if_both_rate_and_conversion_unchanged": "1.640",
-    "missing": [],
+    "missing": [
+      "fresh model prices and balance check in user Claude Code",
+      "confirmation whether native audio changes per-second pricing"
+    ],
     "quote_date": "2026-11-06",
     "quote_source": "User-supplied Claude Code report of reading Kie model price pages; not independently queried here",
     "quote_source_sha256": "416a96357bdb208183a4c1889fa7ce025efc946a0f8d49fed69ab0acfdc3cf72",
@@ -235,7 +239,10 @@
       "usd": 5,
       "credits": 1000,
       "source": "user-supplied report; distinct from task costs"
-    }
+    },
+    "quote_refresh_reason": "Audio-enabled production version dated 2026-11-08; earlier 364-credit quote was for silent templates on 2026-11-06. Refresh before first paid operation.",
+    "proposed_package_credit_cap": 600,
+    "expected_total_with_one_video_and_two_image_corrections_at_old_rates": 552
   },
   "target_master": {
     "seconds": 8,
@@ -244,7 +251,19 @@
     "width": 720,
     "height": 1280,
     "dialogue": false,
-    "on_screen_explanatory_text": false
+    "on_screen_explanatory_text": false,
+    "audio_required": true,
+    "audio_delivery": {
+      "codec": "aac",
+      "sample_rate": 48000,
+      "channels": 2,
+      "source": "native synchronized foley; no speech or music"
+    },
+    "additional_export": {
+      "width": 1080,
+      "height": 1920,
+      "method": "ordinary local scaling from 720p; no new detail or paid upscale"
+    }
   },
   "limitations": {
     "last_frame_mode_live_tested_by_project": false,
@@ -253,8 +272,26 @@
     "new_videos_created": 0,
     "live_price_checked_here": false,
     "artistic_acceptance": false,
-    "social_publication_authorized": false
+    "social_publication_authorized": false,
+    "native_audio_live_tested_by_project": false
   },
-  "next_action": "Await explicit approval for K0 only, quoted at 12 credits; no K1/K2 or video order authorized",
-  "reported_nano_banana_max_image_inputs": 10
+  "next_action": "User can activate the single package using CLAUDE_PRODUCE_FULL_RU.md; account top-up alone has not activated paid requests here.",
+  "reported_nano_banana_max_image_inputs": 10,
+  "batch_proposal": {
+    "credit_cap": 600,
+    "explicit_user_activation_received": false,
+    "funding_reported_by_user": true,
+    "base_image_tasks": 3,
+    "base_video_tasks": 2,
+    "max_additional_image_tasks": 2,
+    "max_additional_video_tasks": 1,
+    "max_total_image_create_attempts": 5,
+    "max_total_video_create_attempts": 3,
+    "expected_base_credits_at_previous_rates": 364,
+    "expected_max_with_all_listed_corrections_at_previous_rates": 552,
+    "automatic_topups_allowed": false,
+    "per_step_user_confirmations_required_after_activation": false,
+    "external_paid_audio_services_allowed": false,
+    "scope": "Only EP001 V3; does not alter global generate skill rules"
+  }
 }

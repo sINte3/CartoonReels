@@ -1,0 +1,32 @@
+{
+  "checked_date": "2026-11-08",
+  "scope": "offline production brief and audiovisual assembly only",
+  "five_prompt_hashes_match_manifest": true,
+  "timelines_contiguous": true,
+  "package_expected_max_at_old_rates": 552,
+  "proposed_cap_credits": 600,
+  "package_activation_received_here": false,
+  "all_generation_authorized_flags_false": true,
+  "native_audio_request_enabled_in_two_video_templates": true,
+  "native_audio_model_or_pricing_live_tested": false,
+  "assembly_filter_test": {
+    "source": "previous video footage and local synthetic test tones, not V3 production content",
+    "duration_seconds": "8.000000",
+    "video_frames": "192",
+    "video_width": 720,
+    "video_height": 1280,
+    "audio_codec": "aac",
+    "sample_rate": "48000",
+    "channels": 2,
+    "audio_signal_nonzero": true,
+    "full_decode_passed": true,
+    "1080_export_width": 1080,
+    "1080_export_height": 1920,
+    "1080_export_full_decode_passed": true
+  },
+  "new_images_created": 0,
+  "new_videos_from_provider": 0,
+  "new_reference_uploads": 0,
+  "new_paid_calls": 0,
+  "native_audio_subjectively_listened_to": false
+}
