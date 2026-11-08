@@ -1,0 +1,173 @@
+{
+  "source_commit": "ae40fd482da901a454f08de3ddaa9d7763eee13a",
+  "technical": [
+    {
+      "file": "EP002_9s_sound_1080p.mp4",
+      "bytes": 8784682,
+      "sha256": "9bd29f553ffd3884b85d9b50893cfe90afd0f8b29c2fd0af541c31d9e484d7c2",
+      "width": 1080,
+      "height": 1920,
+      "frames": 216,
+      "fps": "24/1",
+      "seconds": 9.0,
+      "audio_codec": "aac",
+      "audio_sample_rate": 48000,
+      "audio_channels": 2,
+      "audio_duration": 9.0,
+      "audio_peak_dbfs": -1.76,
+      "audio_rms_dbfs": -22.69,
+      "full_decode_passed": true,
+      "faststart": true
+    },
+    {
+      "file": "EP002_9s_sound_720p.mp4",
+      "bytes": 4640769,
+      "sha256": "d62d832f272a81ea568434be299ff8f11e558492a251da055a19c7e9770224b2",
+      "width": 720,
+      "height": 1280,
+      "frames": 216,
+      "fps": "24/1",
+      "seconds": 9.0,
+      "audio_codec": "aac",
+      "audio_sample_rate": 48000,
+      "audio_channels": 2,
+      "audio_duration": 9.0,
+      "audio_peak_dbfs": -1.76,
+      "audio_rms_dbfs": -22.69,
+      "full_decode_passed": true,
+      "faststart": true
+    }
+  ],
+  "tasks": [
+    {
+      "label": "A",
+      "task_id": "73525ce0db0714212d9638cf77821a06",
+      "state": "success",
+      "credits": 164.0
+    },
+    {
+      "label": "B",
+      "task_id": "acfe6ed9e166f5c70daf3b7285f552c2",
+      "state": "success",
+      "credits": 205.0
+    },
+    {
+      "label": "K0-retry1",
+      "task_id": "f3bdca3087a8ecad355cb81fc1f39715",
+      "state": "success",
+      "credits": 12.0
+    },
+    {
+      "label": "K0",
+      "task_id": "df1628a76b18202a8509a6b4ee602099",
+      "state": "success",
+      "credits": 12.0
+    },
+    {
+      "label": "K1",
+      "task_id": "a56291c0ddd0a7f29f69d38cee1433dc",
+      "state": "success",
+      "credits": 12.0
+    },
+    {
+      "label": "K2-retry1",
+      "task_id": "b19f5d5712b0ff3d6e4b8d2ee8be0580",
+      "state": "success",
+      "credits": 12.0
+    },
+    {
+      "label": "K2",
+      "task_id": "1d6e00e64de3e6c05cd18ae4e2bf1b86",
+      "state": "success",
+      "credits": 12.0
+    }
+  ],
+  "reported_cost_from_saved_records": 429.0,
+  "audio_subjectively_listened_to": false,
+  "live_billing_queried": false,
+  "review_date": "2026-11-08",
+  "timezone": "Asia/Tashkent",
+  "review_method": "54 source frames at 6 fps, denser release/drop frames, selected edit frames; not native realtime viewing",
+  "story_review": "The visual cause of assistance is weak; original hanging pause breaks causal connection. Not accepted here as a finished channel episode. User acceptance pending.",
+  "edited_files": [
+    {
+      "file": "EP002_timing_7s_sound_1080p.mp4",
+      "bytes": 4781733,
+      "sha256": "944ee5a5d015fd9d8fe839a65ccd7e3b970f9c8b814f5f566c1d07e164fad0fe",
+      "width": 1080,
+      "height": 1920,
+      "frames": 168,
+      "fps": "24/1",
+      "seconds": 7.0,
+      "audio_codec": "aac",
+      "audio_sample_rate": 48000,
+      "audio_channels": 2,
+      "audio_seconds": 7.0,
+      "audio_peak_dbfs": -1.71,
+      "full_decode_passed": true,
+      "faststart": true
+    },
+    {
+      "file": "EP002_timing_7s_sound_720p.mp4",
+      "bytes": 2728409,
+      "sha256": "c6a46b9788d324be4e92be66713f176b34a6d268b91996ada1621cd9b90ddda0",
+      "width": 720,
+      "height": 1280,
+      "frames": 168,
+      "fps": "24/1",
+      "seconds": 7.0,
+      "audio_codec": "aac",
+      "audio_sample_rate": 48000,
+      "audio_channels": 2,
+      "audio_seconds": 7.0,
+      "audio_peak_dbfs": -1.71,
+      "full_decode_passed": true,
+      "faststart": true
+    }
+  ],
+  "edit": {
+    "segments": [
+      {
+        "source_start": 0,
+        "source_end": 3.25,
+        "speed": 1
+      },
+      {
+        "source_start": 4,
+        "source_end": 4.75,
+        "speed": 1
+      },
+      {
+        "source_start": 4.75,
+        "source_end": 5.75,
+        "speed": 4
+      },
+      {
+        "source_start": 5.75,
+        "source_end": 6.5,
+        "speed": 1
+      },
+      {
+        "source_start": 6.5,
+        "source_end": 7.5,
+        "speed": 2
+      },
+      {
+        "source_start": 7.5,
+        "source_end": 9,
+        "speed": 1
+      }
+    ],
+    "seconds": 7,
+    "frames": 168,
+    "new_gain_db": 0,
+    "audio_retimed_with_video": true,
+    "original_floor_impact_segment_speed_changed": false,
+    "new_paid_calls": 0,
+    "limitation": "Cannot make tail assistance in shot A visibly stronger or replace missing deep squat; audio retiming needs subjective listening."
+  },
+  "user_artistic_acceptance": false,
+  "audio_subjective_acceptance": "pending; tools here do not provide listening",
+  "source_credit_sum_checked": 429,
+  "new_paid_calls": 0
+}

@@ -3,7 +3,7 @@
   "timezone": "Asia/Tashkent",
   "episode": "EP002",
   "working_title": "Силач понарошку",
-  "stage": "production brief ready; fresh checks and explicit package activation required before paid calls",
+  "stage": "delivered original technically verified; story needs revision; free 7-second timing edit available; listening and user acceptance pending",
   "authorizations": {
     "preparation": true,
     "image_generations": 0,
@@ -243,7 +243,7 @@
     "audio_listened_to": false,
     "fresh_balance_available_here": false
   },
-  "next_action": "User may activate the explicit 640-credit whole EP002 package using CLAUDE_PRODUCE_FULL_RU.md; fresh price/schema/balance checks are the first free steps inside that workflow. Without activation, use CLAUDE_PREPARE_ONLY_RU.md only.",
+  "next_action": "Compare original 9s and free 7s edit, listen, then decide artistic acceptance. Do not restart the completed package or automatically use its remaining video allowance.",
   "batch_proposal": {
     "credit_cap": 640,
     "explicit_package_activation_recorded_here": false,
@@ -274,5 +274,27 @@
     "audio_required": true,
     "missing_video_padding_allowed": false,
     "audio_gain_from_ep001_reused": false
+  },
+  "production_observation": {
+    "date": "2026-11-08",
+    "source_commit": "ae40fd482da901a454f08de3ddaa9d7763eee13a",
+    "records": "production/README.md",
+    "saved_task_records_checked": 7,
+    "saved_credits_consumed_sum_checked": 429,
+    "image_attempts": 5,
+    "video_attempts": 2,
+    "additional_image_attempts_remaining_in_original_package": 0,
+    "additional_video_attempts_remaining_in_original_package": 1,
+    "original_package_cap": 640,
+    "cap_minus_recorded_spend": 211,
+    "activation_record_exists_in_external_journal": true,
+    "live_billing_queried_here": false,
+    "review": "REVIEW_2026-11-08_RU.md",
+    "validation": "../../deliverables/ep002/review-validation-2026-11-08.json",
+    "audio_subjectively_listened_to": false,
+    "reviewer_story_acceptance_as_finished_channel_episode": false,
+    "user_artistic_acceptance": false,
+    "new_paid_calls_during_review": 0,
+    "preproduction_flags_scope": "Original templates/authorization snapshot; not a request to restart completed tasks."
   }
 }
