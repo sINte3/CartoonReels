@@ -1,0 +1,108 @@
+{
+  "review_date": "2026-11-08",
+  "timezone": "Asia/Tashkent",
+  "source_upload_sha256": "841c14a00ae19c6094451e09c04d13fdafd6900e244579a4660d650f985772c6",
+  "evidence": {
+    "technical_checks": "ffprobe, full FFmpeg decode, container atom ordering, stereo PCM levels",
+    "visual_review": "48 sampled source frames at 6 fps; denser first sweep and ending frames; selected edit-boundary frames",
+    "native_realtime_playback_claimed": false,
+    "audio_subjectively_listened_to": false,
+    "speech_music_absence_confirmed": false,
+    "billing_api_queried_here": false
+  },
+  "external_execution_report": {
+    "source": "user-pasted Claude Code completion report",
+    "image_tasks_reported": 5,
+    "video_tasks_reported": 2,
+    "image_credits_reported": 60,
+    "video_credits_reported": 328,
+    "total_credits_reported": 388,
+    "package_cap_reported": 600,
+    "extra_video_used_reported": false,
+    "billing_independently_confirmed": false
+  },
+  "edit": {
+    "new_paid_requests": 0,
+    "kept_source_intervals_seconds": [
+      [
+        0,
+        3
+      ],
+      [
+        5,
+        8
+      ]
+    ],
+    "removed_source_interval_seconds": [
+      3,
+      5
+    ],
+    "final_frame_hold_seconds": 0.5,
+    "total_duration_seconds": 6.5,
+    "final_defensive_pose_approximately_seconds": 1.0,
+    "audio_changes": "matching trims; 20ms splice fades, 60ms end fade, 500ms silent tail; no new gain or generated effects",
+    "limitation": "does not correct the high first broom swing or the completed partial second stroke; not an artistic acceptance"
+  },
+  "files": [
+    {
+      "file": "EP001_V3_original_8s_sound_1080p.mp4",
+      "bytes": 8328836,
+      "sha256": "841c14a00ae19c6094451e09c04d13fdafd6900e244579a4660d650f985772c6",
+      "width": 1080,
+      "height": 1920,
+      "fps": "24/1",
+      "frames": 192,
+      "duration_seconds": 8.0,
+      "video_duration_seconds": 8.0,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "audio_duration_seconds": 8.0,
+      "audio_sample_rate": 48000,
+      "audio_channels": 2,
+      "audio_peak_dbfs": -4.138,
+      "audio_rms_dbfs": -29.115,
+      "faststart": true,
+      "decode_passed": true
+    },
+    {
+      "file": "EP001_V3_timing_6p5s_sound_1080p.mp4",
+      "bytes": 4706646,
+      "sha256": "dfb2c60f4fa155b884fbe91a1f1f29cb2cb664c5acce2b6d5e506136a1f1fe39",
+      "width": 1080,
+      "height": 1920,
+      "fps": "24/1",
+      "frames": 156,
+      "duration_seconds": 6.5,
+      "video_duration_seconds": 6.5,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "audio_duration_seconds": 6.5,
+      "audio_sample_rate": 48000,
+      "audio_channels": 2,
+      "audio_peak_dbfs": -4.179,
+      "audio_rms_dbfs": -28.379,
+      "faststart": true,
+      "decode_passed": true
+    },
+    {
+      "file": "EP001_V3_timing_6p5s_sound_720p.mp4",
+      "bytes": 2322888,
+      "sha256": "51d042b617f951d93f7756cab91941dd0d100d8298d283bdd2c7ab51a5a8e9c2",
+      "width": 720,
+      "height": 1280,
+      "fps": "24/1",
+      "frames": 156,
+      "duration_seconds": 6.5,
+      "video_duration_seconds": 6.5,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "audio_duration_seconds": 6.5,
+      "audio_sample_rate": 48000,
+      "audio_channels": 2,
+      "audio_peak_dbfs": -4.179,
+      "audio_rms_dbfs": -28.379,
+      "faststart": true,
+      "decode_passed": true
+    }
+  ]
+}

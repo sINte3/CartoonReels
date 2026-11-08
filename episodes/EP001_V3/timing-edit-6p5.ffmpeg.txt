@@ -1,0 +1,8 @@
+[0:v]split=2[v0i][v1i];
+[v0i]trim=start_frame=0:end_frame=72,setpts=PTS-STARTPTS[v0];
+[v1i]trim=start_frame=120:end_frame=192,setpts=PTS-STARTPTS[v1];
+[v0][v1]concat=n=2:v=1:a=0,fps=24,tpad=stop_mode=clone:stop_duration=0.5,setsar=1[vout];
+[0:a]asplit=2[a0i][a1i];
+[a0i]atrim=start=0:end=3,asetpts=PTS-STARTPTS,afade=t=out:st=2.98:d=0.02[a0];
+[a1i]atrim=start=5:end=8,asetpts=PTS-STARTPTS,afade=t=in:st=0:d=0.02,afade=t=out:st=2.94:d=0.06[a1];
+[a0][a1]concat=n=2:v=0:a=1,apad=whole_dur=6.5,atrim=end=6.5[aout]

@@ -3,7 +3,7 @@
   "timezone": "Asia/Tashkent",
   "episode": "EP001 V3",
   "working_title": "Чисто. Почти.",
-  "stage": "full-episode production brief with native audio, awaiting explicit package activation in user Claude Code",
+  "stage": "delivered master reviewed; local timing alternative ready; user artistic acceptance pending",
   "provider": "kie.ai via user Claude Code /generate",
   "authorizations": {
     "paid_image_requests": 0,
@@ -275,7 +275,7 @@
     "social_publication_authorized": false,
     "native_audio_live_tested_by_project": false
   },
-  "next_action": "User can activate the single package using CLAUDE_PRODUCE_FULL_RU.md; account top-up alone has not activated paid requests here.",
+  "next_action": "User compares delivered 8-second master and free 6.5-second timing edit; do not rerun production or spend remaining reserve automatically.",
   "reported_nano_banana_max_image_inputs": 10,
   "batch_proposal": {
     "credit_cap": 600,
@@ -293,5 +293,24 @@
     "per_step_user_confirmations_required_after_activation": false,
     "external_paid_audio_services_allowed": false,
     "scope": "Only EP001 V3; does not alter global generate skill rules"
+  },
+  "production_observation": {
+    "date": "2026-11-08",
+    "external_execution_source": "user-pasted Claude Code completion report",
+    "reported_image_tasks": 5,
+    "reported_video_tasks": 2,
+    "reported_total_credits": 388,
+    "reported_cap_credits": 600,
+    "reported_additional_video_used": false,
+    "billing_independently_verified_here": false,
+    "provider_task_ids_available_here": false,
+    "received_master": "../../deliverables/ep001-v3/EP001_V3_original_8s_sound_1080p.mp4",
+    "received_master_sha256": "841c14a00ae19c6094451e09c04d13fdafd6900e244579a4660d650f985772c6",
+    "review": "../../deliverables/ep001-v3/README.md",
+    "validation": "../../deliverables/ep001-v3/validation.json",
+    "new_paid_calls_during_review": 0,
+    "audio_subjectively_listened_to": false,
+    "artistic_acceptance": false,
+    "earlier_flags_scope": "Preproduction templates and authorization snapshot; not a request to rerun completed tasks."
   }
 }
