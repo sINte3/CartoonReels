@@ -1,0 +1,3 @@
+CartoonReels_EP001_V3_A-lastframe_20261108-121954.png | последний кадр (индекс 95) отрезка 0–4 с принятого A | 720,1280 | sha256=995938e4fe4da4ae8f1a22d4b868484cd8f3c9b4617101e2d267205c048ec697 | сохранено 20261108-121955
+источник: E:\Generations\CartoonReels_EP001_V3_A_20261108-121347.mp4 sha256=2ac922bf84b46d1d2d0388006a69f96f20ec4fe12a34a916236cfa36844b5f62 | нормализация: trim=start=0:end=4,setpts=PTS-STARTPTS,fps=24,scale=720:1280,setsar=1 | кадров в отрезке: 96
+SSIM с принятым K1 (масштаб 720×1280, только для сведения): 0.781344

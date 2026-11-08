@@ -1,0 +1,55 @@
+{
+  "label": "K1",
+  "stage": "K1",
+  "kind": "image",
+  "attemptType": "base",
+  "reason": "",
+  "status": "success",
+  "taskId": "3297b76421eb65769b61f9ebaa2e5ef7",
+  "model": "nano-banana-2",
+  "input": {
+    "prompt": "The first reference is the approved clean staging frame K0. The second reference preserves the creature's original identity and tactile 3D style. Produce the after-action frame in exactly the same room, camera angle, framing, lighting and floor layout, vertical 9:16. Preserve the creature's face structure, ears, proportions, two forepaws, two grounded hind feet and single attached tail.\nThe dust cloud has just settled. The dust mound has been swept off the wooden floor, which now looks clean. The creature's muzzle, cheeks and brow fur are visibly coated with matte gray dust. Keep its eyes, eyelids, nose and facial expression clearly readable; ginger ears, cream chest and fur texture remain recognizable. Do not simply darken the whole image or replace the face with a flat black mask.\nThe creature stands stunned, with wide blinking eyes and its former self-satisfaction gone. Its tail still grips the same single broom on screen-right; the broom has finished one sweep and its bristles rest on the floor. No impact injury and no second broom. The important contrast is a clean floor and a dirty creature. Background and camera stay consistent. No text, dialogue lettering, extra characters, extra limbs or duplicated tail.",
+    "image_input": [
+      "https://tempfile.redpandaai.co/kieai/11630331/cartoonreels/ep001-v3/CartoonReels_EP001_V3_K0_20261108-120123_up20261108-120346.png",
+      "https://tempfile.redpandaai.co/kieai/11630331/cartoonreels/ep001-v3/hero-3d-keyframe_up20261108-120355.png"
+    ],
+    "aspect_ratio": "9:16",
+    "resolution": "2K",
+    "output_format": "png"
+  },
+  "priceCr": 12.0,
+  "budget": {
+    "actualBefore": 12.0,
+    "pendingBefore": 0.0,
+    "expected": 12.0,
+    "remainingMandatoryAfter": 340.0,
+    "projectedMax": 364.0,
+    "cap": 600
+  },
+  "inputs": {
+    "K0": {
+      "file": "E:\\Generations\\CartoonReels_EP001_V3_K0_20261108-120123.png",
+      "sha256": "19bddb2010c4d63b3203a14b9fc071207743a41258a34f49751f42f17bec3eee",
+      "url": "https://tempfile.redpandaai.co/kieai/11630331/cartoonreels/ep001-v3/CartoonReels_EP001_V3_K0_20261108-120123_up20261108-120346.png"
+    },
+    "hero": {
+      "file": "E:\\Generations\\refs\\hero-3d-keyframe.png",
+      "sha256": "97c4c09087da7d9523496e2cbf0e3be2dff2b5a374097ca511aba3b80915fdde",
+      "url": "https://tempfile.redpandaai.co/kieai/11630331/cartoonreels/ep001-v3/hero-3d-keyframe_up20261108-120355.png"
+    }
+  },
+  "promptFile": "E:\\Generations\\refs\\CartoonReels_EP001_V3_K1-dusty.prompt.en.txt",
+  "promptSha256": "f446cb22234dfbcf05c81d640c0b1d264f29606f994717ec5c79fd368f9da5a8",
+  "planCommit": "8e3ac3e99040905cca95d6893553e8ec4332a6e7",
+  "sentAt": "2026-11-08T12:04:01+05:00",
+  "createdAt": "2026-11-08T12:04:01+05:00",
+  "lastCheckedAt": "2026-11-08T12:04:47+05:00",
+  "state": "success",
+  "resultUrls": [
+    "https://tempfile.aiquickdraw.com/workers/images/image_1276ebb2a9b393a19f201e0791379db7.png"
+  ],
+  "resultJson": "{\"resultUrls\":[\"https://tempfile.aiquickdraw.com/workers/images/image_1276ebb2a9b393a19f201e0791379db7.png\"]}",
+  "creditsConsumed": 12.0,
+  "costTime": 34,
+  "completedAt": "2026-11-08T12:04:47+05:00"
+}

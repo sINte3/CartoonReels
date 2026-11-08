@@ -1,0 +1,49 @@
+{
+  "label": "K0",
+  "stage": "K0",
+  "kind": "image",
+  "attemptType": "base",
+  "reason": "",
+  "status": "success",
+  "taskId": "7f77459f1012959fd939346edae2e518",
+  "model": "nano-banana-2",
+  "input": {
+    "prompt": "Use the supplied ginger creature and warm cottage room as the identity and visual-style reference. Create a new polished stylized 3D animated-film keyframe, vertical 9:16, medium full shot at the creature's eye level. Preserve its face, ears, short ginger fur, cream muzzle and chest, proportions and single continuous tail. Keep the window on screen-left, the wooden cabinet and plants in the background, tactile wood and soft warm shadows.\nThe creature stands on screen-left with both hind feet grounded. It puffs out its chest and proudly points one forepaw down at a small, clearly visible mound of gray household dust on the floor just to its right. Its expression is smug and managerial, not angry. Both forepaws are visible and anatomically natural.\nOne tail grows from its lower back and visibly wraps around the handle of one wooden broom on screen-right. The bristles are beside the dust mound, ready to sweep. The tail's preparation looks slightly overenthusiastic, while the creature is unaware. Keep the entire creature, the mound, the broom head and the tail path readable. Clean orange face, coherent room, no dust cloud yet. No text, logos, clothing, extra characters, extra tails or limbs. This is a staged film frame, not a character sheet.",
+    "image_input": [
+      "https://tempfile.redpandaai.co/kieai/11630331/cartoonreels/ep001-v3/hero-3d-keyframe_up20261108-120115.png"
+    ],
+    "aspect_ratio": "9:16",
+    "resolution": "2K",
+    "output_format": "png"
+  },
+  "priceCr": 12.0,
+  "budget": {
+    "actualBefore": 0.0,
+    "pendingBefore": 0.0,
+    "expected": 12.0,
+    "remainingMandatoryAfter": 352.0,
+    "projectedMax": 364.0,
+    "cap": 600
+  },
+  "inputs": {
+    "hero": {
+      "file": "E:\\Generations\\refs\\hero-3d-keyframe.png",
+      "sha256": "97c4c09087da7d9523496e2cbf0e3be2dff2b5a374097ca511aba3b80915fdde",
+      "url": "https://tempfile.redpandaai.co/kieai/11630331/cartoonreels/ep001-v3/hero-3d-keyframe_up20261108-120115.png"
+    }
+  },
+  "promptFile": "E:\\Generations\\refs\\CartoonReels_EP001_V3_K0-clean.prompt.en.txt",
+  "promptSha256": "fb5689b644ac4a61e251c3874972acf940c86da90b83794fe1377aed9a60015f",
+  "planCommit": "8e3ac3e99040905cca95d6893553e8ec4332a6e7",
+  "sentAt": "2026-11-08T12:01:23+05:00",
+  "createdAt": "2026-11-08T12:01:24+05:00",
+  "lastCheckedAt": "2026-11-08T12:02:38+05:00",
+  "state": "success",
+  "resultUrls": [
+    "https://tempfile.aiquickdraw.com/a2/7f77459f1012959fd939346edae2e518_1794121591295.png"
+  ],
+  "resultJson": "{\"resultUrls\":[\"https://tempfile.aiquickdraw.com/a2/7f77459f1012959fd939346edae2e518_1794121591295.png\"]}",
+  "creditsConsumed": 12.0,
+  "costTime": 69,
+  "completedAt": "2026-11-08T12:02:38+05:00"
+}

@@ -1,0 +1,63 @@
+{
+  "file": "CartoonReels_EP001_V3_8s_silent_720p-small_20261108-123219.mp4",
+  "sha256": "9e0b8831c3953e1ef49dcf480b3e57b5a84252f8093dacf325bd6a0464c46e88",
+  "bytes": 1157892,
+  "created": "2026-11-08T12:32:39+05:00",
+  "what": "дополнительная маленькая тихая копия того же монтажа (без звука); основные файлы со звуком",
+  "package": "EP001 V3 «Чисто. Почти.», commit 8e3ac3e99040905cca95d6893553e8ec4332a6e7",
+  "sources": {
+    "A": {
+      "file": "CartoonReels_EP001_V3_A_20261108-121347.mp4",
+      "sha256": "2ac922bf84b46d1d2d0388006a69f96f20ec4fe12a34a916236cfa36844b5f62",
+      "taskId": "d5787d94869e00ca61735a702f5edd09"
+    },
+    "B": {
+      "file": "CartoonReels_EP001_V3_B_20261108-122554.mp4",
+      "sha256": "0d12832141849a4c5e3e2cea024165e10d1de3082cfc9a8c6aca01c0ab6201c4",
+      "taskId": "8d05192d493f38fc4de00d02a53d3ad5"
+    }
+  },
+  "filter": {
+    "source": "assemble-with-audio.ffmpeg.txt",
+    "source_sha256": "4b5521274efa543bda3de595613c8557aa12df953a80b7df76a82a407cc3cd72",
+    "used": "assemble-with-audio.gain_20261108-123219.ffmpeg.txt",
+    "used_sha256": "32b38523ee987f9c50c162cf7d5aa7ae7164f7231a99deaa3804425ce7b34575",
+    "gainA_db": 0.0,
+    "gainB_db": 5.0
+  },
+  "ffmpeg_args": "-hide_banner -nostats -v error -y -i E:\\Generations\\CartoonReels_EP001_V3_8s_sound_720p_20261108-123219.mp4 -map 0:v:0 -an -c:v libx264 -preset slow -crf 26 -pix_fmt yuv420p -r 24 -fps_mode cfr -movflags +faststart -f mp4 E:\\Generations\\CartoonReels_EP001_V3_8s_silent_720p-small_20261108-123219.mp4.part",
+  "verification": {
+    "container": "mov,mp4,m4a,3gp,3g2,mj2",
+    "duration_s": "8.000000",
+    "bit_rate": "1157892",
+    "video": {
+      "index": 0,
+      "codec_name": "h264",
+      "profile": "High",
+      "codec_type": "video",
+      "width": 720,
+      "height": 1280,
+      "sample_aspect_ratio": "1:1",
+      "pix_fmt": "yuv420p",
+      "r_frame_rate": "24/1",
+      "duration": "8.000000",
+      "nb_read_frames": "192"
+    },
+    "audio": null,
+    "top_atoms": "ftyp,moov,free,mdat",
+    "full_decode_exit": 0,
+    "full_decode_stderr": "",
+    "checks": {
+      "one_video_h264": true,
+      "size": true,
+      "fps_24": true,
+      "frames_192": true,
+      "duration_8s": true,
+      "faststart_moov_before_mdat": true,
+      "full_decode_clean": true,
+      "no_audio_stream": true
+    },
+    "all_ok": true
+  },
+  "note": "Проверки техническими средствами (ffprobe, полное декодирование, volumedetect/ebur128, порядок атомов). Субъективного прослушивания не было."
+}

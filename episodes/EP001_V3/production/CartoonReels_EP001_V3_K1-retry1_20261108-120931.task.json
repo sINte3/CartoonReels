@@ -1,0 +1,60 @@
+{
+  "label": "K1-retry1",
+  "stage": "K1",
+  "kind": "image",
+  "attemptType": "retry",
+  "reason": "Конкретный дефект истории: «пыль» на лице читается как ровная серая перекраска шерсти с чистой границей-маской — нет порошковой фактуры, неровности, просвечивающей рыжей шерсти, крупинок. Риск «герой просто сам изменил цвет» (критерий README/приёмки A) и плавной смены цвета вместо пыли в видео. Остальное (комната, камера, чистый пол, метла, один хвост, ошеломление) в порядке.",
+  "status": "success",
+  "taskId": "dc86b67ae259b92b46d2400899513537",
+  "model": "nano-banana-2",
+  "input": {
+    "prompt": "The first reference is the approved clean staging frame K0. The second reference preserves the creature's original identity and tactile 3D style. Produce the after-action frame in exactly the same room, camera angle, framing, lighting and floor layout, vertical 9:16. Preserve the creature's face structure, ears, proportions, two forepaws, two grounded hind feet and single attached tail.\nThe dust cloud has just settled. The dust mound has been swept off the wooden floor, which now looks clean. The creature's muzzle, cheeks and brow fur are visibly coated with matte gray dust. Keep its eyes, eyelids, nose and facial expression clearly readable; ginger ears, cream chest and fur texture remain recognizable. Do not simply darken the whole image or replace the face with a flat black mask.\nThe creature stands stunned, with wide blinking eyes and its former self-satisfaction gone. Its tail still grips the same single broom on screen-right; the broom has finished one sweep and its bristles rest on the floor. No impact injury and no second broom. The important contrast is a clean floor and a dirty creature. Background and camera stay consistent. No text, dialogue lettering, extra characters, extra limbs or duplicated tail.\nTargeted correction for this frame: the dust must read unmistakably as loose powdery household dust lying on top of the ginger fur, not as a gray recoloring of the face. Make the coating uneven and patchy: thicker gray-beige clumps on the muzzle, nose bridge and cheeks, a thinner dusting on the brows and forehead, warm ginger fur visibly showing through in places, and a soft irregular edge where the dust ends. Add a few dust specks caught in the whiskers and eyebrows and a light sprinkle on the top of the cream chest. The fur right around the eyes is slightly cleaner because the eyes were squeezed shut. Keep the eyes, eyelids, nose, mouth and stunned expression fully readable. Do not paint a smooth uniform gray mask over the face. Everything else matches the first reference: same room, camera, floor, broom and single tail.",
+    "image_input": [
+      "https://tempfile.redpandaai.co/kieai/11630331/cartoonreels/ep001-v3/CartoonReels_EP001_V3_K0_20261108-120123_up20261108-120914.png",
+      "https://tempfile.redpandaai.co/kieai/11630331/cartoonreels/ep001-v3/hero-3d-keyframe_up20261108-120925.png"
+    ],
+    "aspect_ratio": "9:16",
+    "resolution": "2K",
+    "output_format": "png"
+  },
+  "priceCr": 12.0,
+  "budget": {
+    "actualBefore": 24.0,
+    "pendingBefore": 0.0,
+    "expected": 12.0,
+    "remainingMandatoryAfter": 340.0,
+    "projectedMax": 376.0,
+    "cap": 600
+  },
+  "inputs": {
+    "K0": {
+      "file": "E:\\Generations\\CartoonReels_EP001_V3_K0_20261108-120123.png",
+      "sha256": "19bddb2010c4d63b3203a14b9fc071207743a41258a34f49751f42f17bec3eee",
+      "url": "https://tempfile.redpandaai.co/kieai/11630331/cartoonreels/ep001-v3/CartoonReels_EP001_V3_K0_20261108-120123_up20261108-120914.png"
+    },
+    "hero": {
+      "file": "E:\\Generations\\refs\\hero-3d-keyframe.png",
+      "sha256": "97c4c09087da7d9523496e2cbf0e3be2dff2b5a374097ca511aba3b80915fdde",
+      "url": "https://tempfile.redpandaai.co/kieai/11630331/cartoonreels/ep001-v3/hero-3d-keyframe_up20261108-120925.png"
+    }
+  },
+  "promptFile": "E:\\Generations\\refs\\CartoonReels_EP001_V3_K1-dusty.prompt.en.txt",
+  "promptSha256": "f446cb22234dfbcf05c81d640c0b1d264f29606f994717ec5c79fd368f9da5a8",
+  "promptAddendum": {
+    "file": "E:\\Generations\\refs\\CartoonReels_EP001_V3_K1-retry1_addendum.prompt.en.txt",
+    "sha256": "88b2a84f743e95bacc9bdfcbf9915c84b1a0f0773ade0bd717a375f30041f86d",
+    "text": "Targeted correction for this frame: the dust must read unmistakably as loose powdery household dust lying on top of the ginger fur, not as a gray recoloring of the face. Make the coating uneven and patchy: thicker gray-beige clumps on the muzzle, nose bridge and cheeks, a thinner dusting on the brows and forehead, warm ginger fur visibly showing through in places, and a soft irregular edge where the dust ends. Add a few dust specks caught in the whiskers and eyebrows and a light sprinkle on the top of the cream chest. The fur right around the eyes is slightly cleaner because the eyes were squeezed shut. Keep the eyes, eyelids, nose, mouth and stunned expression fully readable. Do not paint a smooth uniform gray mask over the face. Everything else matches the first reference: same room, camera, floor, broom and single tail."
+  },
+  "planCommit": "8e3ac3e99040905cca95d6893553e8ec4332a6e7",
+  "sentAt": "2026-11-08T12:09:31+05:00",
+  "createdAt": "2026-11-08T12:09:31+05:00",
+  "lastCheckedAt": "2026-11-08T12:10:18+05:00",
+  "state": "success",
+  "resultUrls": [
+    "https://tempfile.aiquickdraw.com/workers/images/image_5817eaec4df518db65babd4fc45dadfb.png"
+  ],
+  "resultJson": "{\"resultUrls\":[\"https://tempfile.aiquickdraw.com/workers/images/image_5817eaec4df518db65babd4fc45dadfb.png\"]}",
+  "creditsConsumed": 12.0,
+  "costTime": 31,
+  "completedAt": "2026-11-08T12:10:18+05:00"
+}

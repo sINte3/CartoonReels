@@ -1,0 +1,66 @@
+{
+  "label": "K2-retry1",
+  "stage": "K2",
+  "kind": "image",
+  "attemptType": "retry",
+  "reason": "Concrete story defect: the broom is not prepared for a second sweep - it stands in exactly the same resting position as in the A last frame (upright, bristles down, same grip), so the K2 beat \"tail prepares the same broom / broom ready for repeat\" is missing and B (A-last -> K2) would end with a motionless broom, which README marks as a failed second turn. Hero pose (alarmed, both paws raised), dusty face and light fresh floor scatter are fine.",
+  "status": "success",
+  "taskId": "6c22a9b61d3a2614ad511e6326ffebd6",
+  "model": "nano-banana-2",
+  "input": {
+    "prompt": "The first reference is the actual last frame of accepted video shot A, locking the creature's real dusty appearance and pose. The second reference K0 locks the room and prop layout; the third preserves the original character design. Create the final comic frame in the same polished tactile 3D style, fixed camera and warm cottage lighting, vertical 9:16, medium full shot with the floor and broom head visible.\nThe creature remains visibly dusty, with the same face, ginger ears and cream chest. A little dust has fallen from it after a sneeze, forming a fresh small gray scatter on the floor near its feet. Do not make the creature suddenly clean or recreate the full original mound.\nThe single attached tail still holds the same wooden broom on screen-right and has drawn it back slightly in preparation for another energetic sweep toward this fresh dust. The broom has not struck yet. The creature sees what is coming: wide alarmed eyes, shoulders pulled back, both forepaws raised defensively with open palms. This is genuine comic alarm, not the smug command pose from K0. Both hind feet remain planted, no running or jumping. Keep the complete tail path, broom grip and new floor dust readable. No second cloud, face impact, new props, extra characters, extra limbs, text or logos.\nTargeted correction for this frame: the broom must clearly read as being prepared for a second sweep, not resting. The single attached tail has lifted the same wooden broom and cocked it back toward screen-right: the handle is tilted diagonally, the bristle head is raised slightly off the floor and pulled back to the right of the fresh dust, angled toward it, ready to swing low along the floorboards. The tail curl around the handle looks tense and eager; the tail stays attached and continuous. The broom is aimed at the dust on the floor, never at the creature. Make the fresh dust clearly visible as a small loose gray scatter on the floorboards between the creature's feet and the broom head. Keep the creature's identity, dust-coated face, ginger ears, cream chest, size and position as in the first reference, now with wide alarmed eyes and both forepaws raised defensively with open palms. Same room, camera, lighting and floor.",
+    "image_input": [
+      "https://tempfile.redpandaai.co/kieai/11630331/cartoonreels/ep001-v3/CartoonReels_EP001_V3_A-lastframe_20261108-121954_up20261108-122334.png",
+      "https://tempfile.redpandaai.co/kieai/11630331/cartoonreels/ep001-v3/CartoonReels_EP001_V3_K0_20261108-120123_up20261108-122339.png",
+      "https://tempfile.redpandaai.co/kieai/11630331/cartoonreels/ep001-v3/hero-3d-keyframe_up20261108-122348.png"
+    ],
+    "aspect_ratio": "9:16",
+    "resolution": "2K",
+    "output_format": "png"
+  },
+  "priceCr": 12.0,
+  "budget": {
+    "actualBefore": 212.0,
+    "pendingBefore": 0.0,
+    "expected": 12.0,
+    "remainingMandatoryAfter": 164.0,
+    "projectedMax": 388.0,
+    "cap": 600
+  },
+  "inputs": {
+    "A-last": {
+      "file": "E:\\Generations\\CartoonReels_EP001_V3_A-lastframe_20261108-121954.png",
+      "sha256": "995938e4fe4da4ae8f1a22d4b868484cd8f3c9b4617101e2d267205c048ec697",
+      "url": "https://tempfile.redpandaai.co/kieai/11630331/cartoonreels/ep001-v3/CartoonReels_EP001_V3_A-lastframe_20261108-121954_up20261108-122334.png"
+    },
+    "K0": {
+      "file": "E:\\Generations\\CartoonReels_EP001_V3_K0_20261108-120123.png",
+      "sha256": "19bddb2010c4d63b3203a14b9fc071207743a41258a34f49751f42f17bec3eee",
+      "url": "https://tempfile.redpandaai.co/kieai/11630331/cartoonreels/ep001-v3/CartoonReels_EP001_V3_K0_20261108-120123_up20261108-122339.png"
+    },
+    "hero": {
+      "file": "E:\\Generations\\refs\\hero-3d-keyframe.png",
+      "sha256": "97c4c09087da7d9523496e2cbf0e3be2dff2b5a374097ca511aba3b80915fdde",
+      "url": "https://tempfile.redpandaai.co/kieai/11630331/cartoonreels/ep001-v3/hero-3d-keyframe_up20261108-122348.png"
+    }
+  },
+  "promptFile": "E:\\Generations\\refs\\CartoonReels_EP001_V3_K2-again.prompt.en.txt",
+  "promptSha256": "1846f45b1df2333301f607dcbfe1a564f95a1216399590687399c65db4bd87c0",
+  "promptAddendum": {
+    "file": "E:\\Generations\\refs\\CartoonReels_EP001_V3_K2-retry1_addendum.prompt.en.txt",
+    "sha256": "6826855ff26ab1afb4c47d3313191377b0eeacdf9052c3162c928416d35cdf5a",
+    "text": "Targeted correction for this frame: the broom must clearly read as being prepared for a second sweep, not resting. The single attached tail has lifted the same wooden broom and cocked it back toward screen-right: the handle is tilted diagonally, the bristle head is raised slightly off the floor and pulled back to the right of the fresh dust, angled toward it, ready to swing low along the floorboards. The tail curl around the handle looks tense and eager; the tail stays attached and continuous. The broom is aimed at the dust on the floor, never at the creature. Make the fresh dust clearly visible as a small loose gray scatter on the floorboards between the creature's feet and the broom head. Keep the creature's identity, dust-coated face, ginger ears, cream chest, size and position as in the first reference, now with wide alarmed eyes and both forepaws raised defensively with open palms. Same room, camera, lighting and floor."
+  },
+  "planCommit": "8e3ac3e99040905cca95d6893553e8ec4332a6e7",
+  "sentAt": "2026-11-08T12:23:54+05:00",
+  "createdAt": "2026-11-08T12:23:54+05:00",
+  "lastCheckedAt": "2026-11-08T12:24:31+05:00",
+  "state": "success",
+  "resultUrls": [
+    "https://tempfile.aiquickdraw.com/workers/images/image_3ae52246ca7a6f738d0569fbf2f4bde8.png"
+  ],
+  "resultJson": "{\"resultUrls\":[\"https://tempfile.aiquickdraw.com/workers/images/image_3ae52246ca7a6f738d0569fbf2f4bde8.png\"]}",
+  "creditsConsumed": 12.0,
+  "costTime": 30,
+  "completedAt": "2026-11-08T12:24:31+05:00"
+}
