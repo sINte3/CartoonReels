@@ -2,6 +2,7 @@
 param([Parameter(Mandatory)][string]$Label, [Parameter(Mandatory)][ValidateSet('accept', 'reject')][string]$Decision, [Parameter(Mandatory)][string]$Reason)
 . (Join-Path $PSScriptRoot 'ep003_lib.ps1')
 $rec = Get-RecordByLabel $Label
+if ($Decision -eq 'accept' -and $rec.stage -eq 'K1') { throw ('K1 исключён ревизией ' + $Revision + ' плана: отклонённые K1 остаются отклонёнными, принимать их нельзя.') }
 $base = $rec._path -replace '\.task\.json$', ''
 $files = @(foreach ($e in 'png', 'jpg', 'mp4') { if (Test-Path -LiteralPath ($base + '.' + $e)) { $base + '.' + $e } })
 if ($Decision -eq 'accept' -and ($rec.status -ne 'success' -or $files.Count -ne 1)) { throw ('Принять можно только сохранённый успешный результат: status = ' + $rec.status + ', файлов ' + $files.Count) }

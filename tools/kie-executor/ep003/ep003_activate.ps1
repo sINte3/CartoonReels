@@ -5,6 +5,7 @@
 $Inv = [Globalization.CultureInfo]::InvariantCulture
 if (@(Get-ChildItem -LiteralPath $Gen -Filter ($Pfx + '_journal_*.jsonl') -File).Count) { throw 'Журнал пакета уже существует — повторная активация не нужна, продолжать по журналу.' }
 if (@(Get-ChildItem -LiteralPath $Gen -Filter ($Pfx + '_*.task.json') -File).Count) { throw 'Записи задач EP003 уже есть без журнала — разобраться до активации.' }
+if ($Revision -ne 1) { throw ('Ревизия ' + $Revision + ' продолжает уже активированный пакет: активация к ней не применяется (ep003_revise.ps1). Активация ревизии 1 — в коммите 6d49f51.') }
 if ((Get-Sha $PlanFile) -ne $PlanSha) { throw 'plan.json не совпал с зафиксированным коммитом.' }
 if ((Get-Sha $Hero) -ne $HeroSha) { throw 'Исходник героя не совпал по SHA-256.' }
 $fltFile = Join-Path $Dl 'assemble-with-audio.ffmpeg.txt'

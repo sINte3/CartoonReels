@@ -1,7 +1,10 @@
 # ep003_lib.ps1 — общий код пакета EP003 «Кому медаль?» (Kie AI: nano-banana-2 и bytedance/seedance-2).
 # Адаптация tools/kie-executor/ep002/ep002_lib.ps1: логика загрузки, createTask, опроса и скачивания та же;
 # изменены префикс, лимит 634, commit пакета, граф K0 → K1 → C → кадр 119 C → K2 → D, цены по этапам (C 5 с = 205, D 4 с = 164),
-# проверка тела видео по этапу (C first+last, D только first — без поля last_frame_url), заглушки plan.json EP003 и uploadPath.
+# проверка тела видео по этапу (ревизия 2: C и D только first — без поля last_frame_url), заглушки plan.json EP003 и uploadPath.
+# Ревизия 2 (09.11.2026, коммит плана f6a9aca): после трёх отклонённых K1 граф — принятый K0 → C (только первый кадр K0) → кадр 119 C → K2 → D.
+# K1 исключён (новые K1 не создаются), журнал, расход 48 и счётчики ревизии 1 сохраняются; ревизию записывает ep003_revise.ps1.
+# Ревизия 1 (коммит 025aad9, C first K0 / last K1) — в истории git, коммит 6d49f51.
 # Подключать через dot-source. Ключ берётся из .env в переменную окружения процесса; в вывод, журнал и записи не попадает.
 $ErrorActionPreference = 'Stop'
 $Gen      = if ($env:EP003_TEST_GEN) { $env:EP003_TEST_GEN } else { 'E:\Generations' }
@@ -9,10 +12,13 @@ $Refs     = Join-Path $Gen 'refs'
 $Pfx      = 'CartoonReels_EP003'
 $Episode  = 'EP003 «Кому медаль?»'
 $Cap      = 634
-$Commit   = '025aad9374f5cfc27323c10125dbe4a4daec532b'
+$Revision = 2
+$Commit   = 'f6a9acaf2473eea76148cc9212bb88e6a7e47f80'
+$CommitRev1 = '025aad9374f5cfc27323c10125dbe4a4daec532b'
 $Dl       = if ($env:KIE_EXEC_INPUTS) { $env:KIE_EXEC_INPUTS } else { Join-Path $PSScriptRoot 'inputs' }   # файлы коммита $Commit, их создаёт export-inputs.ps1
 $PlanFile = Join-Path $Dl 'plan.json'
-$PlanSha  = '8881d6b1dea91b1c55634652955f36c25ee5cd1c03fedd47d06f54d70690d9f5'
+$PlanSha  = '45c2b79d54b102fe7f78c9e374587a182a9575253b827e610ef07d242e9c1db8'
+$PlanShaRev1 = '8881d6b1dea91b1c55634652955f36c25ee5cd1c03fedd47d06f54d70690d9f5'
 $FilterSha = 'ecb5393a5295f910244688ac8920dd0c29af95d85cd773b76d4549d2aaa2af98'
 $Hero     = Join-Path $Refs 'hero-3d-keyframe.png'
 $HeroSha  = '97c4c09087da7d9523496e2cbf0e3be2dff2b5a374097ca511aba3b80915fdde'
@@ -29,10 +35,11 @@ $MaxCreates = @{ image = 5; video = 3 }
 $MaxRetries = @{ image = 2; video = 1 }
 $Utf8     = [Text.UTF8Encoding]::new($false)
 # price — ожидаемая цена этапа; after — ожидаемая цена обязательных этапов, которые останутся после него.
+# K0 и K1 — этапы ревизии 1 (K0 принят, K1 отклонён трижды); excluded — новые отправки этапа запрещены.
 $Stages = [ordered]@{
-  K0 = @{ kind = 'image'; price = 12;  after = 393 }    # K1 12 + C 205 + K2 12 + D 164
-  K1 = @{ kind = 'image'; price = 12;  after = 381 }    # C + K2 + D
-  C  = @{ kind = 'video'; price = 205; after = 176; duration = 5; lastFrame = $true }    # K2 + D
+  K0 = @{ kind = 'image'; price = 12;  after = 393; excluded = $true }    # принят в ревизии 1, новых K0 нет
+  K1 = @{ kind = 'image'; price = 12;  after = 381; excluded = $true }    # исключён ревизией 2
+  C  = @{ kind = 'video'; price = 205; after = 176; duration = 5; lastFrame = $false }    # K2 + D; ревизия 2: только first K0
   K2 = @{ kind = 'image'; price = 12;  after = 164 }    # D
   D  = @{ kind = 'video'; price = 164; after = 0;   duration = 4; lastFrame = $false }
 }
@@ -124,8 +131,15 @@ function Assert-Balance([double]$bal) {
   if (-not $ok) { throw ('Баланс не сходится: в начале ' + $start + ', сейчас ' + $bal + ' (−' + $diff + '), по задачам ' + $sp.actual + ' (+ неясное ' + $sp.pending + '). Новые расходы остановлены.') }
   $sp
 }
+# Ревизия плана должна быть записана в журнал (ep003_revise.ps1) до любой новой отправки по ней.
+function Assert-Revision {
+  $r = @(Read-Journal | Where-Object { $_.type -eq 'revision' -and $_.revision -eq $Revision -and $_.planSha256 -eq $PlanSha -and $_.commit -eq $Commit })
+  if ($r.Count -ne 1) { throw ('Ревизия ' + $Revision + ' плана (' + $Commit.Substring(0, 7) + ') не записана в журнал — сначала ep003_revise.ps1.') }
+  $r[0]
+}
 # Все запреты до любой загрузки и отправки. Повторяется непосредственно перед createTask.
 function Assert-CanCreate([string]$label, [string]$kind, [string]$attemptType, [double]$expected, [double]$after) {
+  [void](Assert-Revision)
   if (@(Get-Records | Where-Object { $_.label -eq $label }).Count) { throw ('Запись этапа ' + $label + ' уже есть — повторная отправка запрещена.') }
   $sp = Get-Spend
   if ($sp.open.Count) { throw ('Есть незавершённая или невыясненная отправка: ' + ($sp.open -join ', ') + '. Новые платные действия остановлены до выяснения.') }
@@ -195,7 +209,7 @@ function Build-Body([string]$planId, [System.Collections.IDictionary]$map, [stri
   } elseif ($tpl.model -eq 'bytedance/seedance-2') {
     $st = $Stages[$planId]; $dur = $st.duration
     if ($st.kind -ne 'video' -or -not $dur -or $st.price -ne $VideoPerSec * $dur) { throw ('Для видео ' + $planId + ' не задана длительность или цена не равна ' + $VideoPerSec + ' кр/с × длительность.') }
-    # C: first+last frame; D: только first frame — поля last_frame_url в теле нет совсем (не null). reference_* не смешивать.
+    # Ревизия 2: и C, и D — только first frame, поля last_frame_url в теле нет совсем (не null). reference_* не смешивать.
     $wantKeys = if ($st.lastFrame) { 'aspect_ratio,duration,first_frame_url,generate_audio,last_frame_url,prompt,resolution' } else { 'aspect_ratio,duration,first_frame_url,generate_audio,prompt,resolution' }
     if ($keys -ne $wantKeys -or (-not $st.lastFrame -and $json -match 'last_frame_url') -or $json -match '"reference_' -or -not ($in.duration -is [long] -or $in.duration -is [int]) -or $in.duration -ne $dur -or $in.resolution -ne '720p' -or $in.aspect_ratio -ne '9:16' -or $in.generate_audio -isnot [bool] -or -not $in.generate_audio) { throw ('Тело ' + $planId + ' не соответствует seedance-2 ' + $dur + ' с 720p 9:16 со звуком, ' + $(if ($st.lastFrame) { 'first+last' } else { 'только first' }) + ' без reference_*: ' + $keys + ', duration=' + $in.duration) }
   } else { throw ('Неожиданная модель ' + $tpl.model) }

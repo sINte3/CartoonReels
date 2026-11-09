@@ -1,12 +1,13 @@
-# ep003_create.ps1 -Label K0|K1|C|K2|D|<этап>-retryN [-AddendumFile f] — ПЛАТНО: одна отправка createTask для одного этапа пакета EP003.
-# Граф: K0 ← кадр 167 начала, герой; K1 ← K0, кадр 167 начала, герой; C ← first K0 / last K1;
-#       K2 ← фактический кадр 119 принятого C, K0, герой; D ← first K2 (без last_frame_url).
+# ep003_create.ps1 -Label C|K2|D|<этап>-retryN [-AddendumFile f] — ПЛАТНО: одна отправка createTask для одного этапа пакета EP003.
+# Граф ревизии 2: C ← только first принятого K0 (без last_frame_url); K2 ← фактический кадр 119 принятого C, K0, герой;
+#                D ← только first K2 (без last_frame_url). K0 принят в ревизии 1; K1 исключён — новые K0/K1 не отправляются.
 param([Parameter(Mandatory)][string]$Label, [string]$AddendumFile = '')
 . (Join-Path $PSScriptRoot 'ep003_lib.ps1')
 if ($AddendumFile -and $Label -notmatch '-retry\d+$') { throw 'Правка промпта допускается только для адресного повтора.' }
 if ($AddendumFile -and -not (Test-Path -LiteralPath $AddendumFile)) { throw ('Нет файла правки ' + $AddendumFile) }
 $stage = $Label -replace '-retry\d+$', ''
 if (-not $Stages.Contains($stage)) { throw ('Неизвестный этап ' + $stage) }
+if ($Stages[$stage].excluded) { throw ('Этап ' + $stage + ' закрыт в ревизии ' + $Revision + ' плана: новые ' + $stage + ' не создаются (K0 принят, K1 отклонён и исключён).') }
 $kind = $Stages[$stage].kind
 $price = [double]$Stages[$stage].price
 $after = [double]$Stages[$stage].after
@@ -32,14 +33,11 @@ function Get-CLast {
   if ((Get-Sha $e.file) -ne $e.sha256) { throw ('Последний кадр C изменился: ' + $e.file) }
   $e
 }
-function Assert-OpeningLast { if ((Get-Sha $OpeningLast) -ne $OpeningLastSha) { throw 'Кадр 167 начала не совпал по SHA-256 — export-inputs.ps1.' } }
 
 # Все запреты — до загрузок
 [void](Assert-CanCreate $Label $kind $attemptType $price $after)
 switch ($stage) {
-  'K0' { Assert-OpeningLast; $need = @() }
-  'K1' { Assert-OpeningLast; $need = @(Get-Accepted 'K0') }
-  'C' { $need = @((Get-Accepted 'K0'), (Get-Accepted 'K1')) }
+  'C' { $need = @(Get-Accepted 'K0') }
   'K2' { $need = @((Get-CLast), (Get-Accepted 'K0')) }
   'D' { [void](Get-CLast); $need = @(Get-Accepted 'K2') }
 }
@@ -53,9 +51,7 @@ try {
     $inputs[$name] = [ordered]@{ file = $file; sha256 = $sha; url = $url }
   }
   switch ($stage) {
-    'K0' { Add-Input $Ph.opening 'opening-last' $OpeningLast $OpeningLastSha; Add-Input $Ph.hero 'hero' $Hero $HeroSha }
-    'K1' { Add-Input $Ph.K0 'K0' $need[0].file $need[0].sha256; Add-Input $Ph.opening 'opening-last' $OpeningLast $OpeningLastSha; Add-Input $Ph.hero 'hero' $Hero $HeroSha }
-    'C' { Add-Input $Ph.K0 'K0' $need[0].file $need[0].sha256; Add-Input $Ph.K1 'K1' $need[1].file $need[1].sha256 }
+    'C' { Add-Input $Ph.K0 'K0' $need[0].file $need[0].sha256 }
     'K2' { Add-Input $Ph.CLast 'C-last' $need[0].file $need[0].sha256; Add-Input $Ph.K0 'K0' $need[1].file $need[1].sha256; Add-Input $Ph.hero 'hero' $Hero $HeroSha }
     'D' { Add-Input $Ph.K2 'K2' $need[0].file $need[0].sha256 }
   }
