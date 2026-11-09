@@ -3,7 +3,7 @@
   "timezone": "Asia/Tashkent",
   "episode": "EP003",
   "working_title": "Кому медаль?",
-  "stage": "production package ready; user approved starting within the quoted 634-credit maximum; external execution not started here",
+  "stage": "revision 2 (2026-11-09): package in progress in user Claude Code, 48 credits spent; three K1 attempts rejected (weight stayed on the floor), K1 excluded; C switched to first-frame-only from accepted K0",
   "user_direction": {
     "date": "2026-11-09",
     "previous_clips_use": "acceptable as technical/acting tests; not release-approved",
@@ -14,6 +14,32 @@
       "context": "Response to the EP003 story and new cost 405 with proposed reserve up to 634",
       "scope": "Same models and 3 base images/2 videos plus maximum 2 extra images/1 extra video, total new spend no more than 634"
     }
+  },
+  "plan_revision": {
+    "revision": 2,
+    "date": "2026-11-09",
+    "previous_revision_commit": "025aad9374f5cfc27323c10125dbe4a4daec532b",
+    "reason": "K1, K1-retry1 and K1-retry2 were rejected: nano-banana-2 copied the dumbbell height from K0, the weight stayed on the floor (gap at most 10-15 px of 2752). The image reserve was used up; with first+last frames C would end with the weight on the floor.",
+    "user_instruction_quote": "Продолжай EP003 в существующем пакете до 634 кредитов, включая уже потраченные 48. Меняем C на режим только первого кадра: принятый K0, 5 секунд, 720p, 9:16, generate_audio=true. Поле last_frame_url полностью убрать. Отклонённые K1 оставить отклонёнными. Не помечать их принятыми ради обхода проверки. Новые K1 не создавать. Новый граф: принятый K0 → C → фактический конец C → K2 → D.",
+    "graph": "accepted K0 -> C (first frame K0 only, 5 s) -> actual C frame 119 -> K2 -> D (first frame K2 only, 4 s)",
+    "k1_excluded": true,
+    "k1_attempts_rejected": ["K1", "K1-retry1", "K1-retry2"],
+    "preserved_from_revision_1": {
+      "journal": "E:\\Generations\\CartoonReels_EP003_journal_20261109-192106.jsonl",
+      "records": "episodes/EP003/production/",
+      "spent_credits": 48,
+      "image_creates_used": 4,
+      "image_retries_used": 2,
+      "video_creates_used": 0,
+      "video_retries_used": 0,
+      "accepted_K0": {
+        "file": "CartoonReels_EP003_K0_20261109-192140.png",
+        "sha256": "24c5a9524cf7c8c28162ebb9a6b72fd1b19254897156b66cae953b8ed1da8d4e",
+        "task_id": "a2c56da82e5e66a9121a859da2b083e9"
+      }
+    },
+    "budget_not_reset": true,
+    "credit_cap_including_spent": 634
   },
   "authorizations": {
     "preparation": true,
@@ -46,13 +72,14 @@
       "id": "K0",
       "purpose": "C start: paws hold medal near chin well above the bar; tail is the only grip on the grounded bar",
       "reference_source": "actual ending of selected opening, original identity and exact dumbbell reference",
-      "status": "prompt prepared; no image generated"
+      "status": "accepted 2026-11-09 (CartoonReels_EP003_K0_20261109-192140.png); ribbon hangs around the neck while the paws clutch it at the chin"
     },
     {
       "id": "K1",
       "purpose": "C climax: tail alone has raised the same weight; both paws remain fully visible and separated from bar; owner looks at medal",
       "reference_source": "accepted K0 first, actual opening ending second, original identity third",
-      "status": "prompt prepared; no image generated"
+      "status": "revision 2: rejected three times (K1, K1-retry1, K1-retry2); excluded from the graph; no new K1",
+      "excluded_from_graph": true
     },
     {
       "id": "K2",
@@ -66,10 +93,10 @@
       "id": "C",
       "duration_seconds": 5,
       "first_keyframe": "K0",
-      "last_keyframe": "K1",
-      "action": "one visible solo lift by the tail, hands stay away, then reaction to the true winner",
+      "last_keyframe": null,
+      "action": "one visible solo lift by the tail to about knee height with a clear floor gap held to the end, hands stay on the medal away from the bar, then reaction to the true winner",
       "native_audio": true,
-      "status": "request template prepared; fresh schema check and generation pending"
+      "status": "revision 2: first-frame-only from accepted K0; generation pending"
     },
     {
       "id": "D",
@@ -148,6 +175,27 @@
       "C": 176,
       "K2": 164,
       "D": 0
+    },
+    "revision_2": {
+      "spent_before_revision": 48,
+      "remaining_mandatory": {
+        "C": 205,
+        "K2": 12,
+        "D": 164
+      },
+      "base_total_after_revision": 429,
+      "shared_video_retry_for_C_or_D_max": 205,
+      "max_total_including_spent": 634,
+      "remaining_mandatory_after_stage": {
+        "C": 176,
+        "K2": 164,
+        "D": 0
+      },
+      "image_creates_left": 1,
+      "image_retries_left": 0,
+      "video_creates_left": 3,
+      "video_retries_left": 1,
+      "stop_before_D_if_K2_unusable": true
     }
   },
   "new_provider_assets_created": 0,
@@ -164,7 +212,7 @@
   "image_tasks": [
     {
       "id": "K0",
-      "status": "prompt and template prepared; no provider task created",
+      "status": "accepted 2026-11-09, taskId a2c56da82e5e66a9121a859da2b083e9",
       "prompt_file": "prompts/K0-medal-ready.prompt.en.txt",
       "prompt_sha256": "0351d92c28ef2550883d24c156bd7ecac06afb35d31c882bb272dd804040e2bb",
       "depends_on": [
@@ -186,7 +234,8 @@
     },
     {
       "id": "K1",
-      "status": "prompt and template prepared; no provider task created",
+      "status": "revision 2: rejected three times, excluded from the graph; do not create",
+      "excluded_from_graph": true,
       "prompt_file": "prompts/K1-true-winner.prompt.en.txt",
       "prompt_sha256": "a82e876cc8c3030aade13c891ff5e972b7596afc0ca2591e324a2bae4993899c",
       "depends_on": [
@@ -235,28 +284,32 @@
   "video_tasks": [
     {
       "id": "C",
-      "status": "prompt and template prepared; no provider task created",
-      "prompt_file": "prompts/C-solo-lift.prompt.en.txt",
-      "prompt_sha256": "842607f72f09b8dbafc5a73f01ede7a2608dbe156bc2a69dc00034158cdfa4c2",
+      "status": "revision 2: first-frame-only from accepted K0; no provider task created yet",
+      "superseded_prompt": {
+        "prompt_file": "prompts/C-solo-lift.prompt.en.txt",
+        "prompt_sha256": "842607f72f09b8dbafc5a73f01ede7a2608dbe156bc2a69dc00034158cdfa4c2",
+        "mode": "first K0 + last K1, not used"
+      },
+      "prompt_file": "prompts/C-solo-lift-first-frame.prompt.en.txt",
+      "prompt_sha256": "daccfa919ab9cce9d9fafd9d2ebd9ada029c41610237cc79cb2a4bf950a94400",
       "depends_on": [
-        "accepted_K0",
-        "accepted_K1"
+        "accepted_K0"
       ],
       "local_time_intervals_seconds": [
         [
           0,
-          0.7
+          0.8
         ],
         [
-          0.7,
+          0.8,
           2.4
         ],
         [
           2.4,
-          3.7
+          3.6
         ],
         [
-          3.7,
+          3.6,
           5
         ]
       ],
@@ -264,13 +317,12 @@
       "request_template": {
         "model": "bytedance/seedance-2",
         "input": {
-          "prompt": "One continuous five-second polished stylized 3D animated-film shot. Supplied first frame K0 establishes the original ginger creature holding one gold medal on a navy ribbon in BOTH forepaws at its upper chest, one rigid dumbbell resting horizontally on the floor, and one attached tail already wrapped around the center of its bar. Supplied last frame K1 establishes the tail's successful SOLO lift and the owner's realization. Keep the same real character, prop geometry, room, warm light and vertical 9:16 stable framing.\n\n0.0-0.7s: The creature clings to its dignified prize-worthy attitude, looking at the medal. Both paws are completely visible and well above the bar. The tail is already gripping the center; no new grasp is needed.\n0.7-2.4s: The tail alone smoothly raises the same dumbbell a modest distance clear of the floor and holds it level. Make the source of support obvious: only the continuous attached tail touches the bar. The creature's paws keep holding the medal near the chin and NEVER reach toward the weight. Hind feet stay grounded.\n2.4-3.7s: The creature sees this effortless solo lift. Its eyes widen and track the tail and the suspended weight; pride drains away. No body motion assists the lift.\n3.7-5.0s: It looks at the medal in its paws, then toward the true winner, with a sheepish recognition. Settle into K1 while the tail keeps the low weight steady. Do not award the medal, lower the weight or start a second lift within this shot.\n\nOne creature, one continuous tail, one rigid dumbbell and one medal throughout. No paw or body contact supporting the bar, duplicate weights, stretching, floating load disconnected from the tail, camera sweep, cut, titles or dialogue. Native synchronized sound: a light handle/metal creak with the lift, a tiny surprised wordless breath, then a quiet realization. No spoken words, singing, music or impact on the floor in this shot.\n",
+          "prompt": "One continuous five-second polished stylized 3D animated-film shot. The supplied first frame is accepted K0: the original ginger creature stands upright, the navy ribbon of ONE gold medal hangs around its neck and both forepaws clutch the ribbon just under its chin, the medal resting on its chest. One rigid dumbbell lies horizontally on the floor in front of its legs, and its single attached tail is already looped over the center of the bar. Keep the same character, prop geometry, room, warm light and the same static vertical 9:16 framing. No last frame is supplied, so the action below defines how the shot ends.\n\n0.0-0.8s: The creature keeps its dignified prize-worthy pose, admiring its medal. Both forepaws stay high at the chin.\n0.8-2.4s: The tail alone tightens its loop and smoothly lifts the whole dumbbell straight up, level, to about the creature's knee height, then holds it there. Both plates leave the floor completely: a wide band of empty wooden floor and a separate soft shadow are clearly visible under each plate. Only the continuous attached tail touches the bar. The forepaws keep clutching the medal ribbon at the chin and NEVER move toward the weight; legs and body do not touch the bar; hind feet stay planted.\n2.4-3.6s: The creature notices the effortless solo lift. Its eyes widen and look down at the tail and the hovering weight; its pride drains away.\n3.6-5.0s: It glances at the medal on its chest, then back at the strong tail, with sheepish recognition. The tail keeps the dumbbell steadily raised, with the same clear gap under both plates, until the very last frame. Do not lower the weight, award the medal or start a second lift in this shot.\n\nOne creature, one continuous tail, one rigid dumbbell and one medal throughout. No paw or body contact with the bar, duplicate weights, stretching, floating load disconnected from the tail, camera movement, cut, titles or dialogue. Native synchronized sound: a light metal creak as the tail lifts, a tiny surprised wordless breath, then quiet room tone. No spoken words, singing, music or impact on the floor in this shot.\n",
           "first_frame_url": "__UPLOADED_ACCEPTED_K0__",
           "duration": 5,
           "resolution": "720p",
           "aspect_ratio": "9:16",
-          "generate_audio": true,
-          "last_frame_url": "__UPLOADED_ACCEPTED_K1__"
+          "generate_audio": true
         }
       }
     },
@@ -314,10 +366,11 @@
     "verify and resume any existing EP003 records",
     "free model/schema/price/balance checks for all required modes",
     "adapt existing executor and run offline mocks before paid calls",
-    "K0 then K1; verify both paws away from bar",
-    "C solo lift, artistic acceptance",
+    "K0 accepted; K1 rejected three times and excluded (revision 2)",
+    "revision 2: free price/balance recheck, continuation dry run, revision entry in the journal",
+    "C first-frame-only from accepted K0: solo tail lift with a clear floor gap, artistic acceptance; one shared video retry for C or D",
     "select 120 frames of C and extract actual last frame 119",
-    "K2 from actual C ending",
+    "K2 from actual C ending (last image create, no retry); stop before D if K2 is unusable",
     "D first-frame-only ending",
     "assemble existing 168 frames plus C120 plus D96, review whole film and sound",
     "deliver candidate and commit/push results; social publication not authorized"
