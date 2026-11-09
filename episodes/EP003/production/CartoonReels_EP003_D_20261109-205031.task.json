@@ -1,0 +1,49 @@
+{
+  "label": "D",
+  "stage": "D",
+  "kind": "video",
+  "attemptType": "base",
+  "reason": "",
+  "status": "success",
+  "taskId": "5b5bddbc5727aa6adc051314abe9654f",
+  "model": "bytedance/seedance-2",
+  "input": {
+    "prompt": "One continuous four-second concluding shot in the same polished tactile stylized 3D animated-film style. Use supplied first frame K2 to establish a COMPLETED award: one round gold medal on a navy ribbon already hangs from the raised tip of the creature's SINGLE attached tail on screen-right. The same dumbbell already rests on the floor. Both forepaws are empty, up near the chest and clearly separate from the prop. The cut before this shot implies the short lowering and medal transfer; do not reenact them.\n\n0.0-0.7s: Let the decorated tail and the owner's sheepish appreciative smile read. The creature looks at the medal-bearing helper.\n0.7-2.1s: The owner gives two small clear applause claps with its original short forepaws, hands meeting near the chest and separating naturally. The bar stays untouched on the floor. Match the two clap sounds to actual paw contact.\n2.1-4.0s: The paws settle and the owner keeps its warm conceding smile. The decorated tail makes one tiny proud settling bob and holds; the medal sways gently and comes to rest. Hold this completed winner image as the ending, with no new threat or action.\n\nStable camera, vertical 9:16, preserve face, anatomy, fur, lighting and the exact same prop and medal. The tail has no face, hands or fingers. Do not duplicate the medal or put it back on the owner; no extra limbs, weight lift, dropped prop, cut, titles, spoken words, singing or music. Native sound: exactly the two synchronized soft paw claps, a very light ribbon/medal rustle, then quiet room tone. No unseen award ceremony, crowd cheering or second floor thud.\n",
+    "first_frame_url": "https://tempfile.redpandaai.co/kieai/11630331/cartoonreels/ep003/CartoonReels_EP003_K2_20261109-204821_up20261109-205021.png",
+    "duration": 4,
+    "resolution": "720p",
+    "aspect_ratio": "9:16",
+    "generate_audio": true
+  },
+  "priceCr": 164.0,
+  "budget": {
+    "actualBefore": 265.0,
+    "pendingBefore": 0.0,
+    "expected": 164.0,
+    "remainingMandatoryAfter": 0.0,
+    "projectedMax": 429.0,
+    "cap": 634
+  },
+  "inputs": {
+    "K2": {
+      "file": "E:\\Generations\\CartoonReels_EP003_K2_20261109-204821.png",
+      "sha256": "3ae55cb1f958b28fdc6f67a609f68e8141ec6d2e1e4b4f3eb1774e6c4043c984",
+      "url": "https://tempfile.redpandaai.co/kieai/11630331/cartoonreels/ep003/CartoonReels_EP003_K2_20261109-204821_up20261109-205021.png"
+    }
+  },
+  "promptFile": "E:\\Generations\\refs\\CartoonReels_EP003_D-award-ending.prompt.en.txt",
+  "promptSha256": "01a9d2eed5aa80b9aa056933bf97d9a23b77072952712ee83edce76811b6af8f",
+  "promptAddendum": null,
+  "planCommit": "f6a9acaf2473eea76148cc9212bb88e6a7e47f80",
+  "sentAt": "2026-11-09T20:50:31+05:00",
+  "createdAt": "2026-11-09T20:50:31+05:00",
+  "lastCheckedAt": "2026-11-09T20:54:39+05:00",
+  "state": "success",
+  "resultUrls": [
+    "https://tempfile.aiquickdraw.com/seedance/1794239909127-yeg9mtmaok.mp4"
+  ],
+  "resultJson": "{\"firstFrameUrl\":[],\"resultUrls\":[\"https://tempfile.aiquickdraw.com/seedance/1794239909127-yeg9mtmaok.mp4\"]}",
+  "creditsConsumed": 164.0,
+  "costTime": 240,
+  "completedAt": "2026-11-09T20:54:39+05:00"
+}

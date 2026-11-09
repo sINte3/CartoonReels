@@ -1,0 +1,115 @@
+{
+  "file": "CartoonReels_EP003_16s_sound_720p_20261109-205847.mp4",
+  "sha256": "77581949c976179d7ed48fb26a307f405aa751830e571251e49f48f0df4eba07",
+  "bytes": 6869391,
+  "created": "2026-11-09T20:59:17+05:00",
+  "what": "720p мастер со звуком: начало кадры 0–167 (0–7 с, звук без изменения) + C кадры 0–119 (7–12 с) + D кадры 0–95 (12–16 с), без укрупнения, AAC 48 кГц стерео, лимитер −1 dBFS, faststart",
+  "package": "EP003 «Кому медаль?», commit f6a9acaf2473eea76148cc9212bb88e6a7e47f80",
+  "sources": {
+    "opening": {
+      "file": "opening-7s.mp4",
+      "sha256": "c6a46b9788d324be4e92be66713f176b34a6d268b91996ada1621cd9b90ddda0",
+      "taskId": "готовое начало EP002 timing 7 s, без новой генерации",
+      "loudness": {
+        "integrated_lufs": -16.8,
+        "true_peak_dbfs": -1.7
+      },
+      "volume": {
+        "mean_db": -21.6,
+        "max_db": -1.7
+      }
+    },
+    "C": {
+      "file": "CartoonReels_EP003_C_20261109-204330.mp4",
+      "sha256": "3acfff6893d948152b00215d3b19848c20c5881c2009da536c32f34a1356d543",
+      "taskId": "5fd76a2e55d007ff8d839c813aa1c7f9",
+      "loudness": {
+        "integrated_lufs": -35.9,
+        "true_peak_dbfs": -15.3
+      },
+      "volume": {
+        "mean_db": -34.9,
+        "max_db": -15.4
+      }
+    },
+    "D": {
+      "file": "CartoonReels_EP003_D_20261109-205031.mp4",
+      "sha256": "43fbed71cd0c1cee217c8b9d0dd8c0717a81c7c49cd903a4f860f8f5fa8a5cfe",
+      "taskId": "5b5bddbc5727aa6adc051314abe9654f",
+      "loudness": {
+        "integrated_lufs": -26.6,
+        "true_peak_dbfs": -0.8
+      },
+      "volume": {
+        "mean_db": -33.6,
+        "max_db": -0.8
+      }
+    }
+  },
+  "filter": {
+    "source": "assemble-with-audio.ffmpeg.txt",
+    "source_sha256": "ecb5393a5295f910244688ac8920dd0c29af95d85cd773b76d4549d2aaa2af98",
+    "used": "CartoonReels_EP003_assemble-with-audio.gain_20261109-205847.ffmpeg.txt",
+    "used_sha256": "5fdc9499fd8db47366899323920e1a3709b0e097e217e17b620b6b54657ea6bf",
+    "gainOpening_db": 0,
+    "gainC_db": 12.0,
+    "gainD_db": 4.0
+  },
+  "ffmpeg_args": "-hide_banner -nostats -v error -y -i E:\\CartoonReels\\.claude\\worktrees\\ep002-full-production-ee8a07\\tools\\kie-executor\\ep003\\inputs\\opening-7s.mp4 -i E:\\Generations\\CartoonReels_EP003_C_20261109-204330.mp4 -i E:\\Generations\\CartoonReels_EP003_D_20261109-205031.mp4 -/filter_complex E:\\Generations\\CartoonReels_EP003_assemble-with-audio.gain_20261109-205847.ffmpeg.txt -map [v] -map [aout] -c:v libx264 -preset slow -crf 16 -pix_fmt yuv420p -r 24 -fps_mode cfr -c:a aac -b:a 192k -ar 48000 -ac 2 -movflags +faststart -f mp4 E:\\Generations\\CartoonReels_EP003_16s_sound_720p_20261109-205847.mp4.part",
+  "verification": {
+    "container": "mov,mp4,m4a,3gp,3g2,mj2",
+    "duration_s": "16.000000",
+    "bit_rate": "3434695",
+    "video": {
+      "index": 0,
+      "codec_name": "h264",
+      "profile": "High",
+      "codec_type": "video",
+      "width": 720,
+      "height": 1280,
+      "sample_aspect_ratio": "1:1",
+      "pix_fmt": "yuv420p",
+      "r_frame_rate": "24/1",
+      "duration": "16.000000",
+      "nb_read_frames": "384"
+    },
+    "audio": {
+      "index": 1,
+      "codec_name": "aac",
+      "profile": "LC",
+      "codec_type": "audio",
+      "sample_rate": "48000",
+      "channels": 2,
+      "channel_layout": "stereo",
+      "r_frame_rate": "0/0",
+      "duration": "16.000000",
+      "nb_read_frames": "750"
+    },
+    "top_atoms": "ftyp,moov,free,mdat",
+    "full_decode_exit": 0,
+    "full_decode_stderr": "",
+    "volume": {
+      "mean_db": -23.2,
+      "max_db": -0.9
+    },
+    "loudness": {
+      "integrated_lufs": -19.9,
+      "true_peak_dbfs": -0.9
+    },
+    "checks": {
+      "one_video_h264": true,
+      "size": true,
+      "fps_24": true,
+      "frames_384": true,
+      "duration_16s": true,
+      "faststart_moov_before_mdat": true,
+      "full_decode_clean": true,
+      "audio_aac_48k_stereo": true,
+      "audio_duration_16s": true,
+      "audio_not_silent": true,
+      "no_clipping": true
+    },
+    "all_ok": true
+  },
+  "note": "Проверки техническими средствами (ffprobe, полное декодирование, volumedetect/ebur128, порядок атомов). Субъективного прослушивания не было."
+}

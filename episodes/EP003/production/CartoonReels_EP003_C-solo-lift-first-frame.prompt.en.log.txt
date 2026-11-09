@@ -1,0 +1,2 @@
+CartoonReels_EP003_C-solo-lift-first-frame.prompt.en.txt | промпт C (ревизия 2, только первый кадр K0) EP003 «Кому медаль?» | 2108 B | sha256=daccfa919ab9cce9d9fafd9d2ebd9ada029c41610237cc79cb2a4bf950a94400 | сохранено 20261109-204308
+источник: git f6a9acaf2473eea76148cc9212bb88e6a7e47f80:episodes/EP003/prompts/C-solo-lift-first-frame.prompt.en.txt (https://github.com/sINte3/CartoonReels/blob/f6a9acaf2473eea76148cc9212bb88e6a7e47f80/episodes/EP003/prompts/C-solo-lift-first-frame.prompt.en.txt), SHA-256 совпал с plan.json того же коммита
