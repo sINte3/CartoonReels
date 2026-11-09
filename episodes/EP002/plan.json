@@ -296,5 +296,11 @@
     "user_artistic_acceptance": false,
     "new_paid_calls_during_review": 0,
     "preproduction_flags_scope": "Original templates/authorization snapshot; not a request to restart completed tasks."
+  },
+  "user_feedback_2026_11_09": {
+    "quote": "Если это тестовые клипы, не для релиза, то все вроде ок. Но для релиза не хватает кульминации и логичной концовки.",
+    "status": "acceptable as tests; not accepted for release",
+    "release_gap": "missing a climax and logical ending",
+    "does_not_authorize_new_spend": true
   }
 }

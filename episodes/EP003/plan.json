@@ -1,0 +1,137 @@
+{
+  "prepared_date": "2026-11-09",
+  "timezone": "Asia/Tashkent",
+  "episode": "EP003",
+  "working_title": "Кому медаль?",
+  "stage": "complete story and shot plan only; candidate for first release, not another technical test",
+  "user_direction": {
+    "date": "2026-11-09",
+    "previous_clips_use": "acceptable as technical/acting tests; not release-approved",
+    "release_requirement": "clear climax and logical ending"
+  },
+  "authorizations": {
+    "preparation": true,
+    "new_image_generations": 0,
+    "new_video_generations": 0,
+    "provider_reference_uploads": 0,
+    "paid_api_calls": 0,
+    "social_publication": false,
+    "new_package_credit_cap_authorized": false
+  },
+  "existing_opening": {
+    "path": "../../deliverables/ep002/EP002_timing_7s_sound_720p.mp4",
+    "sha256": "c6a46b9788d324be4e92be66713f176b34a6d268b91996ada1621cd9b90ddda0",
+    "seconds": 7,
+    "fps": 24,
+    "frames": 168,
+    "additional_generation_cost": 0,
+    "last_frame_path": "references/opening-lastframe.png",
+    "last_frame_index": 167,
+    "last_frame_sha256": "0f48e0d6effb54e2192458a74c394c46e603c34d33a66d38c1f2a379aac4a5fc",
+    "audio_subjective_review_pending": true
+  },
+  "new_keyframes": [
+    {
+      "id": "K0",
+      "purpose": "C start: paws hold medal near chin well above the bar; tail is the only grip on the grounded bar",
+      "reference_source": "actual ending of selected opening, original identity and exact dumbbell reference",
+      "status": "text only; not generated"
+    },
+    {
+      "id": "K1",
+      "purpose": "C climax: tail alone has raised the same weight; both paws remain fully visible and separated from bar; owner looks at medal",
+      "reference_source": "accepted K0 first, actual opening ending second, original identity third",
+      "status": "text only; not generated"
+    },
+    {
+      "id": "K2",
+      "purpose": "D ending: bar on floor, the same medal on upright tail, owner with empty paws ready to applaud",
+      "reference_source": "actual accepted C ending first, accepted K0 medal design second, original identity third",
+      "status": "text only; not generated"
+    }
+  ],
+  "new_video_shots": [
+    {
+      "id": "C",
+      "duration_seconds": 5,
+      "first_keyframe": "K0",
+      "last_keyframe": "K1",
+      "action": "one visible solo lift by the tail, hands stay away, then reaction to the true winner",
+      "native_audio": true,
+      "status": "story only; fresh schema and production request not prepared"
+    },
+    {
+      "id": "D",
+      "duration_seconds": 4,
+      "first_keyframe": "K2",
+      "last_keyframe": null,
+      "action": "two short applause claps, sheepish smile and proud medal-bearing tail settling",
+      "native_audio": true,
+      "status": "story only; verify current single-first-frame audio schema before production"
+    }
+  ],
+  "montage_timeline_seconds": [
+    {
+      "start": 0,
+      "end": 7,
+      "source": "existing EP002 timing edit",
+      "function": "setup, apparent achievement and first reversal"
+    },
+    {
+      "start": 7,
+      "end": 12,
+      "source": "new C",
+      "function": "unambiguous climax: the tail is the sole source of strength"
+    },
+    {
+      "start": 12,
+      "end": 16,
+      "source": "new D",
+      "function": "medal awarded to actual winner, relationship resolved"
+    }
+  ],
+  "climax_acceptance": "Both forepaws visibly remain away from the bar while the tail alone lifts it. Shared-contact ambiguity is unacceptable.",
+  "ending_acceptance": "The medal is shown in the owner paws before the cut and on the tail after it; owner applauds. A stare or preparation for another accident does not replace this ending.",
+  "target_master": {
+    "seconds": 16,
+    "fps": 24,
+    "frames": 384,
+    "width": 720,
+    "height": 1280,
+    "audio_required": true,
+    "audio_codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2,
+    "ordinary_1080_export": true,
+    "explanatory_captions": false
+  },
+  "budget": {
+    "currency": "Kie credits",
+    "basis": "rates reported for EP002 execution on 2026-11-08, not a fresh quote",
+    "image_model_planned": "nano-banana-2",
+    "image_resolution": "2K",
+    "video_model_planned": "bytedance/seedance-2",
+    "video_resolution": "720p",
+    "image_unit_assumed": 12,
+    "video_second_assumed": 41,
+    "new_image_count": 3,
+    "new_video_seconds": 9,
+    "base_new_cost_assumed": 405,
+    "max_additional_images_proposed": 2,
+    "max_additional_videos_proposed": 1,
+    "longest_additional_video_seconds": 5,
+    "reserve_cost_assumed": 229,
+    "expected_max_with_all_named_corrections": 634,
+    "proposed_cap": 640,
+    "cap_authorized": false,
+    "old_ep002_reserve_transfers": false,
+    "reuse_of_existing_opening_charged_again": false,
+    "fresh_pricing_checked_here": false,
+    "new_paid_spend": 0
+  },
+  "new_provider_assets_created": 0,
+  "new_provider_calls": 0,
+  "new_reference_uploads": 0,
+  "derived_existing_frame_extracted": 1,
+  "next_action": "Review the complete ending on the storyboard, confirm current schema/price, then prepare one new execution package. Do not run old EP002 tasks."
+}

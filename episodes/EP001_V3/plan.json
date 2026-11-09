@@ -317,5 +317,11 @@
     "saved_task_records_checked": 7,
     "saved_credits_consumed_sum_checked": 388,
     "live_billing_queried_during_handoff_review": false
+  },
+  "user_feedback_2026_11_09": {
+    "quote": "Если это тестовые клипы, не для релиза, то все вроде ок. Но для релиза не хватает кульминации и логичной концовки.",
+    "status": "acceptable as tests; not accepted for release",
+    "release_gap": "missing a climax and logical ending",
+    "does_not_authorize_new_spend": true
   }
 }

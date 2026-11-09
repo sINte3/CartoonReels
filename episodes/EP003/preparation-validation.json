@@ -1,0 +1,20 @@
+{
+  "checked_date": "2026-11-09",
+  "scope": "story, incremental budget and existing reference integrity only",
+  "existing_opening_hash_matches": true,
+  "derived_last_frame_hash_matches": true,
+  "montage_timeline_seconds": 16,
+  "expected_final_frames": 384,
+  "new_keyframes_planned": 3,
+  "new_video_seconds_planned": 9,
+  "base_incremental_credits_at_old_rates": 405,
+  "max_incremental_credits_with_named_reserve_at_old_rates": 634,
+  "relative_links_checked": 29,
+  "new_provider_images_created": 0,
+  "new_provider_videos_created": 0,
+  "new_reference_uploads": 0,
+  "new_paid_calls": 0,
+  "user_release_approval": false,
+  "fresh_prices_checked": false,
+  "production_requests_prepared": false
+}
