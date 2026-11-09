@@ -3,20 +3,31 @@
   "timezone": "Asia/Tashkent",
   "episode": "EP003",
   "working_title": "Кому медаль?",
-  "stage": "complete story and shot plan only; candidate for first release, not another technical test",
+  "stage": "production package ready; user approved starting within the quoted 634-credit maximum; external execution not started here",
   "user_direction": {
     "date": "2026-11-09",
     "previous_clips_use": "acceptable as technical/acting tests; not release-approved",
-    "release_requirement": "clear climax and logical ending"
+    "release_requirement": "clear climax and logical ending",
+    "start_approval": {
+      "date": "2026-11-09",
+      "quote": "Ок. давай приступим",
+      "context": "Response to the EP003 story and new cost 405 with proposed reserve up to 634",
+      "scope": "Same models and 3 base images/2 videos plus maximum 2 extra images/1 extra video, total new spend no more than 634"
+    }
   },
   "authorizations": {
     "preparation": true,
-    "new_image_generations": 0,
-    "new_video_generations": 0,
-    "provider_reference_uploads": 0,
-    "paid_api_calls": 0,
+    "new_image_generations": 5,
+    "new_video_generations": 3,
+    "provider_reference_uploads": true,
+    "paid_api_create_calls_max": 8,
     "social_publication": false,
-    "new_package_credit_cap_authorized": false
+    "new_package_credit_cap_authorized": true,
+    "credit_cap": 634,
+    "automatic_topups": false,
+    "model_or_provider_changes": false,
+    "confirmation_after_each_stage_required": false,
+    "external_executor_instruction_delivery_pending": true
   },
   "existing_opening": {
     "path": "../../deliverables/ep002/EP002_timing_7s_sound_720p.mp4",
@@ -35,19 +46,19 @@
       "id": "K0",
       "purpose": "C start: paws hold medal near chin well above the bar; tail is the only grip on the grounded bar",
       "reference_source": "actual ending of selected opening, original identity and exact dumbbell reference",
-      "status": "text only; not generated"
+      "status": "prompt prepared; no image generated"
     },
     {
       "id": "K1",
       "purpose": "C climax: tail alone has raised the same weight; both paws remain fully visible and separated from bar; owner looks at medal",
       "reference_source": "accepted K0 first, actual opening ending second, original identity third",
-      "status": "text only; not generated"
+      "status": "prompt prepared; no image generated"
     },
     {
       "id": "K2",
       "purpose": "D ending: bar on floor, the same medal on upright tail, owner with empty paws ready to applaud",
       "reference_source": "actual accepted C ending first, accepted K0 medal design second, original identity third",
-      "status": "text only; not generated"
+      "status": "prompt prepared; no image generated"
     }
   ],
   "new_video_shots": [
@@ -58,7 +69,7 @@
       "last_keyframe": "K1",
       "action": "one visible solo lift by the tail, hands stay away, then reaction to the true winner",
       "native_audio": true,
-      "status": "story only; fresh schema and production request not prepared"
+      "status": "request template prepared; fresh schema check and generation pending"
     },
     {
       "id": "D",
@@ -67,7 +78,7 @@
       "last_keyframe": null,
       "action": "two short applause claps, sheepish smile and proud medal-bearing tail settling",
       "native_audio": true,
-      "status": "story only; verify current single-first-frame audio schema before production"
+      "status": "request template prepared; fresh schema check and generation pending"
     }
   ],
   "montage_timeline_seconds": [
@@ -122,16 +133,212 @@
     "longest_additional_video_seconds": 5,
     "reserve_cost_assumed": 229,
     "expected_max_with_all_named_corrections": 634,
-    "proposed_cap": 640,
-    "cap_authorized": false,
+    "proposed_cap": 634,
+    "cap_authorized": true,
     "old_ep002_reserve_transfers": false,
     "reuse_of_existing_opening_charged_again": false,
     "fresh_pricing_checked_here": false,
-    "new_paid_spend": 0
+    "new_paid_spend": 0,
+    "previous_proposed_cap_before_start_approval": 640,
+    "authorized_cap": 634,
+    "approval_basis": "User approved proceeding after the quoted 405/634-credit estimate, 2026-11-09",
+    "remaining_mandatory_after_stage_at_old_rates": {
+      "K0": 393,
+      "K1": 381,
+      "C": 176,
+      "K2": 164,
+      "D": 0
+    }
   },
   "new_provider_assets_created": 0,
   "new_provider_calls": 0,
   "new_reference_uploads": 0,
   "derived_existing_frame_extracted": 1,
-  "next_action": "Review the complete ending on the storyboard, confirm current schema/price, then prepare one new execution package. Do not run old EP002 tasks."
+  "next_action": "Deliver the single EP003 production instruction to user Claude Code; execute free schema/price/balance checks and offline adaptation first, then proceed within the approved 634-credit package if funded. No new provider calls made here.",
+  "original_character_reference": {
+    "relative_path": "../../deliverables/lookdev-02/hero-3d-keyframe.png",
+    "sha256": "97c4c09087da7d9523496e2cbf0e3be2dff2b5a374097ca511aba3b80915fdde",
+    "width": 941,
+    "height": 1672
+  },
+  "image_tasks": [
+    {
+      "id": "K0",
+      "status": "prompt and template prepared; no provider task created",
+      "prompt_file": "prompts/K0-medal-ready.prompt.en.txt",
+      "prompt_sha256": "0351d92c28ef2550883d24c156bd7ecac06afb35d31c882bb272dd804040e2bb",
+      "depends_on": [
+        "verified_opening_lastframe"
+      ],
+      "request_template": {
+        "model": "nano-banana-2",
+        "input": {
+          "prompt": "The first reference is the actual last frame of the accepted seven-second opening: preserve this original ginger creature, cream muzzle and chest, proportions, tactile fur, cottage lighting and the exact rigid dumbbell with its existing pair of dark plate assemblies. The second reference preserves the original character design. This is a deliberately staged new shot after a cut, not a pixel-identical continuation.\n\nVertical 9:16 polished stylized 3D animated-film frame. Use a stable medium full shot, slightly three-quarter, showing the whole dumbbell, both hind feet, both forepaws, and the complete continuous tail from the lower back. The dumbbell rests horizontally on the floor in front of the feet. The single attached tail already makes one secure visible wrap around the center of the bar. Only the tail touches the bar.\n\nBoth forepaws hold ONE palm-sized plain round gold medal with a dark navy ribbon at the upper chest near the chin. The paws and medal remain well above the bar, with a large visible gap. Neither paw touches or supports the weight. The creature is still trying to look dignified and prize-worthy after the earlier failed lift, looking at its medal. The medal is in its paws, not around its neck or on the tail yet. Keep a clean readable silhouette. No writing, logo, second medal, new weights, extra limbs, tail face or fingers.\n",
+          "image_input": [
+            "__UPLOADED_OPENING_LAST_FRAME__",
+            "__UPLOADED_ORIGINAL_CHARACTER_REFERENCE__"
+          ],
+          "aspect_ratio": "9:16",
+          "resolution": "2K",
+          "output_format": "png"
+        }
+      }
+    },
+    {
+      "id": "K1",
+      "status": "prompt and template prepared; no provider task created",
+      "prompt_file": "prompts/K1-true-winner.prompt.en.txt",
+      "prompt_sha256": "a82e876cc8c3030aade13c891ff5e972b7596afc0ca2591e324a2bae4993899c",
+      "depends_on": [
+        "accepted_K0"
+      ],
+      "request_template": {
+        "model": "nano-banana-2",
+        "input": {
+          "prompt": "Use accepted K0 as the first reference for the staged camera, room, dumbbell, navy-ribbon gold medal and hand positions. The actual ending of the opening is the second reference for the real prop and creature; the original design is the third identity reference. Keep the same tactile stylized 3D materials and warm lighting, vertical 9:16.\n\nThis is the unmistakable climax. The SINGLE attached tail alone supports the center of the SAME horizontal dumbbell, lifting its weights a modest distance clear of the wooden floor. The two forepaws still hold the ONE gold medal at the upper chest near the chin. Both paws are completely visible, clearly above and away from the bar. A broad empty gap separates the paws from the load. No other part of the body supports the dumbbell. Show the continuous tail path and its single firm wrap. Hind feet are planted.\n\nThe creature has just seen the real winner: eyes widened, former pride gone. Its gaze shifts between the powerful tail and the medal it was holding for itself; it turns slightly toward the helper. The tail's low effortless lift contrasts with the owner's earlier strain. Preserve the exact existing bar and plate assemblies, anatomy and face. No overhead lift, paw-to-bar contact, extra tail, extra medal, text or explanatory graphics.\n",
+          "image_input": [
+            "__UPLOADED_ACCEPTED_K0__",
+            "__UPLOADED_OPENING_LAST_FRAME__",
+            "__UPLOADED_ORIGINAL_CHARACTER_REFERENCE__"
+          ],
+          "aspect_ratio": "9:16",
+          "resolution": "2K",
+          "output_format": "png"
+        }
+      }
+    },
+    {
+      "id": "K2",
+      "status": "prompt and template prepared; no provider task created",
+      "prompt_file": "prompts/K2-medal-awarded.prompt.en.txt",
+      "prompt_sha256": "24fa33d7b223cc730c5fc998c78063b30f96e8d9daf4b0aed4e55790055139d5",
+      "depends_on": [
+        "accepted_C",
+        "accepted_K0"
+      ],
+      "request_template": {
+        "model": "nano-banana-2",
+        "input": {
+          "prompt": "The first reference is the actual last frame of accepted video C, preserving the real creature, room, fur and exact dumbbell. The second reference K0 preserves the ONE plain round gold medal and dark navy ribbon; the third preserves the original character design. Create the concluding shot after a deliberate cut and a short implied passage of time.\n\nVertical 9:16, polished tactile stylized 3D, warm cottage light, stable medium full shot. The same dumbbell now rests on the floor in front of the grounded hind feet, its plate assemblies outside the toes. The SINGLE continuous attached tail is no longer holding the bar: it rises naturally on screen-right in a proud gentle curl. The gold medal now hangs visibly by its navy ribbon from this raised tail tip. Show the complete tail connection, medal and free bar.\n\nThe creature's two EMPTY forepaws are raised near the chest, separated and ready to clap. It faces the decorated tail with a sheepish, appreciative smile: the helper gets the prize. The medal is not in its paws or on its neck; there is exactly one medal. This image must clearly read as an awarded winner and a conceding owner. No extra limbs, second tail, tail eyes/fingers, writing, logos or new props. Do not animate the ribbon transfer in this still; the story uses a cut to the completed award.\n",
+          "image_input": [
+            "__UPLOADED_ACTUAL_ACCEPTED_C_LAST_FRAME__",
+            "__UPLOADED_ACCEPTED_K0__",
+            "__UPLOADED_ORIGINAL_CHARACTER_REFERENCE__"
+          ],
+          "aspect_ratio": "9:16",
+          "resolution": "2K",
+          "output_format": "png"
+        }
+      }
+    }
+  ],
+  "video_tasks": [
+    {
+      "id": "C",
+      "status": "prompt and template prepared; no provider task created",
+      "prompt_file": "prompts/C-solo-lift.prompt.en.txt",
+      "prompt_sha256": "842607f72f09b8dbafc5a73f01ede7a2608dbe156bc2a69dc00034158cdfa4c2",
+      "depends_on": [
+        "accepted_K0",
+        "accepted_K1"
+      ],
+      "local_time_intervals_seconds": [
+        [
+          0,
+          0.7
+        ],
+        [
+          0.7,
+          2.4
+        ],
+        [
+          2.4,
+          3.7
+        ],
+        [
+          3.7,
+          5
+        ]
+      ],
+      "timing_is_direction_not_model_enforcement": true,
+      "request_template": {
+        "model": "bytedance/seedance-2",
+        "input": {
+          "prompt": "One continuous five-second polished stylized 3D animated-film shot. Supplied first frame K0 establishes the original ginger creature holding one gold medal on a navy ribbon in BOTH forepaws at its upper chest, one rigid dumbbell resting horizontally on the floor, and one attached tail already wrapped around the center of its bar. Supplied last frame K1 establishes the tail's successful SOLO lift and the owner's realization. Keep the same real character, prop geometry, room, warm light and vertical 9:16 stable framing.\n\n0.0-0.7s: The creature clings to its dignified prize-worthy attitude, looking at the medal. Both paws are completely visible and well above the bar. The tail is already gripping the center; no new grasp is needed.\n0.7-2.4s: The tail alone smoothly raises the same dumbbell a modest distance clear of the floor and holds it level. Make the source of support obvious: only the continuous attached tail touches the bar. The creature's paws keep holding the medal near the chin and NEVER reach toward the weight. Hind feet stay grounded.\n2.4-3.7s: The creature sees this effortless solo lift. Its eyes widen and track the tail and the suspended weight; pride drains away. No body motion assists the lift.\n3.7-5.0s: It looks at the medal in its paws, then toward the true winner, with a sheepish recognition. Settle into K1 while the tail keeps the low weight steady. Do not award the medal, lower the weight or start a second lift within this shot.\n\nOne creature, one continuous tail, one rigid dumbbell and one medal throughout. No paw or body contact supporting the bar, duplicate weights, stretching, floating load disconnected from the tail, camera sweep, cut, titles or dialogue. Native synchronized sound: a light handle/metal creak with the lift, a tiny surprised wordless breath, then a quiet realization. No spoken words, singing, music or impact on the floor in this shot.\n",
+          "first_frame_url": "__UPLOADED_ACCEPTED_K0__",
+          "duration": 5,
+          "resolution": "720p",
+          "aspect_ratio": "9:16",
+          "generate_audio": true,
+          "last_frame_url": "__UPLOADED_ACCEPTED_K1__"
+        }
+      }
+    },
+    {
+      "id": "D",
+      "status": "prompt and template prepared; no provider task created",
+      "prompt_file": "prompts/D-award-ending.prompt.en.txt",
+      "prompt_sha256": "01a9d2eed5aa80b9aa056933bf97d9a23b77072952712ee83edce76811b6af8f",
+      "depends_on": [
+        "accepted_K2"
+      ],
+      "local_time_intervals_seconds": [
+        [
+          0,
+          0.7
+        ],
+        [
+          0.7,
+          2.1
+        ],
+        [
+          2.1,
+          4
+        ]
+      ],
+      "timing_is_direction_not_model_enforcement": true,
+      "request_template": {
+        "model": "bytedance/seedance-2",
+        "input": {
+          "prompt": "One continuous four-second concluding shot in the same polished tactile stylized 3D animated-film style. Use supplied first frame K2 to establish a COMPLETED award: one round gold medal on a navy ribbon already hangs from the raised tip of the creature's SINGLE attached tail on screen-right. The same dumbbell already rests on the floor. Both forepaws are empty, up near the chest and clearly separate from the prop. The cut before this shot implies the short lowering and medal transfer; do not reenact them.\n\n0.0-0.7s: Let the decorated tail and the owner's sheepish appreciative smile read. The creature looks at the medal-bearing helper.\n0.7-2.1s: The owner gives two small clear applause claps with its original short forepaws, hands meeting near the chest and separating naturally. The bar stays untouched on the floor. Match the two clap sounds to actual paw contact.\n2.1-4.0s: The paws settle and the owner keeps its warm conceding smile. The decorated tail makes one tiny proud settling bob and holds; the medal sways gently and comes to rest. Hold this completed winner image as the ending, with no new threat or action.\n\nStable camera, vertical 9:16, preserve face, anatomy, fur, lighting and the exact same prop and medal. The tail has no face, hands or fingers. Do not duplicate the medal or put it back on the owner; no extra limbs, weight lift, dropped prop, cut, titles, spoken words, singing or music. Native sound: exactly the two synchronized soft paw claps, a very light ribbon/medal rustle, then quiet room tone. No unseen award ceremony, crowd cheering or second floor thud.\n",
+          "first_frame_url": "__UPLOADED_ACCEPTED_K2__",
+          "duration": 4,
+          "resolution": "720p",
+          "aspect_ratio": "9:16",
+          "generate_audio": true
+        }
+      }
+    }
+  ],
+  "execution_order": [
+    "verify and resume any existing EP003 records",
+    "free model/schema/price/balance checks for all required modes",
+    "adapt existing executor and run offline mocks before paid calls",
+    "K0 then K1; verify both paws away from bar",
+    "C solo lift, artistic acceptance",
+    "select 120 frames of C and extract actual last frame 119",
+    "K2 from actual C ending",
+    "D first-frame-only ending",
+    "assemble existing 168 frames plus C120 plus D96, review whole film and sound",
+    "deliver candidate and commit/push results; social publication not authorized"
+  ],
+  "assembly": {
+    "filter_file": "assemble-with-audio.ffmpeg.txt",
+    "input_order": [
+      "verified existing 7s opening",
+      "accepted C5s",
+      "accepted D4s"
+    ],
+    "frames_per_input": [
+      168,
+      120,
+      96
+    ],
+    "total_frames": 384,
+    "fps": 24,
+    "total_seconds": 16,
+    "automatic_crop": false,
+    "opening_gain_reapplied": false,
+    "native_audio_required": true
+  }
 }

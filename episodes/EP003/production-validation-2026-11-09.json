@@ -1,0 +1,41 @@
+{
+  "checked_date": "2026-11-09",
+  "scope": "offline assembly and production package only",
+  "test_content": "real 7s opening plus old EP002 footage standing in for ungenerated C/D; not EP003 acting",
+  "filter_sha256": "ecb5393a5295f910244688ac8920dd0c29af95d85cd773b76d4549d2aaa2af98",
+  "assembly_checks": [
+    {
+      "width": 720,
+      "height": 1280,
+      "fps": "24/1",
+      "frames": 384,
+      "seconds": 16.0,
+      "audio_codec": "aac",
+      "audio_sample_rate": 48000,
+      "audio_channels": 2,
+      "audio_seconds": 16.0,
+      "audio_signal_nonzero": true,
+      "full_decode_passed": true
+    },
+    {
+      "width": 1080,
+      "height": 1920,
+      "fps": "24/1",
+      "frames": 384,
+      "seconds": 16.0,
+      "audio_codec": "aac",
+      "audio_sample_rate": 48000,
+      "audio_channels": 2,
+      "audio_seconds": 16.0,
+      "audio_signal_nonzero": true,
+      "full_decode_passed": true
+    }
+  ],
+  "new_provider_calls": 0,
+  "new_generated_images": 0,
+  "new_generated_videos": 0,
+  "fresh_prices_checked_here": false,
+  "powershell_runtime_tested_here": false,
+  "new_story_actions_tested": false,
+  "audio_subjectively_listened_to": false
+}

@@ -9,12 +9,19 @@
   "new_video_seconds_planned": 9,
   "base_incremental_credits_at_old_rates": 405,
   "max_incremental_credits_with_named_reserve_at_old_rates": 634,
-  "relative_links_checked": 29,
+  "relative_links_checked": 42,
   "new_provider_images_created": 0,
   "new_provider_videos_created": 0,
   "new_reference_uploads": 0,
   "new_paid_calls": 0,
   "user_release_approval": false,
   "fresh_prices_checked": false,
-  "production_requests_prepared": false
+  "production_requests_prepared": true,
+  "hashed_prompts_checked": 5,
+  "request_prompt_matches_exported_file": true,
+  "C_first_last_and_D_first_only_verified_in_templates": true,
+  "local_timelines_contiguous": true,
+  "production_start_approved_in_codex_context": true,
+  "authorized_credit_cap": 634,
+  "assembly_check": "production-validation-2026-11-09.json"
 }
