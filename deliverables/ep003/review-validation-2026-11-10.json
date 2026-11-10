@@ -1,0 +1,125 @@
+{
+  "source_commit": "1a950932d7625d3e5767168261d1464de0b00daa",
+  "technical": [
+    {
+      "file": "EP003_16s_sound_1080p.mp4",
+      "bytes": 13704113,
+      "sha256": "1ab96bf871e55aa11f1b64174bb8896237c8504181418fe87c8f5207d8eb6202",
+      "width": 1080,
+      "height": 1920,
+      "frames": 384,
+      "fps": "24/1",
+      "seconds": 16.0,
+      "audio_codec": "aac",
+      "audio_sample_rate": 48000,
+      "audio_channels": 2,
+      "audio_seconds": 16.0,
+      "audio_peak_dbfs": -0.94,
+      "audio_rms_dbfs": -23.21,
+      "full_decode_passed": true,
+      "faststart": true,
+      "aac_payload_sha256": "3aa10cf93e7e27e42e31a5ec592dd8500ba11ef45f14b25f57728c3e3516485e"
+    },
+    {
+      "file": "EP003_16s_sound_720p.mp4",
+      "bytes": 6869391,
+      "sha256": "77581949c976179d7ed48fb26a307f405aa751830e571251e49f48f0df4eba07",
+      "width": 720,
+      "height": 1280,
+      "frames": 384,
+      "fps": "24/1",
+      "seconds": 16.0,
+      "audio_codec": "aac",
+      "audio_sample_rate": 48000,
+      "audio_channels": 2,
+      "audio_seconds": 16.0,
+      "audio_peak_dbfs": -0.94,
+      "audio_rms_dbfs": -23.21,
+      "full_decode_passed": true,
+      "faststart": true,
+      "aac_payload_sha256": "3aa10cf93e7e27e42e31a5ec592dd8500ba11ef45f14b25f57728c3e3516485e"
+    }
+  ],
+  "task_records": [
+    {
+      "label": "C",
+      "task_id": "5fd76a2e55d007ff8d839c813aa1c7f9",
+      "state": "success",
+      "credits": 205.0
+    },
+    {
+      "label": "D",
+      "task_id": "5b5bddbc5727aa6adc051314abe9654f",
+      "state": "success",
+      "credits": 164.0
+    },
+    {
+      "label": "K0",
+      "task_id": "a2c56da82e5e66a9121a859da2b083e9",
+      "state": "success",
+      "credits": 12.0
+    },
+    {
+      "label": "K1-retry1",
+      "task_id": "45b20c252bf79489dd02a02cfb1a35a6",
+      "state": "success",
+      "credits": 12.0
+    },
+    {
+      "label": "K1-retry2",
+      "task_id": "d90992a37f2f9ae260f4660af62fd6c1",
+      "state": "success",
+      "credits": 12.0
+    },
+    {
+      "label": "K1",
+      "task_id": "2cc22b792612b886b954fec8179a824b",
+      "state": "success",
+      "credits": 12.0
+    },
+    {
+      "label": "K2",
+      "task_id": "a630747a67e1e045d61daa4f1e83765c",
+      "state": "success",
+      "credits": 12.0
+    }
+  ],
+  "credits_sum_from_records": 429.0,
+  "audio_subjectively_listened_to": false,
+  "live_billing_queried_here": false,
+  "review_date": "2026-11-10",
+  "timezone": "Asia/Tashkent",
+  "visual_method": "62 sampled frames covering the whole story, full-size climax and ending keyframes; native realtime playback not claimed",
+  "climax_visually_verified": true,
+  "logical_ending_visually_verified": true,
+  "reviewer_recommends_as_first_completed_episode": true,
+  "reviewer_subjective_audio_listening_performed": false,
+  "user_audio_confirmation": {
+    "date": "2026-11-10",
+    "question": "При вашем прослушивании EP003 есть ли разборчивые слова, музыка или неуместные звуки?",
+    "answer": "Нет, только уместные шумы и реакции",
+    "source": "user reply in chat",
+    "passed": true
+  },
+  "audio_identical_between_exports": true,
+  "loudness_measured_720p": {
+    "integrated_lufs": -19.9,
+    "lra_lu": 10.4,
+    "true_peak_dbfs": -0.9
+  },
+  "cost_sum_checked_from_saved_records": 429,
+  "new_paid_calls_during_review": 0,
+  "cover": {
+    "frame_index": 172,
+    "source_seconds": 7.166666666666667,
+    "source_file": "EP003_16s_sound_1080p.mp4",
+    "source_sha256": "1ab96bf871e55aa11f1b64174bb8896237c8504181418fe87c8f5207d8eb6202",
+    "cover_sha256": "d2d42204b5fcdadc931079406f71c702012a3a6650bafa8f73a2eeeb8257b07a",
+    "method": "exact frame extraction, no paint, text, compositing or image generation",
+    "source_resolution": "ordinary 1080p enlargement of 720p; no new detail",
+    "publication_authorized": false
+  },
+  "publication_authorized": false,
+  "social_published": false,
+  "user_final_visual_release_approval_explicitly_given": false
+}

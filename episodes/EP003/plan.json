@@ -3,7 +3,7 @@
   "timezone": "Asia/Tashkent",
   "episode": "EP003",
   "working_title": "Кому медаль?",
-  "stage": "revision 2 (2026-11-09): package in progress in user Claude Code, 48 credits spent; three K1 attempts rejected (weight stayed on the floor), K1 excluded; C switched to first-frame-only from accepted K0",
+  "stage": "complete 16-second film received and visually approved as first completed episode by reviewer; user confirms appropriate audio; publication not authorized",
   "user_direction": {
     "date": "2026-11-09",
     "previous_clips_use": "acceptable as technical/acting tests; not release-approved",
@@ -23,7 +23,11 @@
     "user_instruction_quote": "Продолжай EP003 в существующем пакете до 634 кредитов, включая уже потраченные 48. Меняем C на режим только первого кадра: принятый K0, 5 секунд, 720p, 9:16, generate_audio=true. Поле last_frame_url полностью убрать. Отклонённые K1 оставить отклонёнными. Не помечать их принятыми ради обхода проверки. Новые K1 не создавать. Новый граф: принятый K0 → C → фактический конец C → K2 → D.",
     "graph": "accepted K0 -> C (first frame K0 only, 5 s) -> actual C frame 119 -> K2 -> D (first frame K2 only, 4 s)",
     "k1_excluded": true,
-    "k1_attempts_rejected": ["K1", "K1-retry1", "K1-retry2"],
+    "k1_attempts_rejected": [
+      "K1",
+      "K1-retry1",
+      "K1-retry2"
+    ],
     "preserved_from_revision_1": {
       "journal": "E:\\Generations\\CartoonReels_EP003_journal_20261109-192106.jsonl",
       "records": "episodes/EP003/production/",
@@ -202,7 +206,7 @@
   "new_provider_calls": 0,
   "new_reference_uploads": 0,
   "derived_existing_frame_extracted": 1,
-  "next_action": "Deliver the single EP003 production instruction to user Claude Code; execute free schema/price/balance checks and offline adaptation first, then proceed within the approved 634-credit package if funded. No new provider calls made here.",
+  "next_action": "Use the completed film, extracted cover and publication draft to prepare channel setup and first publication; no new generation recommended. Do not restart EP003. Publication itself needs a direct user instruction.",
   "original_character_reference": {
     "relative_path": "../../deliverables/lookdev-02/hero-3d-keyframe.png",
     "sha256": "97c4c09087da7d9523496e2cbf0e3be2dff2b5a374097ca511aba3b80915fdde",
@@ -393,5 +397,32 @@
     "automatic_crop": false,
     "opening_gain_reapplied": false,
     "native_audio_required": true
+  },
+  "production_observation": {
+    "date": "2026-11-10",
+    "source_commit": "1a950932d7625d3e5767168261d1464de0b00daa",
+    "records": "production/README.md",
+    "saved_task_records_checked": 7,
+    "unique_task_ids_checked": 7,
+    "saved_credits_consumed_sum": 429,
+    "image_creates_completed": 5,
+    "video_creates_completed": 2,
+    "video_retry_used": false,
+    "C_mode": "first-frame-only, 5 seconds, native audio true",
+    "D_mode": "first-frame-only, 4 seconds, native audio true",
+    "assembled_seconds": 16,
+    "assembled_frames": 384,
+    "master_720p_sha256": "77581949c976179d7ed48fb26a307f405aa751830e571251e49f48f0df4eba07",
+    "master_1080p_sha256": "1ab96bf871e55aa11f1b64174bb8896237c8504181418fe87c8f5207d8eb6202",
+    "review": "REVIEW_2026-11-10_RU.md",
+    "validation": "../../deliverables/ep003/review-validation-2026-11-10.json",
+    "climax_accepted_by_reviewer": true,
+    "ending_accepted_by_reviewer": true,
+    "audio_passed_by_user_report": true,
+    "reviewer_listened_to_audio": false,
+    "live_billing_queried_here": false,
+    "new_paid_calls_during_review": 0,
+    "publication_authorized": false,
+    "historical_execution_snapshot_note": "Earlier zero counters and revision_2 remaining values describe planning/resumption snapshots; production records hold completed attempts."
   }
 }
