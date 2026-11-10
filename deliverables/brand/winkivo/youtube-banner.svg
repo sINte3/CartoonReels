@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2560" height="1440" viewBox="0 0 2560 1440" role="img" aria-labelledby="title desc">
+  <title id="title">Winkivo Studio — YouTube channel banner</title>
+  <desc id="desc">Studio W monogram, name and short description within the central 1546 by 423 pixel area. Deep blue, warm ivory and amber.</desc>
+  <rect width="2560" height="1440" fill="#182A3A"/>
+  <circle cx="-140" cy="1320" r="640" fill="#203747"/>
+  <circle cx="2310" cy="85" r="470" fill="#203747"/>
+  <path d="M2055 215 Q2210 98 2365 215" fill="none" stroke="#FFBB55" stroke-width="24" stroke-linecap="round" opacity="0.45"/>
+  <g id="brand-mark" transform="translate(550 565) scale(0.28)">
+    <path d="M260 365 L375 730 L540 475 L705 730 L820 365" fill="none" stroke="#FFF3DA" stroke-width="104" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M633 251 Q686 214 739 251" fill="none" stroke="#FFBB55" stroke-width="38" stroke-linecap="round"/>
+  </g>
+  <text id="brand-title" x="900" y="718" font-family="DejaVu Sans, sans-serif" font-size="118" font-weight="700" fill="#FFF3DA">Winkivo Studio</text>
+  <text id="tagline" x="905" y="794" font-family="DejaVu Sans, sans-serif" font-size="44" fill="#FFBB55">Small stories. Big laughs.</text>
+  <text id="format-line" x="905" y="849" font-family="DejaVu Sans, sans-serif" font-size="34" fill="#FFF3DA">Original animated shorts.</text>
+</svg>
